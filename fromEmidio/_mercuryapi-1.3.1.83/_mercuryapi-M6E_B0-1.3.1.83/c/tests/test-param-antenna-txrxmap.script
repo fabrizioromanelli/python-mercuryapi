@@ -1,0 +1,39 @@
+echo Test txrxmap (virtual antenna)->(tx,rx pair)
+echo Assumes antenna 1 is connected
+
+get /reader/version/model
+
+get /reader/antenna/portList
+get /reader/antenna/txRxMap
+
+echo Single-element mappings
+
+echo All tags have antenna 1
+read 1000
+
+set /reader/antenna/txRxMap [[2,1,1]]
+get /reader/antenna/txRxMap
+echo All tags have antenna 2
+read 1000
+
+set /reader/antenna/txRxMap [[3,1,1]]
+get /reader/antenna/txRxMap
+echo All tags have antenna 3
+read 1000
+
+set /reader/antenna/txRxMap [[255,1,1]]
+get /reader/antenna/txRxMap
+echo All tags have antenna 255
+read 1000
+
+echo Multiple-element mappings
+set /reader/antenna/txRxMap [[11,1,1],[22,2,2],[12,1,2]]
+read 1000
+
+echo Illegal antenna ports
+set /reader/antenna/txRxMap [[1,1,255]]
+set /reader/antenna/txRxMap [[1,255,1]]
+set /reader/antenna/txRxMap [[1,255,255]]
+
+echo Restore default
+set /reader/antenna/txRxMap [[1,1,1],[2,2,2]]

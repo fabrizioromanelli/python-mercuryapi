@@ -1,0 +1,78 @@
+\hypertarget{tmr__tag__lock__action_8h}{
+\section{tmr\_\-tag\_\-lock\_\-action.h File Reference}
+\label{tmr__tag__lock__action_8h}\index{tmr\_\-tag\_\-lock\_\-action.h@{tmr\_\-tag\_\-lock\_\-action.h}}
+}
+Mercury API - Tag Lock Action Interface.  
+
+
+{\tt \#include \char`\"{}tmr\_\-gen2.h\char`\"{}}\par
+{\tt \#include \char`\"{}tmr\_\-iso180006b.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+struct \hyperlink{struct_t_m_r___tag_lock_action}{TMR\_\-TagLockAction}
+\end{CompactItemize}
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{tmr__tag__lock__action_8h_9bed85006c57f9d418f4a8fba7dedf58}{TMR\_\-TagLockActionType} 
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+TMR\_\-Status \hyperlink{tmr__tag__lock__action_8h_116ff1ad409013b7f3b73f2e9e2d5613}{TMR\_\-TLA\_\-init\_\-gen2} (\hyperlink{struct_t_m_r___tag_lock_action}{TMR\_\-TagLockAction} $\ast$lockAction, uint16\_\-t mask, uint16\_\-t action)
+\item 
+TMR\_\-Status \hyperlink{tmr__tag__lock__action_8h_8517627c3d941e322dab770c9b34d433}{TMR\_\-TLA\_\-init\_\-ISO180006B} (\hyperlink{struct_t_m_r___tag_lock_action}{TMR\_\-TagLockAction} $\ast$lockAction, uint8\_\-t address)
+\end{CompactItemize}
+
+
+\label{_details}
+\hypertarget{_details}{}
+\subsection{Detailed Description}
+Mercury API - Tag Lock Action Interface. 
+
+\begin{Desc}
+\item[Author:]Brian Fiegel \end{Desc}
+\begin{Desc}
+\item[Date:]4/18/2009 \end{Desc}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{tmr__tag__lock__action_8h_9bed85006c57f9d418f4a8fba7dedf58}{
+\index{tmr\_\-tag\_\-lock\_\-action.h@{tmr\_\-tag\_\-lock\_\-action.h}!TMR\_\-TagLockActionType@{TMR\_\-TagLockActionType}}
+\index{TMR\_\-TagLockActionType@{TMR\_\-TagLockActionType}!tmr_tag_lock_action.h@{tmr\_\-tag\_\-lock\_\-action.h}}
+\subsubsection[{TMR\_\-TagLockActionType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf TMR\_\-TagLockActionType}}}
+\label{tmr__tag__lock__action_8h_9bed85006c57f9d418f4a8fba7dedf58}
+
+
+Types of RFID Tag Locking Structures 
+
+\subsection{Function Documentation}
+\hypertarget{tmr__tag__lock__action_8h_116ff1ad409013b7f3b73f2e9e2d5613}{
+\index{tmr\_\-tag\_\-lock\_\-action.h@{tmr\_\-tag\_\-lock\_\-action.h}!TMR\_\-TLA\_\-init\_\-gen2@{TMR\_\-TLA\_\-init\_\-gen2}}
+\index{TMR\_\-TLA\_\-init\_\-gen2@{TMR\_\-TLA\_\-init\_\-gen2}!tmr_tag_lock_action.h@{tmr\_\-tag\_\-lock\_\-action.h}}
+\subsubsection[{TMR\_\-TLA\_\-init\_\-gen2}]{\setlength{\rightskip}{0pt plus 5cm}TMR\_\-Status TMR\_\-TLA\_\-init\_\-gen2 ({\bf TMR\_\-TagLockAction} $\ast$ {\em lockAction}, \/  uint16\_\-t {\em mask}, \/  uint16\_\-t {\em action})}}
+\label{tmr__tag__lock__action_8h_116ff1ad409013b7f3b73f2e9e2d5613}
+
+
+Initialize a \hyperlink{struct_t_m_r___tag_lock_action}{TMR\_\-TagLockAction} as a Gen2 lock action with the provided parameters.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em lockAction}]Pointer to the structure to initialize. \item[{\em mask}]mask \item[{\em action}]action \end{description}
+\end{Desc}
+\hypertarget{tmr__tag__lock__action_8h_8517627c3d941e322dab770c9b34d433}{
+\index{tmr\_\-tag\_\-lock\_\-action.h@{tmr\_\-tag\_\-lock\_\-action.h}!TMR\_\-TLA\_\-init\_\-ISO180006B@{TMR\_\-TLA\_\-init\_\-ISO180006B}}
+\index{TMR\_\-TLA\_\-init\_\-ISO180006B@{TMR\_\-TLA\_\-init\_\-ISO180006B}!tmr_tag_lock_action.h@{tmr\_\-tag\_\-lock\_\-action.h}}
+\subsubsection[{TMR\_\-TLA\_\-init\_\-ISO180006B}]{\setlength{\rightskip}{0pt plus 5cm}TMR\_\-Status TMR\_\-TLA\_\-init\_\-ISO180006B ({\bf TMR\_\-TagLockAction} $\ast$ {\em lockAction}, \/  uint8\_\-t {\em address})}}
+\label{tmr__tag__lock__action_8h_8517627c3d941e322dab770c9b34d433}
+
+
+Initialize a \hyperlink{struct_t_m_r___tag_lock_action}{TMR\_\-TagLockAction} as an ISO180006B lock action with the provided parameters.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em lockAction}]Pointer to the structure to initialize. \item[{\em address}]The byte to lock \end{description}
+\end{Desc}

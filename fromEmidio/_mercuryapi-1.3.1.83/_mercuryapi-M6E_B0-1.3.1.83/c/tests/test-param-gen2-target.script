@@ -1,0 +1,46 @@
+echo Testing Gen2 target setting
+
+get /reader/gen2/target
+
+set /reader/gen2/target BA
+get /reader/gen2/target
+
+set /reader/gen2/target AB
+get /reader/gen2/target
+
+set /reader/gen2/target B
+get /reader/gen2/target
+
+set /reader/gen2/target a
+get /reader/gen2/target
+
+echo Illegal settings
+
+set /reader/gen2/target ABA
+set /reader/gen2/target S0
+
+echo Target AB will find tags on in back-to-back reads in session 2
+set /reader/gen2/session S2
+get /reader/gen2/session
+set /reader/gen2/target AB
+get /reader/gen2/target
+
+read 500
+echo Second read
+read 500
+
+echo Flushing tags to state A with target B setting
+set /reader/gen2/target B
+get /reader/gen2/target
+read 500
+
+
+echo Target A will only find tags in the first of the back-to-back reads
+set /reader/gen2/target A
+get /reader/gen2/target
+read 500
+echo Second read
+read 500
+
+set /reader/gen2/session S0
+echo Done

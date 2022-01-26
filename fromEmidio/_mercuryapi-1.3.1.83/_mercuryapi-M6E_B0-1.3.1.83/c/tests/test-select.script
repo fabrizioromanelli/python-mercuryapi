@@ -1,0 +1,55 @@
+echo Testing tag select operations
+
+set /reader/gen2/session S0
+set /reader/gen2/accessPassword 0
+
+echo Initializing EPC and memory contents
+writeepc EPC:0123456789ABCDEF01234567
+set /reader/read/plan [GEN2,[],EPC:0123456789ABCDEF01234567,1]
+read 100
+set /reader/read/plan [GEN2,[],NULL,1]
+
+writemembytes 0 0 bytes:0011223344556677 EPC:0123456789ABCDEF01234567
+readmembytes 0 0 8
+
+echo Entire EPC
+readmemwords 0 0 4 EPC:0123456789ABCDEF01234567
+
+echo EPC prefixes
+readmemwords 0 0 4 EPC:0123456789ABCDEF012345
+readmemwords 0 0 4 EPC:0123456789ABCDEF0123
+readmemwords 0 0 4 EPC:0123456789ABCDEF01
+readmemwords 0 0 4 EPC:0123456789ABCDEF
+readmemwords 0 0 4 EPC:0123456789ABCD
+readmemwords 0 0 4 EPC:0123456789AB
+readmemwords 0 0 4 EPC:0123456789
+readmemwords 0 0 4 EPC:01234567
+readmemwords 0 0 4 EPC:012345
+readmemwords 0 0 4 EPC:0123
+readmemwords 0 0 4 EPC:01
+
+echo Gen2 selects
+readmemwords 0 0 4 Gen2.Select:EPC,32,16,0123
+readmemwords 0 0 4 Gen2.Select:EPC,40,16,2345
+readmemwords 0 0 4 Gen2.Select:EPC,48,16,4567
+readmemwords 0 0 4 Gen2.Select:EPC,52,32,56789ABC
+
+echo Should not find a tag - incorrect EPC
+readmemwords 0 0 4 EPC:76543210FEDCBA9876543210
+
+echo Should not find a tag - correct EPC but too long
+readmemwords 0 0 4 EPC:0123456789ABCDEF0123456789
+
+echo Selects inside of a read plan
+set /reader/read/plan [GEN2,[],EPC:0123456789ABCDEF01234567,1]
+read 1000
+set /reader/read/plan [GEN2,[],Gen2.Select:EPC,52,32,56789ABC,1]
+read 1000
+set /reader/read/plan [GEN2,[],NULL,1]
+
+echo Should not find a tag - inverse of correct Gen2 select
+echo (May find random other tags in the field, unfortunately)
+readmemwords 0 0 4 Gen2.Select:~EPC,32,16,0123
+
+echo Resetting memory contents to 0
+writemembytes 0 0 bytes:0000000000000000 EPC:0123456789ABCDEF01234567

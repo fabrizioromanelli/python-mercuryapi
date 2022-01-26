@@ -1,0 +1,54 @@
+\hypertarget{osdep__win32_8c}{
+\section{osdep\_\-win32.c File Reference}
+\label{osdep__win32_8c}\index{osdep\_\-win32.c@{osdep\_\-win32.c}}
+}
+Mercury API - Windows platform implementation of OS dependencies.  
+
+
+{\tt \#include $<$windows.h$>$}\par
+{\tt \#include \char`\"{}osdep.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+uint32\_\-t \hyperlink{osdep__win32_8c_8b9a41ea0e4c9af99375fa569115b182}{tmr\_\-gettime\_\-low} ()
+\item 
+uint32\_\-t \hyperlink{osdep__win32_8c_2b149cffcc762be9fcb09cd0ff85e6a6}{tmr\_\-gettime\_\-high} ()
+\item 
+void \hyperlink{osdep__win32_8c_875c3bfe0d6c1974f408c6d9e660b8d2}{tmr\_\-sleep} (uint32\_\-t sleepms)
+\end{CompactItemize}
+
+
+\label{_details}
+\hypertarget{_details}{}
+\subsection{Detailed Description}
+Mercury API - Windows platform implementation of OS dependencies. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{osdep__win32_8c_2b149cffcc762be9fcb09cd0ff85e6a6}{
+\index{osdep\_\-win32.c@{osdep\_\-win32.c}!tmr\_\-gettime\_\-high@{tmr\_\-gettime\_\-high}}
+\index{tmr\_\-gettime\_\-high@{tmr\_\-gettime\_\-high}!osdep_win32.c@{osdep\_\-win32.c}}
+\subsubsection[{tmr\_\-gettime\_\-high}]{\setlength{\rightskip}{0pt plus 5cm}uint32\_\-t tmr\_\-gettime\_\-high ()}}
+\label{osdep__win32_8c_2b149cffcc762be9fcb09cd0ff85e6a6}
+
+
+Return the high 32-bits of a system millisecond counter. This is used to timestamp tag reads. \hypertarget{osdep__win32_8c_8b9a41ea0e4c9af99375fa569115b182}{
+\index{osdep\_\-win32.c@{osdep\_\-win32.c}!tmr\_\-gettime\_\-low@{tmr\_\-gettime\_\-low}}
+\index{tmr\_\-gettime\_\-low@{tmr\_\-gettime\_\-low}!osdep_win32.c@{osdep\_\-win32.c}}
+\subsubsection[{tmr\_\-gettime\_\-low}]{\setlength{\rightskip}{0pt plus 5cm}uint32\_\-t tmr\_\-gettime\_\-low ()}}
+\label{osdep__win32_8c_8b9a41ea0e4c9af99375fa569115b182}
+
+
+Return the low 32-bits of a system millisecond counter. This is used internally for operation timing and to timestamp tag reads. \hypertarget{osdep__win32_8c_875c3bfe0d6c1974f408c6d9e660b8d2}{
+\index{osdep\_\-win32.c@{osdep\_\-win32.c}!tmr\_\-sleep@{tmr\_\-sleep}}
+\index{tmr\_\-sleep@{tmr\_\-sleep}!osdep_win32.c@{osdep\_\-win32.c}}
+\subsubsection[{tmr\_\-sleep}]{\setlength{\rightskip}{0pt plus 5cm}void tmr\_\-sleep (uint32\_\-t {\em sleepms})}}
+\label{osdep__win32_8c_875c3bfe0d6c1974f408c6d9e660b8d2}
+
+
+Suspend operation for a given duration. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em sleepms}]The number of milliseconds to sleep for. \end{description}
+\end{Desc}

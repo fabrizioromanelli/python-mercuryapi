@@ -1,0 +1,57 @@
+\hypertarget{osdep_8h}{
+\section{osdep.h File Reference}
+\label{osdep_8h}\index{osdep.h@{osdep.h}}
+}
+Mercury API - OS dependencies.  
+
+
+{\tt \#include $<$stdint.h$>$}\par
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+uint32\_\-t \hyperlink{osdep_8h_8b9a41ea0e4c9af99375fa569115b182}{tmr\_\-gettime\_\-low} ()
+\item 
+uint32\_\-t \hyperlink{osdep_8h_2b149cffcc762be9fcb09cd0ff85e6a6}{tmr\_\-gettime\_\-high} ()
+\item 
+void \hyperlink{osdep_8h_875c3bfe0d6c1974f408c6d9e660b8d2}{tmr\_\-sleep} (uint32\_\-t sleepms)
+\end{CompactItemize}
+
+
+\label{_details}
+\hypertarget{_details}{}
+\subsection{Detailed Description}
+Mercury API - OS dependencies. 
+
+\begin{Desc}
+\item[Author:]Nathan Williams \end{Desc}
+\begin{Desc}
+\item[Date:]2/24/2010 \end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{osdep_8h_2b149cffcc762be9fcb09cd0ff85e6a6}{
+\index{osdep.h@{osdep.h}!tmr\_\-gettime\_\-high@{tmr\_\-gettime\_\-high}}
+\index{tmr\_\-gettime\_\-high@{tmr\_\-gettime\_\-high}!osdep.h@{osdep.h}}
+\subsubsection[{tmr\_\-gettime\_\-high}]{\setlength{\rightskip}{0pt plus 5cm}uint32\_\-t tmr\_\-gettime\_\-high ()}}
+\label{osdep_8h_2b149cffcc762be9fcb09cd0ff85e6a6}
+
+
+Return the high 32-bits of a system millisecond counter. This is used to timestamp tag reads. \hypertarget{osdep_8h_8b9a41ea0e4c9af99375fa569115b182}{
+\index{osdep.h@{osdep.h}!tmr\_\-gettime\_\-low@{tmr\_\-gettime\_\-low}}
+\index{tmr\_\-gettime\_\-low@{tmr\_\-gettime\_\-low}!osdep.h@{osdep.h}}
+\subsubsection[{tmr\_\-gettime\_\-low}]{\setlength{\rightskip}{0pt plus 5cm}uint32\_\-t tmr\_\-gettime\_\-low ()}}
+\label{osdep_8h_8b9a41ea0e4c9af99375fa569115b182}
+
+
+Return the low 32-bits of a system millisecond counter. This is used internally for operation timing and to timestamp tag reads. \hypertarget{osdep_8h_875c3bfe0d6c1974f408c6d9e660b8d2}{
+\index{osdep.h@{osdep.h}!tmr\_\-sleep@{tmr\_\-sleep}}
+\index{tmr\_\-sleep@{tmr\_\-sleep}!osdep.h@{osdep.h}}
+\subsubsection[{tmr\_\-sleep}]{\setlength{\rightskip}{0pt plus 5cm}void tmr\_\-sleep (uint32\_\-t {\em sleepms})}}
+\label{osdep_8h_875c3bfe0d6c1974f408c6d9e660b8d2}
+
+
+Suspend operation for a given duration. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em sleepms}]The number of milliseconds to sleep for. \end{description}
+\end{Desc}

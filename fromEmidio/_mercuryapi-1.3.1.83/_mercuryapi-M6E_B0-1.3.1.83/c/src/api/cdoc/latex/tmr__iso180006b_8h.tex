@@ -1,0 +1,106 @@
+\hypertarget{tmr__iso180006b_8h}{
+\section{tmr\_\-iso180006b.h File Reference}
+\label{tmr__iso180006b_8h}\index{tmr\_\-iso180006b.h@{tmr\_\-iso180006b.h}}
+}
+Mercury API - ISO180006B tag information and interfaces.  
+
+
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+struct \hyperlink{struct_t_m_r___i_s_o180006_b___select}{TMR\_\-ISO180006B\_\-Select}
+\item 
+struct \hyperlink{struct_t_m_r___i_s_o180006_b___lock_action}{TMR\_\-ISO180006B\_\-LockAction}
+\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef struct \hyperlink{struct_t_m_r___i_s_o180006_b___lock_action}{TMR\_\-ISO180006B\_\-LockAction} \hyperlink{tmr__iso180006b_8h_c20f4d8aaaf94e7919820ac8e51825dc}{TMR\_\-IS0180006B\_\-LockAction}
+\end{CompactItemize}
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{tmr__iso180006b_8h_cfb53ac1c38fae6b8085ed03f6c9b705}{TMR\_\-ISO180006B\_\-SelectOp} \{ \hyperlink{tmr__iso180006b_8h_cfb53ac1c38fae6b8085ed03f6c9b70555b7b4b04afd135b744ceb7338b5d3a5}{TMR\_\-ISO180006B\_\-SELECT\_\-OP\_\-EQUALS} =  0, 
+\hyperlink{tmr__iso180006b_8h_cfb53ac1c38fae6b8085ed03f6c9b705302de9910e170d16de75633903992994}{TMR\_\-ISO180006B\_\-SELECT\_\-OP\_\-NOT\_\-EQUALS} =  1, 
+\hyperlink{tmr__iso180006b_8h_cfb53ac1c38fae6b8085ed03f6c9b70587fc86525ef244350c32a652848558d7}{TMR\_\-ISO180006B\_\-SELECT\_\-OP\_\-LESS\_\-THAN} =  2, 
+\hyperlink{tmr__iso180006b_8h_cfb53ac1c38fae6b8085ed03f6c9b705294a6969effc077cc0909b9b0c5ef94b}{TMR\_\-ISO180006B\_\-SELECT\_\-OP\_\-GREATER\_\-THAN} =  3
+ \}
+\item 
+enum \hyperlink{tmr__iso180006b_8h_980b7caa8201f2b5dc717de3864e5eef}{TMR\_\-ISO180006B\_\-LinkFrequency} \{ \hyperlink{tmr__iso180006b_8h_980b7caa8201f2b5dc717de3864e5eef4d410359df6d1b50ad8cf70de585a3f5}{TMR\_\-ISO180006B\_\-LINKFREQUENCY\_\-40KHZ} =  40, 
+\hyperlink{tmr__iso180006b_8h_980b7caa8201f2b5dc717de3864e5eef62d62bc5c7426696edf612c79f02443f}{TMR\_\-ISO180006B\_\-LINKFREQUENCY\_\-160KHZ} =  160
+ \}
+\end{CompactItemize}
+
+
+\label{_details}
+\hypertarget{_details}{}
+\subsection{Detailed Description}
+Mercury API - ISO180006B tag information and interfaces. 
+
+\begin{Desc}
+\item[Author:]Brian Fiegel \end{Desc}
+\begin{Desc}
+\item[Date:]5/7/2009 \end{Desc}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{tmr__iso180006b_8h_c20f4d8aaaf94e7919820ac8e51825dc}{
+\index{tmr\_\-iso180006b.h@{tmr\_\-iso180006b.h}!TMR\_\-IS0180006B\_\-LockAction@{TMR\_\-IS0180006B\_\-LockAction}}
+\index{TMR\_\-IS0180006B\_\-LockAction@{TMR\_\-IS0180006B\_\-LockAction}!tmr_iso180006b.h@{tmr\_\-iso180006b.h}}
+\subsubsection[{TMR\_\-IS0180006B\_\-LockAction}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf TMR\_\-ISO180006B\_\-LockAction}  {\bf TMR\_\-IS0180006B\_\-LockAction}}}
+\label{tmr__iso180006b_8h_c20f4d8aaaf94e7919820ac8e51825dc}
+
+
+The arguments to a \hyperlink{group__reader_g8597458eb25df64f934016a89eac981c}{TMR\_\-lockTag()} method for ISO18000-6B tags. Represents the byte to be locked. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{tmr__iso180006b_8h_980b7caa8201f2b5dc717de3864e5eef}{
+\index{tmr\_\-iso180006b.h@{tmr\_\-iso180006b.h}!TMR\_\-ISO180006B\_\-LinkFrequency@{TMR\_\-ISO180006B\_\-LinkFrequency}}
+\index{TMR\_\-ISO180006B\_\-LinkFrequency@{TMR\_\-ISO180006B\_\-LinkFrequency}!tmr_iso180006b.h@{tmr\_\-iso180006b.h}}
+\subsubsection[{TMR\_\-ISO180006B\_\-LinkFrequency}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf TMR\_\-ISO180006B\_\-LinkFrequency}}}
+\label{tmr__iso180006b_8h_980b7caa8201f2b5dc717de3864e5eef}
+
+
+ISO180006B link frequencies \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{TMR\_\-ISO180006B\_\-LINKFREQUENCY\_\-40KHZ@{TMR\_\-ISO180006B\_\-LINKFREQUENCY\_\-40KHZ}!tmr\_\-iso180006b.h@{tmr\_\-iso180006b.h}}\index{tmr\_\-iso180006b.h@{tmr\_\-iso180006b.h}!TMR\_\-ISO180006B\_\-LINKFREQUENCY\_\-40KHZ@{TMR\_\-ISO180006B\_\-LINKFREQUENCY\_\-40KHZ}}\item[{\em 
+\hypertarget{tmr__iso180006b_8h_980b7caa8201f2b5dc717de3864e5eef4d410359df6d1b50ad8cf70de585a3f5}{
+TMR\_\-ISO180006B\_\-LINKFREQUENCY\_\-40KHZ}
+\label{tmr__iso180006b_8h_980b7caa8201f2b5dc717de3864e5eef4d410359df6d1b50ad8cf70de585a3f5}
+}]40 kHz \index{TMR\_\-ISO180006B\_\-LINKFREQUENCY\_\-160KHZ@{TMR\_\-ISO180006B\_\-LINKFREQUENCY\_\-160KHZ}!tmr\_\-iso180006b.h@{tmr\_\-iso180006b.h}}\index{tmr\_\-iso180006b.h@{tmr\_\-iso180006b.h}!TMR\_\-ISO180006B\_\-LINKFREQUENCY\_\-160KHZ@{TMR\_\-ISO180006B\_\-LINKFREQUENCY\_\-160KHZ}}\item[{\em 
+\hypertarget{tmr__iso180006b_8h_980b7caa8201f2b5dc717de3864e5eef62d62bc5c7426696edf612c79f02443f}{
+TMR\_\-ISO180006B\_\-LINKFREQUENCY\_\-160KHZ}
+\label{tmr__iso180006b_8h_980b7caa8201f2b5dc717de3864e5eef62d62bc5c7426696edf612c79f02443f}
+}]160 kHz \end{description}
+\end{Desc}
+
+\hypertarget{tmr__iso180006b_8h_cfb53ac1c38fae6b8085ed03f6c9b705}{
+\index{tmr\_\-iso180006b.h@{tmr\_\-iso180006b.h}!TMR\_\-ISO180006B\_\-SelectOp@{TMR\_\-ISO180006B\_\-SelectOp}}
+\index{TMR\_\-ISO180006B\_\-SelectOp@{TMR\_\-ISO180006B\_\-SelectOp}!tmr_iso180006b.h@{tmr\_\-iso180006b.h}}
+\subsubsection[{TMR\_\-ISO180006B\_\-SelectOp}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf TMR\_\-ISO180006B\_\-SelectOp}}}
+\label{tmr__iso180006b_8h_cfb53ac1c38fae6b8085ed03f6c9b705}
+
+
+ISO180006B Select operations \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{TMR\_\-ISO180006B\_\-SELECT\_\-OP\_\-EQUALS@{TMR\_\-ISO180006B\_\-SELECT\_\-OP\_\-EQUALS}!tmr\_\-iso180006b.h@{tmr\_\-iso180006b.h}}\index{tmr\_\-iso180006b.h@{tmr\_\-iso180006b.h}!TMR\_\-ISO180006B\_\-SELECT\_\-OP\_\-EQUALS@{TMR\_\-ISO180006B\_\-SELECT\_\-OP\_\-EQUALS}}\item[{\em 
+\hypertarget{tmr__iso180006b_8h_cfb53ac1c38fae6b8085ed03f6c9b70555b7b4b04afd135b744ceb7338b5d3a5}{
+TMR\_\-ISO180006B\_\-SELECT\_\-OP\_\-EQUALS}
+\label{tmr__iso180006b_8h_cfb53ac1c38fae6b8085ed03f6c9b70555b7b4b04afd135b744ceb7338b5d3a5}
+}]Select if tag data matches op data \index{TMR\_\-ISO180006B\_\-SELECT\_\-OP\_\-NOT\_\-EQUALS@{TMR\_\-ISO180006B\_\-SELECT\_\-OP\_\-NOT\_\-EQUALS}!tmr\_\-iso180006b.h@{tmr\_\-iso180006b.h}}\index{tmr\_\-iso180006b.h@{tmr\_\-iso180006b.h}!TMR\_\-ISO180006B\_\-SELECT\_\-OP\_\-NOT\_\-EQUALS@{TMR\_\-ISO180006B\_\-SELECT\_\-OP\_\-NOT\_\-EQUALS}}\item[{\em 
+\hypertarget{tmr__iso180006b_8h_cfb53ac1c38fae6b8085ed03f6c9b705302de9910e170d16de75633903992994}{
+TMR\_\-ISO180006B\_\-SELECT\_\-OP\_\-NOT\_\-EQUALS}
+\label{tmr__iso180006b_8h_cfb53ac1c38fae6b8085ed03f6c9b705302de9910e170d16de75633903992994}
+}]Select if tag data does not match op data \index{TMR\_\-ISO180006B\_\-SELECT\_\-OP\_\-LESS\_\-THAN@{TMR\_\-ISO180006B\_\-SELECT\_\-OP\_\-LESS\_\-THAN}!tmr\_\-iso180006b.h@{tmr\_\-iso180006b.h}}\index{tmr\_\-iso180006b.h@{tmr\_\-iso180006b.h}!TMR\_\-ISO180006B\_\-SELECT\_\-OP\_\-LESS\_\-THAN@{TMR\_\-ISO180006B\_\-SELECT\_\-OP\_\-LESS\_\-THAN}}\item[{\em 
+\hypertarget{tmr__iso180006b_8h_cfb53ac1c38fae6b8085ed03f6c9b70587fc86525ef244350c32a652848558d7}{
+TMR\_\-ISO180006B\_\-SELECT\_\-OP\_\-LESS\_\-THAN}
+\label{tmr__iso180006b_8h_cfb53ac1c38fae6b8085ed03f6c9b70587fc86525ef244350c32a652848558d7}
+}]Select if tag data is less than op data \index{TMR\_\-ISO180006B\_\-SELECT\_\-OP\_\-GREATER\_\-THAN@{TMR\_\-ISO180006B\_\-SELECT\_\-OP\_\-GREATER\_\-THAN}!tmr\_\-iso180006b.h@{tmr\_\-iso180006b.h}}\index{tmr\_\-iso180006b.h@{tmr\_\-iso180006b.h}!TMR\_\-ISO180006B\_\-SELECT\_\-OP\_\-GREATER\_\-THAN@{TMR\_\-ISO180006B\_\-SELECT\_\-OP\_\-GREATER\_\-THAN}}\item[{\em 
+\hypertarget{tmr__iso180006b_8h_cfb53ac1c38fae6b8085ed03f6c9b705294a6969effc077cc0909b9b0c5ef94b}{
+TMR\_\-ISO180006B\_\-SELECT\_\-OP\_\-GREATER\_\-THAN}
+\label{tmr__iso180006b_8h_cfb53ac1c38fae6b8085ed03f6c9b705294a6969effc077cc0909b9b0c5ef94b}
+}]Select if tag data is greater than op data \end{description}
+\end{Desc}
+

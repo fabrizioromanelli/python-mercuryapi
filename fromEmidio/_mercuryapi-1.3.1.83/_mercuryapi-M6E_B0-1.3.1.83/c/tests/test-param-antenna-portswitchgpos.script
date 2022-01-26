@@ -1,0 +1,46 @@
+echo Port switch GPIO
+echo Assumes a two-port reader, port 1 connected, no multiplexer.
+
+set /reader/gen2/session S0
+set /reader/antenna/portSwitchGpos []
+get /reader/antenna/portSwitchGpos
+get /reader/antenna/portList
+get /reader/antenna/connectedPortList
+get /reader/antenna/txRxMap
+
+echo Should find tags on port 1 only
+read 1000
+
+set /reader/antenna/portSwitchGpos [1]
+get /reader/antenna/portSwitchGpos
+get /reader/antenna/portList
+get /reader/antenna/connectedPortList
+get /reader/antenna/txRxMap
+
+echo Should find tags on ports 1 and 5(M5e) or 9(M6e)
+read 1000
+
+set /reader/antenna/portSwitchGpos [2]
+get /reader/antenna/portSwitchGpos
+get /reader/antenna/portList
+get /reader/antenna/connectedPortList
+get /reader/antenna/txRxMap
+
+echo Should find tags on ports 1 and 3
+read 1000
+
+set /reader/antenna/portSwitchGpos [1,2]
+get /reader/antenna/portSwitchGpos
+get /reader/antenna/portList
+get /reader/antenna/connectedPortList
+get /reader/antenna/txRxMap
+
+echo Should find tags on ports 1,3,5,7(M5e) or 1,5,9,13(M6e)
+read 1000
+
+set /reader/antenna/portSwitchGpos []
+get /reader/antenna/portSwitchGpos
+get /reader/antenna/portList
+get /reader/antenna/connectedPortList
+get /reader/antenna/txRxMap
+

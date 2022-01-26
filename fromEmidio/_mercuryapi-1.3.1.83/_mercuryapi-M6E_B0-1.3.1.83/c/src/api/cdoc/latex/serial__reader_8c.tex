@@ -1,0 +1,43 @@
+\hypertarget{serial__reader_8c}{
+\section{serial\_\-reader.c File Reference}
+\label{serial__reader_8c}\index{serial\_\-reader.c@{serial\_\-reader.c}}
+}
+Mercury API - serial reader high level implementation.  
+
+
+{\tt \#include $<$stdlib.h$>$}\par
+{\tt \#include $<$stdio.h$>$}\par
+{\tt \#include $<$string.h$>$}\par
+{\tt \#include \char`\"{}tm\_\-reader.h\char`\"{}}\par
+{\tt \#include \char`\"{}serial\_\-reader\_\-imp.h\char`\"{}}\par
+{\tt \#include \char`\"{}tmr\_\-utils.h\char`\"{}}\par
+{\tt \#include \char`\"{}osdep.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+TMR\_\-Status \hyperlink{group__reader_gb0b455295d4984b2fa653f2ebccc263e}{TMR\_\-paramList} (struct \hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, \hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692}{TMR\_\-Param} $\ast$keys, uint32\_\-t $\ast$len)
+\item 
+TMR\_\-Status \hyperlink{serial__reader_8c_9dd1d68fa5b7ad34bec0631f4c5a1007}{TMR\_\-SR\_\-SerialReader\_\-init} (\hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader)
+\end{CompactItemize}
+
+
+\label{_details}
+\hypertarget{_details}{}
+\subsection{Detailed Description}
+Mercury API - serial reader high level implementation. 
+
+\begin{Desc}
+\item[Author:]Nathan Williams \end{Desc}
+\begin{Desc}
+\item[Date:]10/28/2009 \end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{serial__reader_8c_9dd1d68fa5b7ad34bec0631f4c5a1007}{
+\index{serial\_\-reader.c@{serial\_\-reader.c}!TMR\_\-SR\_\-SerialReader\_\-init@{TMR\_\-SR\_\-SerialReader\_\-init}}
+\index{TMR\_\-SR\_\-SerialReader\_\-init@{TMR\_\-SR\_\-SerialReader\_\-init}!serial_reader.c@{serial\_\-reader.c}}
+\subsubsection[{TMR\_\-SR\_\-SerialReader\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}TMR\_\-Status TMR\_\-SR\_\-SerialReader\_\-init ({\bf TMR\_\-Reader} $\ast$ {\em reader})}}
+\label{serial__reader_8c_9dd1d68fa5b7ad34bec0631f4c5a1007}
+
+
+Initialize a serial reader. The reader-$>$u.serialReader.transport structure must be initialized before calling this. 

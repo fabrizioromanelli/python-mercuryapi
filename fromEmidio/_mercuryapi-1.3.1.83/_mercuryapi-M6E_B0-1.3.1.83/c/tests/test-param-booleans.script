@@ -1,0 +1,48 @@
+# Test the various true/false parameters, for persistence.
+
+get /reader/antenna/checkPort
+
+set /reader/antenna/checkPort true
+get /reader/antenna/checkPort
+
+set /reader/antenna/checkPort false
+get /reader/antenna/checkPort
+
+
+get /reader/tagReadData/recordHighestRssi
+
+set /reader/tagReadData/recordHighestRssi true
+get /reader/tagReadData/recordHighestRssi
+
+set /reader/tagReadData/recordHighestRssi false
+get /reader/tagReadData/recordHighestRssi
+
+
+get /reader/tagReadData/reportRssiInDbm
+
+set /reader/tagReadData/reportRssiInDbm true
+get /reader/tagReadData/reportRssiInDbm
+
+set /reader/tagReadData/reportRssiInDbm false
+get /reader/tagReadData/reportRssiInDbm
+
+
+get /reader/tagReadData/uniqueByAntenna
+
+set /reader/tagReadData/uniqueByAntenna true
+get /reader/tagReadData/uniqueByAntenna
+
+set /reader/tagReadData/uniqueByAntenna false
+get /reader/tagReadData/uniqueByAntenna
+
+
+get /reader/tagReadData/uniqueByData
+
+set /reader/tagReadData/uniqueByData false
+get /reader/tagReadData/uniqueByData
+
+set /reader/tagReadData/uniqueByData true
+get /reader/tagReadData/uniqueByData
+
+
+

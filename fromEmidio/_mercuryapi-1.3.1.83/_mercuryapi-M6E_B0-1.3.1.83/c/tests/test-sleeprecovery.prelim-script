@@ -1,0 +1,12 @@
+echo Test recovery from deep sleep mode
+
+set /reader/powerMode MEDSAVE
+
+get /reader/version/software
+get /reader/baudRate
+
+get /reader/powerMode
+get /reader/powerMode
+read
+get /reader/powerMode
+get /reader/powerMode

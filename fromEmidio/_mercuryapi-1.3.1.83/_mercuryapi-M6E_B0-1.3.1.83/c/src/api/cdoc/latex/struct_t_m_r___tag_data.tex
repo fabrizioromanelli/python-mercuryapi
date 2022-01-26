@@ -1,0 +1,77 @@
+\hypertarget{struct_t_m_r___tag_data}{
+\section{TMR\_\-TagData Struct Reference}
+\label{struct_t_m_r___tag_data}\index{TMR\_\-TagData@{TMR\_\-TagData}}
+}
+{\tt \#include $<$tmr\_\-tag\_\-data.h$>$}
+
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{tmr__tag__protocol_8h_1e727f69e94ccc81da4d3b9440aba934}{TMR\_\-TagProtocol} \hyperlink{struct_t_m_r___tag_data_2e68f5026358cf4f83694ea89d926b66}{protocol}
+\item 
+uint8\_\-t \hyperlink{struct_t_m_r___tag_data_35dd257d58a4d5a3f4e4178a6f961f77}{epcByteCount}
+\item 
+uint8\_\-t \hyperlink{struct_t_m_r___tag_data_4f93cf257db348393277b792004d8923}{epc} \mbox{[}TMR\_\-MAX\_\-EPC\_\-BYTE\_\-COUNT\mbox{]}
+\item 
+uint16\_\-t \hyperlink{struct_t_m_r___tag_data_d8dafe51e5af4f7476122780d2cb4509}{crc}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\hyperlink{struct_t_m_r___g_e_n2___tag_data}{TMR\_GEN2\_TagData} \hyperlink{struct_t_m_r___tag_data_2fb9c8ed3770aa54ec3b266a98dc9361}{gen2}\\
+\} \hyperlink{struct_t_m_r___tag_data_37f17300bc0e1089399f25866676404e}{u}\\
+
+\end{tabbing}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A structure to represent RFID tags. 
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_t_m_r___tag_data_d8dafe51e5af4f7476122780d2cb4509}{
+\index{TMR\_\-TagData@{TMR\_\-TagData}!crc@{crc}}
+\index{crc@{crc}!TMR_TagData@{TMR\_\-TagData}}
+\subsubsection[{crc}]{\setlength{\rightskip}{0pt plus 5cm}uint16\_\-t {\bf TMR\_\-TagData::crc}}}
+\label{struct_t_m_r___tag_data_d8dafe51e5af4f7476122780d2cb4509}
+
+
+Tag CRC \hypertarget{struct_t_m_r___tag_data_4f93cf257db348393277b792004d8923}{
+\index{TMR\_\-TagData@{TMR\_\-TagData}!epc@{epc}}
+\index{epc@{epc}!TMR_TagData@{TMR\_\-TagData}}
+\subsubsection[{epc}]{\setlength{\rightskip}{0pt plus 5cm}uint8\_\-t {\bf TMR\_\-TagData::epc}\mbox{[}TMR\_\-MAX\_\-EPC\_\-BYTE\_\-COUNT\mbox{]}}}
+\label{struct_t_m_r___tag_data_4f93cf257db348393277b792004d8923}
+
+
+Tag EPC \hypertarget{struct_t_m_r___tag_data_35dd257d58a4d5a3f4e4178a6f961f77}{
+\index{TMR\_\-TagData@{TMR\_\-TagData}!epcByteCount@{epcByteCount}}
+\index{epcByteCount@{epcByteCount}!TMR_TagData@{TMR\_\-TagData}}
+\subsubsection[{epcByteCount}]{\setlength{\rightskip}{0pt plus 5cm}uint8\_\-t {\bf TMR\_\-TagData::epcByteCount}}}
+\label{struct_t_m_r___tag_data_35dd257d58a4d5a3f4e4178a6f961f77}
+
+
+Length of the tag's EPC in bytes \hypertarget{struct_t_m_r___tag_data_2fb9c8ed3770aa54ec3b266a98dc9361}{
+\index{TMR\_\-TagData@{TMR\_\-TagData}!gen2@{gen2}}
+\index{gen2@{gen2}!TMR_TagData@{TMR\_\-TagData}}
+\subsubsection[{gen2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TMR\_\-GEN2\_\-TagData} {\bf TMR\_\-TagData::gen2}}}
+\label{struct_t_m_r___tag_data_2fb9c8ed3770aa54ec3b266a98dc9361}
+
+
+Gen2-specific tag information \hypertarget{struct_t_m_r___tag_data_2e68f5026358cf4f83694ea89d926b66}{
+\index{TMR\_\-TagData@{TMR\_\-TagData}!protocol@{protocol}}
+\index{protocol@{protocol}!TMR_TagData@{TMR\_\-TagData}}
+\subsubsection[{protocol}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TMR\_\-TagProtocol} {\bf TMR\_\-TagData::protocol}}}
+\label{struct_t_m_r___tag_data_2e68f5026358cf4f83694ea89d926b66}
+
+
+Protocol of the tag \hypertarget{struct_t_m_r___tag_data_37f17300bc0e1089399f25866676404e}{
+\index{TMR\_\-TagData@{TMR\_\-TagData}!u@{u}}
+\index{u@{u}!TMR_TagData@{TMR\_\-TagData}}
+\subsubsection[{u}]{\setlength{\rightskip}{0pt plus 5cm}union \{ ... \}  {\bf TMR\_\-TagData::u}}}
+\label{struct_t_m_r___tag_data_37f17300bc0e1089399f25866676404e}
+
+
+Protocol-specific tag information 
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+\hyperlink{tmr__tag__data_8h}{tmr\_\-tag\_\-data.h}\end{CompactItemize}

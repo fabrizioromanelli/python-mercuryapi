@@ -1,0 +1,134 @@
+\hypertarget{tmr__filter_8h}{
+\section{tmr\_\-filter.h File Reference}
+\label{tmr__filter_8h}\index{tmr\_\-filter.h@{tmr\_\-filter.h}}
+}
+Mercury API - Tag Filter Interface.  
+
+
+{\tt \#include \char`\"{}tmr\_\-tag\_\-data.h\char`\"{}}\par
+{\tt \#include \char`\"{}tmr\_\-gen2.h\char`\"{}}\par
+{\tt \#include \char`\"{}tmr\_\-iso180006b.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+struct \hyperlink{struct_t_m_r___tag_filter}{TMR\_\-TagFilter}
+\end{CompactItemize}
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{tmr__filter_8h_37bbe58817f1f464d21fe20d05649f69}{TMR\_\-FilterType} \{ \hyperlink{tmr__filter_8h_37bbe58817f1f464d21fe20d05649f69264d5523f759d3762ced172413ee698d}{TMR\_\-FILTER\_\-TYPE\_\-TAG\_\-DATA} =  0, 
+\hyperlink{tmr__filter_8h_37bbe58817f1f464d21fe20d05649f69b96b9014f2e1e91217a148484bcdaf25}{TMR\_\-FILTER\_\-TYPE\_\-GEN2\_\-SELECT} =  1, 
+\hyperlink{tmr__filter_8h_37bbe58817f1f464d21fe20d05649f6940bab2000b6822771c1cd397fd6ac873}{TMR\_\-FILTER\_\-TYPE\_\-ISO180006B\_\-SELECT} =  2
+ \}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+bool \hyperlink{tmr__filter_8h_dcf199f9dd42397d6afee396e6a840db}{TMR\_\-TF\_\-match} (\hyperlink{struct_t_m_r___tag_filter}{TMR\_\-TagFilter} $\ast$filter, \hyperlink{struct_t_m_r___tag_data}{TMR\_\-TagData} $\ast$tag)
+\item 
+TMR\_\-Status \hyperlink{tmr__filter_8h_fa8ba54d6dc70f2b8104d518b1e9bf6d}{TMR\_\-TF\_\-init\_\-tag} (\hyperlink{struct_t_m_r___tag_filter}{TMR\_\-TagFilter} $\ast$filter, \hyperlink{struct_t_m_r___tag_data}{TMR\_\-TagData} $\ast$tag)
+\item 
+TMR\_\-Status \hyperlink{tmr__filter_8h_5ea8889db53b34159bd630e7259d5c81}{TMR\_\-TF\_\-init\_\-gen2\_\-select} (\hyperlink{struct_t_m_r___tag_filter}{TMR\_\-TagFilter} $\ast$filter, bool invert, \hyperlink{tmr__gen2_8h_0037d967117e4d1fb33a75ef09a81b03}{TMR\_\-GEN2\_\-Bank} bank, uint32\_\-t bitPointer, uint16\_\-t maskBitLength, uint8\_\-t $\ast$mask)
+\item 
+TMR\_\-Status \hyperlink{tmr__filter_8h_9abb9b0df1a192f54ad638f860ce2bfd}{TMR\_\-TF\_\-init\_\-ISO180006B\_\-select} (\hyperlink{struct_t_m_r___tag_filter}{TMR\_\-TagFilter} $\ast$filter, bool invert, \hyperlink{tmr__iso180006b_8h_cfb53ac1c38fae6b8085ed03f6c9b705}{TMR\_\-ISO180006B\_\-SelectOp} op, uint8\_\-t address, uint8\_\-t mask, uint8\_\-t wordData\mbox{[}8\mbox{]})
+\end{CompactItemize}
+
+
+\label{_details}
+\hypertarget{_details}{}
+\subsection{Detailed Description}
+Mercury API - Tag Filter Interface. 
+
+\begin{Desc}
+\item[Author:]Brian Fiegel \end{Desc}
+\begin{Desc}
+\item[Date:]4/18/2009 \end{Desc}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{tmr__filter_8h_37bbe58817f1f464d21fe20d05649f69}{
+\index{tmr\_\-filter.h@{tmr\_\-filter.h}!TMR\_\-FilterType@{TMR\_\-FilterType}}
+\index{TMR\_\-FilterType@{TMR\_\-FilterType}!tmr_filter.h@{tmr\_\-filter.h}}
+\subsubsection[{TMR\_\-FilterType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf TMR\_\-FilterType}}}
+\label{tmr__filter_8h_37bbe58817f1f464d21fe20d05649f69}
+
+
+Type of a \hyperlink{struct_t_m_r___tag_filter}{TMR\_\-TagFilter} structure \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{TMR\_\-FILTER\_\-TYPE\_\-TAG\_\-DATA@{TMR\_\-FILTER\_\-TYPE\_\-TAG\_\-DATA}!tmr\_\-filter.h@{tmr\_\-filter.h}}\index{tmr\_\-filter.h@{tmr\_\-filter.h}!TMR\_\-FILTER\_\-TYPE\_\-TAG\_\-DATA@{TMR\_\-FILTER\_\-TYPE\_\-TAG\_\-DATA}}\item[{\em 
+\hypertarget{tmr__filter_8h_37bbe58817f1f464d21fe20d05649f69264d5523f759d3762ced172413ee698d}{
+TMR\_\-FILTER\_\-TYPE\_\-TAG\_\-DATA}
+\label{tmr__filter_8h_37bbe58817f1f464d21fe20d05649f69264d5523f759d3762ced172413ee698d}
+}]Tag data filter - non-protocol-specific \index{TMR\_\-FILTER\_\-TYPE\_\-GEN2\_\-SELECT@{TMR\_\-FILTER\_\-TYPE\_\-GEN2\_\-SELECT}!tmr\_\-filter.h@{tmr\_\-filter.h}}\index{tmr\_\-filter.h@{tmr\_\-filter.h}!TMR\_\-FILTER\_\-TYPE\_\-GEN2\_\-SELECT@{TMR\_\-FILTER\_\-TYPE\_\-GEN2\_\-SELECT}}\item[{\em 
+\hypertarget{tmr__filter_8h_37bbe58817f1f464d21fe20d05649f69b96b9014f2e1e91217a148484bcdaf25}{
+TMR\_\-FILTER\_\-TYPE\_\-GEN2\_\-SELECT}
+\label{tmr__filter_8h_37bbe58817f1f464d21fe20d05649f69b96b9014f2e1e91217a148484bcdaf25}
+}]Gen2 Select filter \index{TMR\_\-FILTER\_\-TYPE\_\-ISO180006B\_\-SELECT@{TMR\_\-FILTER\_\-TYPE\_\-ISO180006B\_\-SELECT}!tmr\_\-filter.h@{tmr\_\-filter.h}}\index{tmr\_\-filter.h@{tmr\_\-filter.h}!TMR\_\-FILTER\_\-TYPE\_\-ISO180006B\_\-SELECT@{TMR\_\-FILTER\_\-TYPE\_\-ISO180006B\_\-SELECT}}\item[{\em 
+\hypertarget{tmr__filter_8h_37bbe58817f1f464d21fe20d05649f6940bab2000b6822771c1cd397fd6ac873}{
+TMR\_\-FILTER\_\-TYPE\_\-ISO180006B\_\-SELECT}
+\label{tmr__filter_8h_37bbe58817f1f464d21fe20d05649f6940bab2000b6822771c1cd397fd6ac873}
+}]ISO180006B Select filter \end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{tmr__filter_8h_5ea8889db53b34159bd630e7259d5c81}{
+\index{tmr\_\-filter.h@{tmr\_\-filter.h}!TMR\_\-TF\_\-init\_\-gen2\_\-select@{TMR\_\-TF\_\-init\_\-gen2\_\-select}}
+\index{TMR\_\-TF\_\-init\_\-gen2\_\-select@{TMR\_\-TF\_\-init\_\-gen2\_\-select}!tmr_filter.h@{tmr\_\-filter.h}}
+\subsubsection[{TMR\_\-TF\_\-init\_\-gen2\_\-select}]{\setlength{\rightskip}{0pt plus 5cm}TMR\_\-Status TMR\_\-TF\_\-init\_\-gen2\_\-select ({\bf TMR\_\-TagFilter} $\ast$ {\em filter}, \/  bool {\em invert}, \/  {\bf TMR\_\-GEN2\_\-Bank} {\em bank}, \/  uint32\_\-t {\em bitPointer}, \/  uint16\_\-t {\em maskBitLength}, \/  uint8\_\-t $\ast$ {\em mask})}}
+\label{tmr__filter_8h_5ea8889db53b34159bd630e7259d5c81}
+
+
+Initialize a TMR\_\-Filter structure as a Gen2 select filter with the provided parameters.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em filter}]Pointer to the filter structure to initialize \item[{\em invert}]Whether to invert the result of the select \item[{\em bank}]The memory bank on the tag to compare with the data \item[{\em bitPointer}]The bit address of the tag data to compare \item[{\em maskBitLength}]The length of the data to compare \item[{\em mask}]The data to compare \end{description}
+\end{Desc}
+\hypertarget{tmr__filter_8h_9abb9b0df1a192f54ad638f860ce2bfd}{
+\index{tmr\_\-filter.h@{tmr\_\-filter.h}!TMR\_\-TF\_\-init\_\-ISO180006B\_\-select@{TMR\_\-TF\_\-init\_\-ISO180006B\_\-select}}
+\index{TMR\_\-TF\_\-init\_\-ISO180006B\_\-select@{TMR\_\-TF\_\-init\_\-ISO180006B\_\-select}!tmr_filter.h@{tmr\_\-filter.h}}
+\subsubsection[{TMR\_\-TF\_\-init\_\-ISO180006B\_\-select}]{\setlength{\rightskip}{0pt plus 5cm}TMR\_\-Status TMR\_\-TF\_\-init\_\-ISO180006B\_\-select ({\bf TMR\_\-TagFilter} $\ast$ {\em filter}, \/  bool {\em invert}, \/  {\bf TMR\_\-ISO180006B\_\-SelectOp} {\em op}, \/  uint8\_\-t {\em address}, \/  uint8\_\-t {\em mask}, \/  uint8\_\-t {\em wordData}\mbox{[}8\mbox{]})}}
+\label{tmr__filter_8h_9abb9b0df1a192f54ad638f860ce2bfd}
+
+
+Initialize a TMR\_\-Filter structure as an ISO180006B select filter with the provided parameters.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em filter}]Pointer to the filter structure to initialize \item[{\em invert}]Whether to invert the result of the select \item[{\em op}]The operation to use to compare the provided data with the tag data \item[{\em address}]The address of the 8 bytes of data on the tag to compare \item[{\em mask}]8-bit mask of the bytes to compare \item[{\em wordData}]The data to compare to the tag data \end{description}
+\end{Desc}
+\hypertarget{tmr__filter_8h_fa8ba54d6dc70f2b8104d518b1e9bf6d}{
+\index{tmr\_\-filter.h@{tmr\_\-filter.h}!TMR\_\-TF\_\-init\_\-tag@{TMR\_\-TF\_\-init\_\-tag}}
+\index{TMR\_\-TF\_\-init\_\-tag@{TMR\_\-TF\_\-init\_\-tag}!tmr_filter.h@{tmr\_\-filter.h}}
+\subsubsection[{TMR\_\-TF\_\-init\_\-tag}]{\setlength{\rightskip}{0pt plus 5cm}TMR\_\-Status TMR\_\-TF\_\-init\_\-tag ({\bf TMR\_\-TagFilter} $\ast$ {\em filter}, \/  {\bf TMR\_\-TagData} $\ast$ {\em tag})}}
+\label{tmr__filter_8h_fa8ba54d6dc70f2b8104d518b1e9bf6d}
+
+
+Initialize a TMR\_\-Filter structure as tag data (EPC) filter with the provided tag (which is copied).
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em filter}]Pointer to the filter structure to initialize \item[{\em tag}]\hyperlink{struct_t_m_r___tag_data}{TMR\_\-TagData} to use as the filter value \end{description}
+\end{Desc}
+\hypertarget{tmr__filter_8h_dcf199f9dd42397d6afee396e6a840db}{
+\index{tmr\_\-filter.h@{tmr\_\-filter.h}!TMR\_\-TF\_\-match@{TMR\_\-TF\_\-match}}
+\index{TMR\_\-TF\_\-match@{TMR\_\-TF\_\-match}!tmr_filter.h@{tmr\_\-filter.h}}
+\subsubsection[{TMR\_\-TF\_\-match}]{\setlength{\rightskip}{0pt plus 5cm}bool TMR\_\-TF\_\-match ({\bf TMR\_\-TagFilter} $\ast$ {\em filter}, \/  {\bf TMR\_\-TagData} $\ast$ {\em tag})}}
+\label{tmr__filter_8h_dcf199f9dd42397d6afee396e6a840db}
+
+
+Test if a tag matches this filter. Only applies to selects based on the EPC.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em filter}]The filter to test with. \item[{\em tag}]The tag to test. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true if the tag matches the filter. \end{Desc}

@@ -1,0 +1,9 @@
+D:\Tesi\Visual c\cs\Samples\M6e-Read-Write-Demo-Tool\M6e-Read-Write-Demo-Tool\obj\Release\ResolveAssemblyReference.cache
+D:\Tesi\Visual c\cs\Samples\M6e-Read-Write-Demo-Tool\M6e-Read-Write-Demo-Tool\obj\Release\Demo_readWrite.readWriteDemo.resources
+D:\Tesi\Visual c\cs\Samples\M6e-Read-Write-Demo-Tool\M6e-Read-Write-Demo-Tool\obj\Release\M6e_Read_Write_Demo_Tool.Properties.Resources.resources
+D:\Tesi\Visual c\cs\Samples\M6e-Read-Write-Demo-Tool\M6e-Read-Write-Demo-Tool\obj\Release\M6e-Read-Write-Demo-Tool.csproj.GenerateResource.Cache
+D:\Tesi\Visual c\cs\Readme.txt
+D:\Tesi\Visual c\cs\Samples\M6e-Read-Write-Demo-Tool\M6e-Read-Write-Demo-Tool\obj\Release\M6e-Read-Write-Demo-Tool.exe
+D:\Tesi\Visual c\cs\Samples\M6e-Read-Write-Demo-Tool\M6e-Read-Write-Demo-Tool\obj\Release\M6e-Read-Write-Demo-Tool.pdb
+D:\Tesi\Visual c\cs\M6e-Read-Write-Demo-Tool.exe
+D:\Tesi\Visual c\cs\M6e-Read-Write-Demo-Tool.pdb

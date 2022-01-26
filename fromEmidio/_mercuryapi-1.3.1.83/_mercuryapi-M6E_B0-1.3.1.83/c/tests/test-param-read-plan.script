@@ -1,0 +1,59 @@
+echo Read plan parsing and printing
+
+echo Default read plan
+get /reader/read/plan # Check default read plan
+
+echo Simple read plans
+set /reader/read/plan [GEN2,[],NULL,1]
+get /reader/read/plan
+
+set /reader/read/plan [GEN2,[1],NULL,1]
+get /reader/read/plan
+
+set /reader/read/plan [GEN2,[1,2],NULL,1]
+get /reader/read/plan
+
+set /reader/read/plan [GEN2,[2,1],NULL,1]
+get /reader/read/plan
+
+
+echo Multi read plans
+
+set /reader/read/plan [[GEN2,[],NULL,1],1] # Pointless, but valid
+get /reader/read/plan
+
+set /reader/read/plan [[GEN2,[],NULL,1],[GEN2,[],NULL,1],1] # Also pointless
+get /reader/read/plan
+
+set /reader/read/plan [[GEN2,[1],NULL,2],[GEN2,[2],NULL,1],1]
+get /reader/read/plan
+
+set /reader/read/plan [[[[GEN2,[1],NULL,2],[GEN2,[2],NULL,1],1],1],1]
+
+echo Read plans with filters
+set /reader/read/plan [GEN2,[],NULL,1]
+get /reader/read/plan
+
+set /reader/read/plan [GEN2,[],EPC:1234,1]
+get /reader/read/plan
+
+set /reader/read/plan [GEN2,[],EPC:12345678AAAAAAAA87654321,1]
+get /reader/read/plan
+
+set /reader/read/plan [GEN2,[],Gen2.Select:EPC,32,16,1234,1]
+get /reader/read/plan
+
+set /reader/read/plan [GEN2,[],Gen2.Select:~Reserved,0,32,00000000,1]
+get /reader/read/plan
+
+echo Read plans that should not parse
+
+set /reader/read/plan [GEN2,[],1]        # No filter
+set /reader/read/plan [FOO,[],NULL,1]    # Bogus protocol
+set /reader/read/plan [GEN2,,NULL,1]     # No antenna list
+set /reader/read/plan [GEN2,[]]          # No weight or filter
+set /reader/read/plan [GEN2,[],NULL]     # No weight
+set /reader/read/plan [GEN2,[],NULL,]    # No weight
+
+
+set /reader/read/plan [GEN2,[],NULL,1] # Set back to default

@@ -1,0 +1,302 @@
+\hypertarget{tmr__params_8h}{
+\section{tmr\_\-params.h File Reference}
+\label{tmr__params_8h}\index{tmr\_\-params.h@{tmr\_\-params.h}}
+}
+Mercury API - Reader parameter interface.  
+
+
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692}{TMR\_\-Param} \{ \par
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692d466223d097f556841d98e4e0fd14b52}{TMR\_\-PARAM\_\-NONE}
+, \hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692843ce922e276b6f4b05037e1fa9d7cb2}{TMR\_\-PARAM\_\-BAUDRATE} =  TMR\_\-PARAM\_\-MIN, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692fd01225e9a1829039c78efc9b74d4abe}{TMR\_\-PARAM\_\-COMMANDTIMEOUT}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692a2af1b87c4314e8068b7fdd4961f238e}{TMR\_\-PARAM\_\-TRANSPORTTIMEOUT}, 
+\par
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692bd1abe38ec87fcd50baaf9d58cc1bc71}{TMR\_\-PARAM\_\-POWERMODE}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69214bb7f3b6012032bf91aa7f3f984e254}{TMR\_\-PARAM\_\-USERMODE}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6921d497a11ec962c5bb4749e40f3b2efcb}{TMR\_\-PARAM\_\-ANTENNA\_\-CHECKPORT}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6923acb089fadf966185b76a88192b6000a}{TMR\_\-PARAM\_\-ANTENNA\_\-PORTLIST}, 
+\par
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69283b4a788ad151aaceb42b012e60011c2}{TMR\_\-PARAM\_\-ANTENNA\_\-CONNECTEDPORTLIST}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692fbdacda7f23b2544c84948413b7769c8}{TMR\_\-PARAM\_\-ANTENNA\_\-PORTSWITCHGPOS}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692284896f8462fd592dc6c22896772b9eb}{TMR\_\-PARAM\_\-ANTENNA\_\-SETTLINGTIMELIST}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69210fbb5e707ef81f7eb30761f8dc09a87}{TMR\_\-PARAM\_\-ANTENNA\_\-TXRXMAP}, 
+\par
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6928f1d9a2cefae74b331e956a111ae23bd}{TMR\_\-PARAM\_\-GPIO\_\-INPUTLIST}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692bfa3696270eb889c9a8e791667b24ff4}{TMR\_\-PARAM\_\-GPIO\_\-OUTPUTLIST}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69234cfca3e59cae188fc5f65064ee9fa1a}{TMR\_\-PARAM\_\-GEN2\_\-ACCESSPASSWORD}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6927fdc90f613cf606903245f31599a0a78}{TMR\_\-PARAM\_\-GEN2\_\-Q}, 
+\par
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6924b692447b4eb8b65a2db515dccf67d99}{TMR\_\-PARAM\_\-GEN2\_\-TAGENCODING}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69255c744698c857cb49130d25af1693d77}{TMR\_\-PARAM\_\-GEN2\_\-SESSION}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692e1c3732f2368ec2a8f2ea5a9f7f0a81f}{TMR\_\-PARAM\_\-GEN2\_\-TARGET}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692c5016ef74a2bf68be22187ca13235dea}{TMR\_\-PARAM\_\-GEN2\_\-BLF}, 
+\par
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692ea6ed757b5576325368c72968724725e}{TMR\_\-PARAM\_\-GEN2\_\-TARI}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692f65fb0ff2df8a632b6548f2cbd8098ed}{TMR\_\-PARAM\_\-GEN2\_\-WRITEMODE}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692c0bc54b2d9993c17c4ab6cba3e513ed8}{TMR\_\-PARAM\_\-ISO180006B\_\-BLF}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6927dabcf25447fd001047954a022ae00a9}{TMR\_\-PARAM\_\-READ\_\-ASYNCOFFTIME}, 
+\par
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692929ac118d8b4ea037c4072b0026c4b74}{TMR\_\-PARAM\_\-READ\_\-ASYNCONTIME}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69253b6c173e62ef22a716eef2c120f6aad}{TMR\_\-PARAM\_\-READ\_\-PLAN}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6928ab97e5238c1962f74a80f2177c8201f}{TMR\_\-PARAM\_\-RADIO\_\-ENABLEPOWERSAVE}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692c8c0bde205e762d6c5be78bcf6482492}{TMR\_\-PARAM\_\-RADIO\_\-POWERMAX}, 
+\par
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69247204486bce900bb96d14747d6aabf7e}{TMR\_\-PARAM\_\-RADIO\_\-POWERMIN}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69240c43e7090df6c1244afb15cd74daab6}{TMR\_\-PARAM\_\-RADIO\_\-PORTREADPOWERLIST}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6920f873db7a83d0fe9eeabe2d581b7b37b}{TMR\_\-PARAM\_\-RADIO\_\-PORTWRITEPOWERLIST}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69247f176fdfe6b6afad9053f7cfb0aca49}{TMR\_\-PARAM\_\-RADIO\_\-READPOWER}, 
+\par
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692ffb04c8e31401104b85bd323e3b0ed56}{TMR\_\-PARAM\_\-RADIO\_\-WRITEPOWER}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6922e61722d01cb1f4e631490af6963a706}{TMR\_\-PARAM\_\-RADIO\_\-TEMPERATURE}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6926711aba7968827e17a7ff0170d1b34bc}{TMR\_\-PARAM\_\-TAGREADDATA\_\-RECORDHIGHESTRSSI}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692eb59e8a641b9feab71163e077699b99f}{TMR\_\-PARAM\_\-TAGREADDATA\_\-REPORTRSSIINDBM}, 
+\par
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692019eb0f4aab316ed09fcd455b9e89abf}{TMR\_\-PARAM\_\-TAGREADDATA\_\-UNIQUEBYANTENNA}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692402fdaa56522bb353568e11478503f05}{TMR\_\-PARAM\_\-TAGREADDATA\_\-UNIQUEBYDATA}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6926bb6b98c02d99469e931ef8a3a029059}{TMR\_\-PARAM\_\-TAGOP\_\-ANTENNA}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692be3c434c4dae8af9076c12042e0e753c}{TMR\_\-PARAM\_\-TAGOP\_\-PROTOCOL}, 
+\par
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69282353549792a44ae93bc860eb440748b}{TMR\_\-PARAM\_\-VERSION\_\-HARDWARE}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6926df51ad4e3dea85402498e0fd01d7162}{TMR\_\-PARAM\_\-VERSION\_\-SERIAL}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692bb88bb67f2cb2e1c5743551d304c57f5}{TMR\_\-PARAM\_\-VERSION\_\-MODEL}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6924f8a42677eb591802833a92852fafbde}{TMR\_\-PARAM\_\-VERSION\_\-SOFTWARE}, 
+\par
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692e6f6af68fedb809e40cf8bf163788e9a}{TMR\_\-PARAM\_\-VERSION\_\-SUPPORTEDPROTOCOLS}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692babd6c344acd3e1c1ec88613a8549650}{TMR\_\-PARAM\_\-REGION\_\-ID}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692f87a151ed748b7d35466c14d7a89d2da}{TMR\_\-PARAM\_\-REGION\_\-SUPPORTEDREGIONS}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692affcdd01fdc785269cb6eeb41b48c9ec}{TMR\_\-PARAM\_\-REGION\_\-HOPTABLE}, 
+\par
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692b8a2835e303ff0e92c7094f76f8ff47c}{TMR\_\-PARAM\_\-REGION\_\-HOPTIME}, 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692736362309450b5d28f261cffb4e85b00}{TMR\_\-PARAM\_\-REGION\_\-LBT\_\-ENABLE}
+ \}
+\end{CompactItemize}
+
+
+\label{_details}
+\hypertarget{_details}{}
+\subsection{Detailed Description}
+Mercury API - Reader parameter interface. 
+
+\begin{Desc}
+\item[Author:]Nathan Williams \end{Desc}
+\begin{Desc}
+\item[Date:]10/20/2009 \end{Desc}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692}{
+\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-Param@{TMR\_\-Param}}
+\index{TMR\_\-Param@{TMR\_\-Param}!tmr_params.h@{tmr\_\-params.h}}
+\subsubsection[{TMR\_\-Param}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf TMR\_\-Param}}}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692}
+
+
+Parameter keys for \hyperlink{group__reader_gd8c8030610870c694ff19b9733799dbb}{TMR\_\-paramSet()} and \hyperlink{group__reader_g799e9d2c2d6b254e689bc53570af8f15}{TMR\_\-paramGet()}. Each parameter is listed with its associated string name and the parameter type. A pointer to that type is passed to \hyperlink{group__reader_g799e9d2c2d6b254e689bc53570af8f15}{TMR\_\-paramGet()} (for example, \char`\"{}TMR\_\-String $\ast$\char`\"{} for /reader/version/model). \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{TMR\_\-PARAM\_\-NONE@{TMR\_\-PARAM\_\-NONE}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-NONE@{TMR\_\-PARAM\_\-NONE}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692d466223d097f556841d98e4e0fd14b52}{
+TMR\_\-PARAM\_\-NONE}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692d466223d097f556841d98e4e0fd14b52}
+}]No such parameter - used as a return value from \hyperlink{group__reader_g837ad11acb819d1427a2d9ecf1cef99a}{TMR\_\-paramID()}. \index{TMR\_\-PARAM\_\-BAUDRATE@{TMR\_\-PARAM\_\-BAUDRATE}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-BAUDRATE@{TMR\_\-PARAM\_\-BAUDRATE}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692843ce922e276b6f4b05037e1fa9d7cb2}{
+TMR\_\-PARAM\_\-BAUDRATE}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692843ce922e276b6f4b05037e1fa9d7cb2}
+}]\char`\"{}/reader/baudRate\char`\"{}, uint32\_\-t \index{TMR\_\-PARAM\_\-COMMANDTIMEOUT@{TMR\_\-PARAM\_\-COMMANDTIMEOUT}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-COMMANDTIMEOUT@{TMR\_\-PARAM\_\-COMMANDTIMEOUT}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692fd01225e9a1829039c78efc9b74d4abe}{
+TMR\_\-PARAM\_\-COMMANDTIMEOUT}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692fd01225e9a1829039c78efc9b74d4abe}
+}]\char`\"{}/reader/commandTimeout\char`\"{}, uint32\_\-t \index{TMR\_\-PARAM\_\-TRANSPORTTIMEOUT@{TMR\_\-PARAM\_\-TRANSPORTTIMEOUT}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-TRANSPORTTIMEOUT@{TMR\_\-PARAM\_\-TRANSPORTTIMEOUT}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692a2af1b87c4314e8068b7fdd4961f238e}{
+TMR\_\-PARAM\_\-TRANSPORTTIMEOUT}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692a2af1b87c4314e8068b7fdd4961f238e}
+}]\char`\"{}/reader/transportTimeout\char`\"{}, uint32\_\-t \index{TMR\_\-PARAM\_\-POWERMODE@{TMR\_\-PARAM\_\-POWERMODE}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-POWERMODE@{TMR\_\-PARAM\_\-POWERMODE}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692bd1abe38ec87fcd50baaf9d58cc1bc71}{
+TMR\_\-PARAM\_\-POWERMODE}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692bd1abe38ec87fcd50baaf9d58cc1bc71}
+}]\char`\"{}/reader/powerMode\char`\"{}, TMR\_\-SR\_\-PowerMode \index{TMR\_\-PARAM\_\-USERMODE@{TMR\_\-PARAM\_\-USERMODE}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-USERMODE@{TMR\_\-PARAM\_\-USERMODE}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69214bb7f3b6012032bf91aa7f3f984e254}{
+TMR\_\-PARAM\_\-USERMODE}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69214bb7f3b6012032bf91aa7f3f984e254}
+}]\char`\"{}/reader/userMode\char`\"{}, TMR\_\-SR\_\-UserMode \index{TMR\_\-PARAM\_\-ANTENNA\_\-CHECKPORT@{TMR\_\-PARAM\_\-ANTENNA\_\-CHECKPORT}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-ANTENNA\_\-CHECKPORT@{TMR\_\-PARAM\_\-ANTENNA\_\-CHECKPORT}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6921d497a11ec962c5bb4749e40f3b2efcb}{
+TMR\_\-PARAM\_\-ANTENNA\_\-CHECKPORT}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6921d497a11ec962c5bb4749e40f3b2efcb}
+}]\char`\"{}/reader/antenna/checkPort\char`\"{}, bool \index{TMR\_\-PARAM\_\-ANTENNA\_\-PORTLIST@{TMR\_\-PARAM\_\-ANTENNA\_\-PORTLIST}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-ANTENNA\_\-PORTLIST@{TMR\_\-PARAM\_\-ANTENNA\_\-PORTLIST}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6923acb089fadf966185b76a88192b6000a}{
+TMR\_\-PARAM\_\-ANTENNA\_\-PORTLIST}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6923acb089fadf966185b76a88192b6000a}
+}]\char`\"{}/reader/antenna/portList\char`\"{}, \hyperlink{struct_t_m_r__uint8_list}{TMR\_\-uint8List} \index{TMR\_\-PARAM\_\-ANTENNA\_\-CONNECTEDPORTLIST@{TMR\_\-PARAM\_\-ANTENNA\_\-CONNECTEDPORTLIST}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-ANTENNA\_\-CONNECTEDPORTLIST@{TMR\_\-PARAM\_\-ANTENNA\_\-CONNECTEDPORTLIST}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69283b4a788ad151aaceb42b012e60011c2}{
+TMR\_\-PARAM\_\-ANTENNA\_\-CONNECTEDPORTLIST}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69283b4a788ad151aaceb42b012e60011c2}
+}]\char`\"{}/reader/antenna/connectedPortList\char`\"{}, \hyperlink{struct_t_m_r__uint8_list}{TMR\_\-uint8List} \index{TMR\_\-PARAM\_\-ANTENNA\_\-PORTSWITCHGPOS@{TMR\_\-PARAM\_\-ANTENNA\_\-PORTSWITCHGPOS}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-ANTENNA\_\-PORTSWITCHGPOS@{TMR\_\-PARAM\_\-ANTENNA\_\-PORTSWITCHGPOS}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692fbdacda7f23b2544c84948413b7769c8}{
+TMR\_\-PARAM\_\-ANTENNA\_\-PORTSWITCHGPOS}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692fbdacda7f23b2544c84948413b7769c8}
+}]\char`\"{}/reader/antenna/portSwitchGpos\char`\"{}, \hyperlink{struct_t_m_r__uint8_list}{TMR\_\-uint8List} \index{TMR\_\-PARAM\_\-ANTENNA\_\-SETTLINGTIMELIST@{TMR\_\-PARAM\_\-ANTENNA\_\-SETTLINGTIMELIST}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-ANTENNA\_\-SETTLINGTIMELIST@{TMR\_\-PARAM\_\-ANTENNA\_\-SETTLINGTIMELIST}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692284896f8462fd592dc6c22896772b9eb}{
+TMR\_\-PARAM\_\-ANTENNA\_\-SETTLINGTIMELIST}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692284896f8462fd592dc6c22896772b9eb}
+}]\char`\"{}/reader/antenna/settlingTimeList\char`\"{}, \hyperlink{struct_t_m_r___port_value_list}{TMR\_\-PortValueList} \index{TMR\_\-PARAM\_\-ANTENNA\_\-TXRXMAP@{TMR\_\-PARAM\_\-ANTENNA\_\-TXRXMAP}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-ANTENNA\_\-TXRXMAP@{TMR\_\-PARAM\_\-ANTENNA\_\-TXRXMAP}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69210fbb5e707ef81f7eb30761f8dc09a87}{
+TMR\_\-PARAM\_\-ANTENNA\_\-TXRXMAP}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69210fbb5e707ef81f7eb30761f8dc09a87}
+}]\char`\"{}/reader/antenna/txRxMap\char`\"{}, \hyperlink{struct_t_m_r___antenna_map_list}{TMR\_\-AntennaMapList} \index{TMR\_\-PARAM\_\-GPIO\_\-INPUTLIST@{TMR\_\-PARAM\_\-GPIO\_\-INPUTLIST}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-GPIO\_\-INPUTLIST@{TMR\_\-PARAM\_\-GPIO\_\-INPUTLIST}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6928f1d9a2cefae74b331e956a111ae23bd}{
+TMR\_\-PARAM\_\-GPIO\_\-INPUTLIST}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6928f1d9a2cefae74b331e956a111ae23bd}
+}]\char`\"{}/reader/gpio/inputList\char`\"{}, \hyperlink{struct_t_m_r__uint8_list}{TMR\_\-uint8List} \index{TMR\_\-PARAM\_\-GPIO\_\-OUTPUTLIST@{TMR\_\-PARAM\_\-GPIO\_\-OUTPUTLIST}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-GPIO\_\-OUTPUTLIST@{TMR\_\-PARAM\_\-GPIO\_\-OUTPUTLIST}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692bfa3696270eb889c9a8e791667b24ff4}{
+TMR\_\-PARAM\_\-GPIO\_\-OUTPUTLIST}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692bfa3696270eb889c9a8e791667b24ff4}
+}]\char`\"{}/reader/gpio/outputList\char`\"{}, \hyperlink{struct_t_m_r__uint8_list}{TMR\_\-uint8List} \index{TMR\_\-PARAM\_\-GEN2\_\-ACCESSPASSWORD@{TMR\_\-PARAM\_\-GEN2\_\-ACCESSPASSWORD}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-GEN2\_\-ACCESSPASSWORD@{TMR\_\-PARAM\_\-GEN2\_\-ACCESSPASSWORD}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69234cfca3e59cae188fc5f65064ee9fa1a}{
+TMR\_\-PARAM\_\-GEN2\_\-ACCESSPASSWORD}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69234cfca3e59cae188fc5f65064ee9fa1a}
+}]\char`\"{}/reader/gen2/accessPassword\char`\"{}, TMR\_\-GEN2\_\-Password \index{TMR\_\-PARAM\_\-GEN2\_\-Q@{TMR\_\-PARAM\_\-GEN2\_\-Q}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-GEN2\_\-Q@{TMR\_\-PARAM\_\-GEN2\_\-Q}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6927fdc90f613cf606903245f31599a0a78}{
+TMR\_\-PARAM\_\-GEN2\_\-Q}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6927fdc90f613cf606903245f31599a0a78}
+}]\char`\"{}/reader/gen2/q\char`\"{}, \hyperlink{struct_t_m_r___s_r___g_e_n2___q}{TMR\_\-SR\_\-GEN2\_\-Q} \index{TMR\_\-PARAM\_\-GEN2\_\-TAGENCODING@{TMR\_\-PARAM\_\-GEN2\_\-TAGENCODING}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-GEN2\_\-TAGENCODING@{TMR\_\-PARAM\_\-GEN2\_\-TAGENCODING}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6924b692447b4eb8b65a2db515dccf67d99}{
+TMR\_\-PARAM\_\-GEN2\_\-TAGENCODING}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6924b692447b4eb8b65a2db515dccf67d99}
+}]\char`\"{}/reader/gen2/tagEncoding\char`\"{}, TMR\_\-GEN2\_\-TagEncoding \index{TMR\_\-PARAM\_\-GEN2\_\-SESSION@{TMR\_\-PARAM\_\-GEN2\_\-SESSION}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-GEN2\_\-SESSION@{TMR\_\-PARAM\_\-GEN2\_\-SESSION}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69255c744698c857cb49130d25af1693d77}{
+TMR\_\-PARAM\_\-GEN2\_\-SESSION}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69255c744698c857cb49130d25af1693d77}
+}]\char`\"{}/reader/gen2/session\char`\"{}, TMR\_\-GEN2\_\-Session \index{TMR\_\-PARAM\_\-GEN2\_\-TARGET@{TMR\_\-PARAM\_\-GEN2\_\-TARGET}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-GEN2\_\-TARGET@{TMR\_\-PARAM\_\-GEN2\_\-TARGET}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692e1c3732f2368ec2a8f2ea5a9f7f0a81f}{
+TMR\_\-PARAM\_\-GEN2\_\-TARGET}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692e1c3732f2368ec2a8f2ea5a9f7f0a81f}
+}]\char`\"{}/reader/gen2/target\char`\"{}, TMR\_\-GEN2\_\-Target \index{TMR\_\-PARAM\_\-GEN2\_\-BLF@{TMR\_\-PARAM\_\-GEN2\_\-BLF}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-GEN2\_\-BLF@{TMR\_\-PARAM\_\-GEN2\_\-BLF}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692c5016ef74a2bf68be22187ca13235dea}{
+TMR\_\-PARAM\_\-GEN2\_\-BLF}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692c5016ef74a2bf68be22187ca13235dea}
+}]\char`\"{}/reader/gen2/BLF\char`\"{}, TMR\_\-Gen2\_\-LinkFrequency \index{TMR\_\-PARAM\_\-GEN2\_\-TARI@{TMR\_\-PARAM\_\-GEN2\_\-TARI}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-GEN2\_\-TARI@{TMR\_\-PARAM\_\-GEN2\_\-TARI}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692ea6ed757b5576325368c72968724725e}{
+TMR\_\-PARAM\_\-GEN2\_\-TARI}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692ea6ed757b5576325368c72968724725e}
+}]\char`\"{}/reader/gen2/Tari\char`\"{}, TMR\_\-Gen2\_\-Tari \index{TMR\_\-PARAM\_\-GEN2\_\-WRITEMODE@{TMR\_\-PARAM\_\-GEN2\_\-WRITEMODE}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-GEN2\_\-WRITEMODE@{TMR\_\-PARAM\_\-GEN2\_\-WRITEMODE}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692f65fb0ff2df8a632b6548f2cbd8098ed}{
+TMR\_\-PARAM\_\-GEN2\_\-WRITEMODE}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692f65fb0ff2df8a632b6548f2cbd8098ed}
+}]\char`\"{}/reader/gen2/writeMode\char`\"{}, TMR\_\-Gen2\_\-WriteMode \index{TMR\_\-PARAM\_\-ISO180006B\_\-BLF@{TMR\_\-PARAM\_\-ISO180006B\_\-BLF}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-ISO180006B\_\-BLF@{TMR\_\-PARAM\_\-ISO180006B\_\-BLF}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692c0bc54b2d9993c17c4ab6cba3e513ed8}{
+TMR\_\-PARAM\_\-ISO180006B\_\-BLF}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692c0bc54b2d9993c17c4ab6cba3e513ed8}
+}]\char`\"{}/reader/iso180006b/BLF\char`\"{}, TMR\_\-ISO180006B\_\-LinkFrequency \index{TMR\_\-PARAM\_\-READ\_\-ASYNCOFFTIME@{TMR\_\-PARAM\_\-READ\_\-ASYNCOFFTIME}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-READ\_\-ASYNCOFFTIME@{TMR\_\-PARAM\_\-READ\_\-ASYNCOFFTIME}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6927dabcf25447fd001047954a022ae00a9}{
+TMR\_\-PARAM\_\-READ\_\-ASYNCOFFTIME}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6927dabcf25447fd001047954a022ae00a9}
+}]\char`\"{}/reader/read/asyncOffTime\char`\"{}, uint32\_\-t \index{TMR\_\-PARAM\_\-READ\_\-ASYNCONTIME@{TMR\_\-PARAM\_\-READ\_\-ASYNCONTIME}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-READ\_\-ASYNCONTIME@{TMR\_\-PARAM\_\-READ\_\-ASYNCONTIME}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692929ac118d8b4ea037c4072b0026c4b74}{
+TMR\_\-PARAM\_\-READ\_\-ASYNCONTIME}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692929ac118d8b4ea037c4072b0026c4b74}
+}]\char`\"{}/reader/read/asyncOnTime\char`\"{}, uint32\_\-t \index{TMR\_\-PARAM\_\-READ\_\-PLAN@{TMR\_\-PARAM\_\-READ\_\-PLAN}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-READ\_\-PLAN@{TMR\_\-PARAM\_\-READ\_\-PLAN}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69253b6c173e62ef22a716eef2c120f6aad}{
+TMR\_\-PARAM\_\-READ\_\-PLAN}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69253b6c173e62ef22a716eef2c120f6aad}
+}]\char`\"{}/reader/read/plan\char`\"{}, \hyperlink{struct_t_m_r___read_plan}{TMR\_\-ReadPlan} \index{TMR\_\-PARAM\_\-RADIO\_\-ENABLEPOWERSAVE@{TMR\_\-PARAM\_\-RADIO\_\-ENABLEPOWERSAVE}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-RADIO\_\-ENABLEPOWERSAVE@{TMR\_\-PARAM\_\-RADIO\_\-ENABLEPOWERSAVE}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6928ab97e5238c1962f74a80f2177c8201f}{
+TMR\_\-PARAM\_\-RADIO\_\-ENABLEPOWERSAVE}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6928ab97e5238c1962f74a80f2177c8201f}
+}]\char`\"{}/reader/radio/enablePowerSave, bool \index{TMR\_\-PARAM\_\-RADIO\_\-POWERMAX@{TMR\_\-PARAM\_\-RADIO\_\-POWERMAX}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-RADIO\_\-POWERMAX@{TMR\_\-PARAM\_\-RADIO\_\-POWERMAX}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692c8c0bde205e762d6c5be78bcf6482492}{
+TMR\_\-PARAM\_\-RADIO\_\-POWERMAX}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692c8c0bde205e762d6c5be78bcf6482492}
+}]\char`\"{}/reader/radio/powerMax\char`\"{}, uint16\_\-t \index{TMR\_\-PARAM\_\-RADIO\_\-POWERMIN@{TMR\_\-PARAM\_\-RADIO\_\-POWERMIN}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-RADIO\_\-POWERMIN@{TMR\_\-PARAM\_\-RADIO\_\-POWERMIN}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69247204486bce900bb96d14747d6aabf7e}{
+TMR\_\-PARAM\_\-RADIO\_\-POWERMIN}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69247204486bce900bb96d14747d6aabf7e}
+}]\char`\"{}/reader/radio/powerMin\char`\"{}, uint16\_\-t \index{TMR\_\-PARAM\_\-RADIO\_\-PORTREADPOWERLIST@{TMR\_\-PARAM\_\-RADIO\_\-PORTREADPOWERLIST}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-RADIO\_\-PORTREADPOWERLIST@{TMR\_\-PARAM\_\-RADIO\_\-PORTREADPOWERLIST}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69240c43e7090df6c1244afb15cd74daab6}{
+TMR\_\-PARAM\_\-RADIO\_\-PORTREADPOWERLIST}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69240c43e7090df6c1244afb15cd74daab6}
+}]\char`\"{}/reader/radio/portReadPowerList\char`\"{}, \hyperlink{struct_t_m_r___port_value_list}{TMR\_\-PortValueList} \index{TMR\_\-PARAM\_\-RADIO\_\-PORTWRITEPOWERLIST@{TMR\_\-PARAM\_\-RADIO\_\-PORTWRITEPOWERLIST}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-RADIO\_\-PORTWRITEPOWERLIST@{TMR\_\-PARAM\_\-RADIO\_\-PORTWRITEPOWERLIST}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6920f873db7a83d0fe9eeabe2d581b7b37b}{
+TMR\_\-PARAM\_\-RADIO\_\-PORTWRITEPOWERLIST}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6920f873db7a83d0fe9eeabe2d581b7b37b}
+}]\char`\"{}/reader/radio/portWritePowerList\char`\"{}, \hyperlink{struct_t_m_r___port_value_list}{TMR\_\-PortValueList} \index{TMR\_\-PARAM\_\-RADIO\_\-READPOWER@{TMR\_\-PARAM\_\-RADIO\_\-READPOWER}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-RADIO\_\-READPOWER@{TMR\_\-PARAM\_\-RADIO\_\-READPOWER}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69247f176fdfe6b6afad9053f7cfb0aca49}{
+TMR\_\-PARAM\_\-RADIO\_\-READPOWER}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69247f176fdfe6b6afad9053f7cfb0aca49}
+}]\char`\"{}/reader/radio/readPower\char`\"{}, uint16\_\-t \index{TMR\_\-PARAM\_\-RADIO\_\-WRITEPOWER@{TMR\_\-PARAM\_\-RADIO\_\-WRITEPOWER}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-RADIO\_\-WRITEPOWER@{TMR\_\-PARAM\_\-RADIO\_\-WRITEPOWER}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692ffb04c8e31401104b85bd323e3b0ed56}{
+TMR\_\-PARAM\_\-RADIO\_\-WRITEPOWER}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692ffb04c8e31401104b85bd323e3b0ed56}
+}]\char`\"{}/reader/radio/writePower\char`\"{}, uint16\_\-t \index{TMR\_\-PARAM\_\-RADIO\_\-TEMPERATURE@{TMR\_\-PARAM\_\-RADIO\_\-TEMPERATURE}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-RADIO\_\-TEMPERATURE@{TMR\_\-PARAM\_\-RADIO\_\-TEMPERATURE}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6922e61722d01cb1f4e631490af6963a706}{
+TMR\_\-PARAM\_\-RADIO\_\-TEMPERATURE}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6922e61722d01cb1f4e631490af6963a706}
+}]\char`\"{}/reader/radio/temperature\char`\"{}, uint8\_\-t \index{TMR\_\-PARAM\_\-TAGREADDATA\_\-RECORDHIGHESTRSSI@{TMR\_\-PARAM\_\-TAGREADDATA\_\-RECORDHIGHESTRSSI}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-TAGREADDATA\_\-RECORDHIGHESTRSSI@{TMR\_\-PARAM\_\-TAGREADDATA\_\-RECORDHIGHESTRSSI}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6926711aba7968827e17a7ff0170d1b34bc}{
+TMR\_\-PARAM\_\-TAGREADDATA\_\-RECORDHIGHESTRSSI}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6926711aba7968827e17a7ff0170d1b34bc}
+}]\char`\"{}/reader/tagReadData/recordHighestRssi\char`\"{}, bool \index{TMR\_\-PARAM\_\-TAGREADDATA\_\-REPORTRSSIINDBM@{TMR\_\-PARAM\_\-TAGREADDATA\_\-REPORTRSSIINDBM}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-TAGREADDATA\_\-REPORTRSSIINDBM@{TMR\_\-PARAM\_\-TAGREADDATA\_\-REPORTRSSIINDBM}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692eb59e8a641b9feab71163e077699b99f}{
+TMR\_\-PARAM\_\-TAGREADDATA\_\-REPORTRSSIINDBM}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692eb59e8a641b9feab71163e077699b99f}
+}]\char`\"{}/reader/tagReadData/reportRssiInDbm\char`\"{}, bool \index{TMR\_\-PARAM\_\-TAGREADDATA\_\-UNIQUEBYANTENNA@{TMR\_\-PARAM\_\-TAGREADDATA\_\-UNIQUEBYANTENNA}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-TAGREADDATA\_\-UNIQUEBYANTENNA@{TMR\_\-PARAM\_\-TAGREADDATA\_\-UNIQUEBYANTENNA}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692019eb0f4aab316ed09fcd455b9e89abf}{
+TMR\_\-PARAM\_\-TAGREADDATA\_\-UNIQUEBYANTENNA}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692019eb0f4aab316ed09fcd455b9e89abf}
+}]\char`\"{}/reader/tagReadData/uniqueByAntenna\char`\"{}, bool \index{TMR\_\-PARAM\_\-TAGREADDATA\_\-UNIQUEBYDATA@{TMR\_\-PARAM\_\-TAGREADDATA\_\-UNIQUEBYDATA}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-TAGREADDATA\_\-UNIQUEBYDATA@{TMR\_\-PARAM\_\-TAGREADDATA\_\-UNIQUEBYDATA}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692402fdaa56522bb353568e11478503f05}{
+TMR\_\-PARAM\_\-TAGREADDATA\_\-UNIQUEBYDATA}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692402fdaa56522bb353568e11478503f05}
+}]\char`\"{}/reader/tagReadData/uniqueByData\char`\"{}, bool \index{TMR\_\-PARAM\_\-TAGOP\_\-ANTENNA@{TMR\_\-PARAM\_\-TAGOP\_\-ANTENNA}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-TAGOP\_\-ANTENNA@{TMR\_\-PARAM\_\-TAGOP\_\-ANTENNA}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6926bb6b98c02d99469e931ef8a3a029059}{
+TMR\_\-PARAM\_\-TAGOP\_\-ANTENNA}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6926bb6b98c02d99469e931ef8a3a029059}
+}]\char`\"{}/reader/tagop/antenna\char`\"{}, uint8\_\-t \index{TMR\_\-PARAM\_\-TAGOP\_\-PROTOCOL@{TMR\_\-PARAM\_\-TAGOP\_\-PROTOCOL}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-TAGOP\_\-PROTOCOL@{TMR\_\-PARAM\_\-TAGOP\_\-PROTOCOL}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692be3c434c4dae8af9076c12042e0e753c}{
+TMR\_\-PARAM\_\-TAGOP\_\-PROTOCOL}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692be3c434c4dae8af9076c12042e0e753c}
+}]\char`\"{}/reader/tagop/protocol\char`\"{}, TMR\_\-Protocol \index{TMR\_\-PARAM\_\-VERSION\_\-HARDWARE@{TMR\_\-PARAM\_\-VERSION\_\-HARDWARE}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-VERSION\_\-HARDWARE@{TMR\_\-PARAM\_\-VERSION\_\-HARDWARE}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69282353549792a44ae93bc860eb440748b}{
+TMR\_\-PARAM\_\-VERSION\_\-HARDWARE}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff69282353549792a44ae93bc860eb440748b}
+}]\char`\"{}/reader/version/hardware\char`\"{}, \hyperlink{struct_t_m_r___string}{TMR\_\-String} \index{TMR\_\-PARAM\_\-VERSION\_\-SERIAL@{TMR\_\-PARAM\_\-VERSION\_\-SERIAL}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-VERSION\_\-SERIAL@{TMR\_\-PARAM\_\-VERSION\_\-SERIAL}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6926df51ad4e3dea85402498e0fd01d7162}{
+TMR\_\-PARAM\_\-VERSION\_\-SERIAL}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6926df51ad4e3dea85402498e0fd01d7162}
+}]\char`\"{}/reader/version/serial\char`\"{}, \hyperlink{struct_t_m_r___string}{TMR\_\-String} \index{TMR\_\-PARAM\_\-VERSION\_\-MODEL@{TMR\_\-PARAM\_\-VERSION\_\-MODEL}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-VERSION\_\-MODEL@{TMR\_\-PARAM\_\-VERSION\_\-MODEL}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692bb88bb67f2cb2e1c5743551d304c57f5}{
+TMR\_\-PARAM\_\-VERSION\_\-MODEL}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692bb88bb67f2cb2e1c5743551d304c57f5}
+}]\char`\"{}/reader/version/model\char`\"{}, \hyperlink{struct_t_m_r___string}{TMR\_\-String} \index{TMR\_\-PARAM\_\-VERSION\_\-SOFTWARE@{TMR\_\-PARAM\_\-VERSION\_\-SOFTWARE}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-VERSION\_\-SOFTWARE@{TMR\_\-PARAM\_\-VERSION\_\-SOFTWARE}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6924f8a42677eb591802833a92852fafbde}{
+TMR\_\-PARAM\_\-VERSION\_\-SOFTWARE}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff6924f8a42677eb591802833a92852fafbde}
+}]\char`\"{}/reader/version/software\char`\"{}, \hyperlink{struct_t_m_r___string}{TMR\_\-String} \index{TMR\_\-PARAM\_\-VERSION\_\-SUPPORTEDPROTOCOLS@{TMR\_\-PARAM\_\-VERSION\_\-SUPPORTEDPROTOCOLS}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-VERSION\_\-SUPPORTEDPROTOCOLS@{TMR\_\-PARAM\_\-VERSION\_\-SUPPORTEDPROTOCOLS}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692e6f6af68fedb809e40cf8bf163788e9a}{
+TMR\_\-PARAM\_\-VERSION\_\-SUPPORTEDPROTOCOLS}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692e6f6af68fedb809e40cf8bf163788e9a}
+}]\char`\"{}/reader/version/supportedProtocols\char`\"{}, TMR\_\-ProtocolList \index{TMR\_\-PARAM\_\-REGION\_\-ID@{TMR\_\-PARAM\_\-REGION\_\-ID}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-REGION\_\-ID@{TMR\_\-PARAM\_\-REGION\_\-ID}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692babd6c344acd3e1c1ec88613a8549650}{
+TMR\_\-PARAM\_\-REGION\_\-ID}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692babd6c344acd3e1c1ec88613a8549650}
+}]\char`\"{}/reader/region/id\char`\"{}, TMR\_\-Region \index{TMR\_\-PARAM\_\-REGION\_\-SUPPORTEDREGIONS@{TMR\_\-PARAM\_\-REGION\_\-SUPPORTEDREGIONS}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-REGION\_\-SUPPORTEDREGIONS@{TMR\_\-PARAM\_\-REGION\_\-SUPPORTEDREGIONS}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692f87a151ed748b7d35466c14d7a89d2da}{
+TMR\_\-PARAM\_\-REGION\_\-SUPPORTEDREGIONS}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692f87a151ed748b7d35466c14d7a89d2da}
+}]\char`\"{}/reader/region/supportedRegions\char`\"{}, \hyperlink{struct_t_m_r___region_list}{TMR\_\-RegionList} \index{TMR\_\-PARAM\_\-REGION\_\-HOPTABLE@{TMR\_\-PARAM\_\-REGION\_\-HOPTABLE}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-REGION\_\-HOPTABLE@{TMR\_\-PARAM\_\-REGION\_\-HOPTABLE}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692affcdd01fdc785269cb6eeb41b48c9ec}{
+TMR\_\-PARAM\_\-REGION\_\-HOPTABLE}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692affcdd01fdc785269cb6eeb41b48c9ec}
+}]\char`\"{}/reader/region/hopTable\char`\"{}, \hyperlink{struct_t_m_r__uint32_list}{TMR\_\-uint32List} \index{TMR\_\-PARAM\_\-REGION\_\-HOPTIME@{TMR\_\-PARAM\_\-REGION\_\-HOPTIME}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-REGION\_\-HOPTIME@{TMR\_\-PARAM\_\-REGION\_\-HOPTIME}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692b8a2835e303ff0e92c7094f76f8ff47c}{
+TMR\_\-PARAM\_\-REGION\_\-HOPTIME}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692b8a2835e303ff0e92c7094f76f8ff47c}
+}]\char`\"{}/reader/region/hopTime\char`\"{}, uint32\_\-t \index{TMR\_\-PARAM\_\-REGION\_\-LBT\_\-ENABLE@{TMR\_\-PARAM\_\-REGION\_\-LBT\_\-ENABLE}!tmr\_\-params.h@{tmr\_\-params.h}}\index{tmr\_\-params.h@{tmr\_\-params.h}!TMR\_\-PARAM\_\-REGION\_\-LBT\_\-ENABLE@{TMR\_\-PARAM\_\-REGION\_\-LBT\_\-ENABLE}}\item[{\em 
+\hypertarget{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692736362309450b5d28f261cffb4e85b00}{
+TMR\_\-PARAM\_\-REGION\_\-LBT\_\-ENABLE}
+\label{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692736362309450b5d28f261cffb4e85b00}
+}]\char`\"{}/reader/region/lbt/enable\char`\"{}, bool \end{description}
+\end{Desc}
+

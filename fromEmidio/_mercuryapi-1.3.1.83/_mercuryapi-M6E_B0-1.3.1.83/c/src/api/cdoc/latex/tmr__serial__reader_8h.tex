@@ -1,0 +1,184 @@
+\hypertarget{tmr__serial__reader_8h}{
+\section{tmr\_\-serial\_\-reader.h File Reference}
+\label{tmr__serial__reader_8h}\index{tmr\_\-serial\_\-reader.h@{tmr\_\-serial\_\-reader.h}}
+}
+Mercury API - Serial Reader interface.  
+
+
+{\tt \#include \char`\"{}tmr\_\-region.h\char`\"{}}\par
+{\tt \#include \char`\"{}tmr\_\-tag\_\-protocol.h\char`\"{}}\par
+{\tt \#include \char`\"{}tmr\_\-serial\_\-transport.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+struct \hyperlink{struct_t_m_r___s_r___g_e_n2___q_static}{TMR\_\-SR\_\-GEN2\_\-QStatic}
+\item 
+struct \hyperlink{struct_t_m_r___s_r___g_e_n2___q}{TMR\_\-SR\_\-GEN2\_\-Q}
+\item 
+struct \hyperlink{struct_t_m_r___port_value}{TMR\_\-PortValue}
+\item 
+struct \hyperlink{struct_t_m_r___port_value_list}{TMR\_\-PortValueList}
+\item 
+struct \hyperlink{struct_t_m_r___antenna_map}{TMR\_\-AntennaMap}
+\item 
+struct \hyperlink{struct_t_m_r___antenna_map_list}{TMR\_\-AntennaMapList}
+\item 
+struct \hyperlink{struct_t_m_r___s_r___version_info}{TMR\_\-SR\_\-VersionInfo}
+\item 
+struct \hyperlink{struct_t_m___s_r___serial_reader}{TM\_\-SR\_\-SerialReader}
+\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef struct \hyperlink{struct_t_m___s_r___serial_reader}{TM\_\-SR\_\-SerialReader} \hyperlink{tmr__serial__reader_8h_51eeb75460e514c25662727196e1ff16}{TMR\_\-SR\_\-SerialReader}
+\end{CompactItemize}
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{tmr__serial__reader_8h_27bef2c06d3a0f0f8a4d0bc1c0ad105f}{TMR\_\-SR\_\-PowerMode} 
+\item 
+enum \hyperlink{tmr__serial__reader_8h_186406fc9aeed5fb6693dba5d9184585}{TMR\_\-SR\_\-SetUserProfileOption} \{ \hyperlink{tmr__serial__reader_8h_186406fc9aeed5fb6693dba5d918458556c00ace78fd2b354272f95f560a69bd}{TMR\_\-SR\_\-SAVE} =  0x01, 
+\hyperlink{tmr__serial__reader_8h_186406fc9aeed5fb6693dba5d9184585739c2fa7f5ef5761f5791be8dd07068b}{TMR\_\-SR\_\-RESTORE} =  0x02, 
+\hyperlink{tmr__serial__reader_8h_186406fc9aeed5fb6693dba5d91845857f99ed9c131724763ff2c183efa88811}{TMR\_\-SR\_\-VERIFY} =  0x03, 
+\hyperlink{tmr__serial__reader_8h_186406fc9aeed5fb6693dba5d9184585b5fb785bdd19f1a118219f6cb037fae1}{TMR\_\-SR\_\-CLEAR} =  0x04
+ \}
+\item 
+enum \hyperlink{tmr__serial__reader_8h_2ba0789a5ed5ab345babafdfb2b12c1b}{TMR\_\-SR\_\-SetUserProfileKey} \{ \hyperlink{tmr__serial__reader_8h_2ba0789a5ed5ab345babafdfb2b12c1bfe6dc6b6b1e031a479f8793bbc6144d8}{TMR\_\-SR\_\-ALL} = 0x01
+ \}
+\item 
+enum \hyperlink{tmr__serial__reader_8h_a17d16f6f0b1d6762c4f2d80caf3bf3c}{TMR\_\-SR\_\-SetUserProfileValue} \{ \hyperlink{tmr__serial__reader_8h_a17d16f6f0b1d6762c4f2d80caf3bf3c426690b97b45ebc161ad2f5c226ea3ee}{TMR\_\-SR\_\-FIRMWARE\_\-DEFAULT} = 0x00, 
+\hyperlink{tmr__serial__reader_8h_a17d16f6f0b1d6762c4f2d80caf3bf3ced5b384331b2382fe52213433c8dbd6f}{TMR\_\-SR\_\-CUSTOM\_\-CONFIGURATION} = 0x01
+ \}
+\item 
+enum \hyperlink{tmr__serial__reader_8h_afe0ad90fa02d8d4162515e3adb1b323}{TMR\_\-SR\_\-UserMode} 
+\item 
+enum \hyperlink{tmr__serial__reader_8h_3bed220f21260999210ab0d66e8b9f69}{TMR\_\-SR\_\-GEN2\_\-QType} 
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+TMR\_\-Status \hyperlink{tmr__serial__reader_8h_9dd1d68fa5b7ad34bec0631f4c5a1007}{TMR\_\-SR\_\-SerialReader\_\-init} (\hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader)
+\end{CompactItemize}
+
+
+\label{_details}
+\hypertarget{_details}{}
+\subsection{Detailed Description}
+Mercury API - Serial Reader interface. 
+
+\begin{Desc}
+\item[Author:]Nathan Williams \end{Desc}
+\begin{Desc}
+\item[Date:]10/20/2009 \end{Desc}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{tmr__serial__reader_8h_51eeb75460e514c25662727196e1ff16}{
+\index{tmr\_\-serial\_\-reader.h@{tmr\_\-serial\_\-reader.h}!TMR\_\-SR\_\-SerialReader@{TMR\_\-SR\_\-SerialReader}}
+\index{TMR\_\-SR\_\-SerialReader@{TMR\_\-SR\_\-SerialReader}!tmr_serial_reader.h@{tmr\_\-serial\_\-reader.h}}
+\subsubsection[{TMR\_\-SR\_\-SerialReader}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf TM\_\-SR\_\-SerialReader}  {\bf TMR\_\-SR\_\-SerialReader}}}
+\label{tmr__serial__reader_8h_51eeb75460e514c25662727196e1ff16}
+
+
+The serial reader structure. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{tmr__serial__reader_8h_3bed220f21260999210ab0d66e8b9f69}{
+\index{tmr\_\-serial\_\-reader.h@{tmr\_\-serial\_\-reader.h}!TMR\_\-SR\_\-GEN2\_\-QType@{TMR\_\-SR\_\-GEN2\_\-QType}}
+\index{TMR\_\-SR\_\-GEN2\_\-QType@{TMR\_\-SR\_\-GEN2\_\-QType}!tmr_serial_reader.h@{tmr\_\-serial\_\-reader.h}}
+\subsubsection[{TMR\_\-SR\_\-GEN2\_\-QType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf TMR\_\-SR\_\-GEN2\_\-QType}}}
+\label{tmr__serial__reader_8h_3bed220f21260999210ab0d66e8b9f69}
+
+
+This represents the types of Q algorithms avaliable on the reader. \hypertarget{tmr__serial__reader_8h_27bef2c06d3a0f0f8a4d0bc1c0ad105f}{
+\index{tmr\_\-serial\_\-reader.h@{tmr\_\-serial\_\-reader.h}!TMR\_\-SR\_\-PowerMode@{TMR\_\-SR\_\-PowerMode}}
+\index{TMR\_\-SR\_\-PowerMode@{TMR\_\-SR\_\-PowerMode}!tmr_serial_reader.h@{tmr\_\-serial\_\-reader.h}}
+\subsubsection[{TMR\_\-SR\_\-PowerMode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf TMR\_\-SR\_\-PowerMode}}}
+\label{tmr__serial__reader_8h_27bef2c06d3a0f0f8a4d0bc1c0ad105f}
+
+
+Defines the values for the parameter {\tt /reader/powerMode} and the return value and parameter to TMR\_\-SR\_\-cmdGetPowerMode and TMR\_\-SR\_\-cmdSetPowerMode. \hypertarget{tmr__serial__reader_8h_2ba0789a5ed5ab345babafdfb2b12c1b}{
+\index{tmr\_\-serial\_\-reader.h@{tmr\_\-serial\_\-reader.h}!TMR\_\-SR\_\-SetUserProfileKey@{TMR\_\-SR\_\-SetUserProfileKey}}
+\index{TMR\_\-SR\_\-SetUserProfileKey@{TMR\_\-SR\_\-SetUserProfileKey}!tmr_serial_reader.h@{tmr\_\-serial\_\-reader.h}}
+\subsubsection[{TMR\_\-SR\_\-SetUserProfileKey}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf TMR\_\-SR\_\-SetUserProfileKey}}}
+\label{tmr__serial__reader_8h_2ba0789a5ed5ab345babafdfb2b12c1b}
+
+
+Congfig key for cmdSetUserProfile \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{TMR\_\-SR\_\-ALL@{TMR\_\-SR\_\-ALL}!tmr\_\-serial\_\-reader.h@{tmr\_\-serial\_\-reader.h}}\index{tmr\_\-serial\_\-reader.h@{tmr\_\-serial\_\-reader.h}!TMR\_\-SR\_\-ALL@{TMR\_\-SR\_\-ALL}}\item[{\em 
+\hypertarget{tmr__serial__reader_8h_2ba0789a5ed5ab345babafdfb2b12c1bfe6dc6b6b1e031a479f8793bbc6144d8}{
+TMR\_\-SR\_\-ALL}
+\label{tmr__serial__reader_8h_2ba0789a5ed5ab345babafdfb2b12c1bfe6dc6b6b1e031a479f8793bbc6144d8}
+}]All Configuration \end{description}
+\end{Desc}
+
+\hypertarget{tmr__serial__reader_8h_186406fc9aeed5fb6693dba5d9184585}{
+\index{tmr\_\-serial\_\-reader.h@{tmr\_\-serial\_\-reader.h}!TMR\_\-SR\_\-SetUserProfileOption@{TMR\_\-SR\_\-SetUserProfileOption}}
+\index{TMR\_\-SR\_\-SetUserProfileOption@{TMR\_\-SR\_\-SetUserProfileOption}!tmr_serial_reader.h@{tmr\_\-serial\_\-reader.h}}
+\subsubsection[{TMR\_\-SR\_\-SetUserProfileOption}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf TMR\_\-SR\_\-SetUserProfileOption}}}
+\label{tmr__serial__reader_8h_186406fc9aeed5fb6693dba5d9184585}
+
+
+Operation Options for cmdSetUserProfile \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{TMR\_\-SR\_\-SAVE@{TMR\_\-SR\_\-SAVE}!tmr\_\-serial\_\-reader.h@{tmr\_\-serial\_\-reader.h}}\index{tmr\_\-serial\_\-reader.h@{tmr\_\-serial\_\-reader.h}!TMR\_\-SR\_\-SAVE@{TMR\_\-SR\_\-SAVE}}\item[{\em 
+\hypertarget{tmr__serial__reader_8h_186406fc9aeed5fb6693dba5d918458556c00ace78fd2b354272f95f560a69bd}{
+TMR\_\-SR\_\-SAVE}
+\label{tmr__serial__reader_8h_186406fc9aeed5fb6693dba5d918458556c00ace78fd2b354272f95f560a69bd}
+}]Save operation \index{TMR\_\-SR\_\-RESTORE@{TMR\_\-SR\_\-RESTORE}!tmr\_\-serial\_\-reader.h@{tmr\_\-serial\_\-reader.h}}\index{tmr\_\-serial\_\-reader.h@{tmr\_\-serial\_\-reader.h}!TMR\_\-SR\_\-RESTORE@{TMR\_\-SR\_\-RESTORE}}\item[{\em 
+\hypertarget{tmr__serial__reader_8h_186406fc9aeed5fb6693dba5d9184585739c2fa7f5ef5761f5791be8dd07068b}{
+TMR\_\-SR\_\-RESTORE}
+\label{tmr__serial__reader_8h_186406fc9aeed5fb6693dba5d9184585739c2fa7f5ef5761f5791be8dd07068b}
+}]Restore operation \index{TMR\_\-SR\_\-VERIFY@{TMR\_\-SR\_\-VERIFY}!tmr\_\-serial\_\-reader.h@{tmr\_\-serial\_\-reader.h}}\index{tmr\_\-serial\_\-reader.h@{tmr\_\-serial\_\-reader.h}!TMR\_\-SR\_\-VERIFY@{TMR\_\-SR\_\-VERIFY}}\item[{\em 
+\hypertarget{tmr__serial__reader_8h_186406fc9aeed5fb6693dba5d91845857f99ed9c131724763ff2c183efa88811}{
+TMR\_\-SR\_\-VERIFY}
+\label{tmr__serial__reader_8h_186406fc9aeed5fb6693dba5d91845857f99ed9c131724763ff2c183efa88811}
+}]Verify operation \index{TMR\_\-SR\_\-CLEAR@{TMR\_\-SR\_\-CLEAR}!tmr\_\-serial\_\-reader.h@{tmr\_\-serial\_\-reader.h}}\index{tmr\_\-serial\_\-reader.h@{tmr\_\-serial\_\-reader.h}!TMR\_\-SR\_\-CLEAR@{TMR\_\-SR\_\-CLEAR}}\item[{\em 
+\hypertarget{tmr__serial__reader_8h_186406fc9aeed5fb6693dba5d9184585b5fb785bdd19f1a118219f6cb037fae1}{
+TMR\_\-SR\_\-CLEAR}
+\label{tmr__serial__reader_8h_186406fc9aeed5fb6693dba5d9184585b5fb785bdd19f1a118219f6cb037fae1}
+}]Clear operation \end{description}
+\end{Desc}
+
+\hypertarget{tmr__serial__reader_8h_a17d16f6f0b1d6762c4f2d80caf3bf3c}{
+\index{tmr\_\-serial\_\-reader.h@{tmr\_\-serial\_\-reader.h}!TMR\_\-SR\_\-SetUserProfileValue@{TMR\_\-SR\_\-SetUserProfileValue}}
+\index{TMR\_\-SR\_\-SetUserProfileValue@{TMR\_\-SR\_\-SetUserProfileValue}!tmr_serial_reader.h@{tmr\_\-serial\_\-reader.h}}
+\subsubsection[{TMR\_\-SR\_\-SetUserProfileValue}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf TMR\_\-SR\_\-SetUserProfileValue}}}
+\label{tmr__serial__reader_8h_a17d16f6f0b1d6762c4f2d80caf3bf3c}
+
+
+The config values for cmdSetUserProfile \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{TMR\_\-SR\_\-FIRMWARE\_\-DEFAULT@{TMR\_\-SR\_\-FIRMWARE\_\-DEFAULT}!tmr\_\-serial\_\-reader.h@{tmr\_\-serial\_\-reader.h}}\index{tmr\_\-serial\_\-reader.h@{tmr\_\-serial\_\-reader.h}!TMR\_\-SR\_\-FIRMWARE\_\-DEFAULT@{TMR\_\-SR\_\-FIRMWARE\_\-DEFAULT}}\item[{\em 
+\hypertarget{tmr__serial__reader_8h_a17d16f6f0b1d6762c4f2d80caf3bf3c426690b97b45ebc161ad2f5c226ea3ee}{
+TMR\_\-SR\_\-FIRMWARE\_\-DEFAULT}
+\label{tmr__serial__reader_8h_a17d16f6f0b1d6762c4f2d80caf3bf3c426690b97b45ebc161ad2f5c226ea3ee}
+}]Firmware default configurations \index{TMR\_\-SR\_\-CUSTOM\_\-CONFIGURATION@{TMR\_\-SR\_\-CUSTOM\_\-CONFIGURATION}!tmr\_\-serial\_\-reader.h@{tmr\_\-serial\_\-reader.h}}\index{tmr\_\-serial\_\-reader.h@{tmr\_\-serial\_\-reader.h}!TMR\_\-SR\_\-CUSTOM\_\-CONFIGURATION@{TMR\_\-SR\_\-CUSTOM\_\-CONFIGURATION}}\item[{\em 
+\hypertarget{tmr__serial__reader_8h_a17d16f6f0b1d6762c4f2d80caf3bf3ced5b384331b2382fe52213433c8dbd6f}{
+TMR\_\-SR\_\-CUSTOM\_\-CONFIGURATION}
+\label{tmr__serial__reader_8h_a17d16f6f0b1d6762c4f2d80caf3bf3ced5b384331b2382fe52213433c8dbd6f}
+}]Custom configurations \end{description}
+\end{Desc}
+
+\hypertarget{tmr__serial__reader_8h_afe0ad90fa02d8d4162515e3adb1b323}{
+\index{tmr\_\-serial\_\-reader.h@{tmr\_\-serial\_\-reader.h}!TMR\_\-SR\_\-UserMode@{TMR\_\-SR\_\-UserMode}}
+\index{TMR\_\-SR\_\-UserMode@{TMR\_\-SR\_\-UserMode}!tmr_serial_reader.h@{tmr\_\-serial\_\-reader.h}}
+\subsubsection[{TMR\_\-SR\_\-UserMode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf TMR\_\-SR\_\-UserMode}}}
+\label{tmr__serial__reader_8h_afe0ad90fa02d8d4162515e3adb1b323}
+
+
+Defines the values for the parameter /reader/userMode and the return value and parameter to TMR\_\-SR\_\-cmdGetUserMode() and TMR\_\-SR\_\-cmdSetUserMode. 
+
+\subsection{Function Documentation}
+\hypertarget{tmr__serial__reader_8h_9dd1d68fa5b7ad34bec0631f4c5a1007}{
+\index{tmr\_\-serial\_\-reader.h@{tmr\_\-serial\_\-reader.h}!TMR\_\-SR\_\-SerialReader\_\-init@{TMR\_\-SR\_\-SerialReader\_\-init}}
+\index{TMR\_\-SR\_\-SerialReader\_\-init@{TMR\_\-SR\_\-SerialReader\_\-init}!tmr_serial_reader.h@{tmr\_\-serial\_\-reader.h}}
+\subsubsection[{TMR\_\-SR\_\-SerialReader\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}TMR\_\-Status TMR\_\-SR\_\-SerialReader\_\-init ({\bf TMR\_\-Reader} $\ast$ {\em reader})}}
+\label{tmr__serial__reader_8h_9dd1d68fa5b7ad34bec0631f4c5a1007}
+
+
+Initialize a serial reader. The reader-$>$u.serialReader.transport structure must be initialized before calling this. 

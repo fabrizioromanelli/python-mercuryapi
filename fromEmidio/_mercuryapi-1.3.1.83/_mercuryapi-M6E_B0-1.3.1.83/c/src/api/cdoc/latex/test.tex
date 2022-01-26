@@ -1,0 +1,122 @@
+\label{test__test000013}
+\hypertarget{test__test000013}{}
+ \begin{description}
+\item[Member \hyperlink{hex__bytes_8c_ebfeac0977014965d178a396f6d74944}{TMR\_\-bytesToHex} ]If size is 0, $\ast$hex should point to an empty string. \end{description}
+
+
+\label{test__test000012}
+\hypertarget{test__test000012}{}
+ \begin{description}
+\item[Member \hyperlink{hex__bytes_8c_96a5d471a62fa37b1a66e894c04b98af}{TMR\_\-hexToBytes} ]If hex string is empty, $\ast$bytes should not be altered. 
+
+$\ast$convertLen is set to the correct value. 
+
+Function works when convertLen is {\tt NULL}. 
+
+Specific values: {\tt \char`\"{}00\char`\"{}}, {\tt \char`\"{}0000\char`\"{}}, {\tt \char`\"{}ffff\char`\"{}}, {\tt \char`\"{}0xffff\char`\"{}}, {\tt \char`\"{}00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899aabb\char`\"{}}. \end{description}
+
+
+\label{test__test000003}
+\hypertarget{test__test000003}{}
+ \begin{description}
+\item[Member \hyperlink{group__reader_gf4d6e37515b6206807f60e2d21ca1e52}{TMR\_\-connect} ]Connecting to existing reader should succeed. 
+
+Connecting to nonexisting reader should fail. \end{description}
+
+
+\label{test__test000001}
+\hypertarget{test__test000001}{}
+ \begin{description}
+\item[Member \hyperlink{group__reader_g77b9edd8d948ab1e1d9b95bf546cc43e}{TMR\_\-create} ]Call with valid URI should not fail. 
+
+Call with invalid URI should fail. \end{description}
+
+
+\label{test__test000002}
+\hypertarget{test__test000002}{}
+ \begin{description}
+\item[Member \hyperlink{group__reader_g3a75a6998463bfdf20242a3fb9c82427}{TMR\_\-create\_\-alloc} ]Call with valid URI should not fail. 
+
+Call with invalid URI should fail. 
+
+Multiple calls with different URIs should return distinct objects. \end{description}
+
+
+\label{test__test000004}
+\hypertarget{test__test000004}{}
+ \begin{description}
+\item[Member \hyperlink{group__reader_gc0d51178a7d1d96ea82c8ea87b1697db}{TMR\_\-destroy} ]Destroying existing connected reader should succed. 
+
+Destroying existing unconnected reader should succeed. 
+
+Destroying already-destroyed reader should fail. 
+
+Destroying reader allocated by \hyperlink{group__reader_g3a75a6998463bfdf20242a3fb9c82427}{TMR\_\-create\_\-alloc()} should free the allocated memory. \end{description}
+
+
+\label{test__test000007}
+\hypertarget{test__test000007}{}
+ \begin{description}
+\item[Member \hyperlink{group__reader_gbee8bf69ae6010858c5425956308292b}{TMR\_\-getNextTag} ]Call should fail before a read() call. 
+
+Call should fail after a read() call that set $\ast$tagCount to zero. 
+
+Call should fill in a tag after a read() call that set $\ast$tagCount to a nonzero value. 
+
+Call should succeed exactly as many times as specified by $\ast$tagCount. \end{description}
+
+
+\label{test__test000006}
+\hypertarget{test__test000006}{}
+ \begin{description}
+\item[Member \hyperlink{group__reader_g5925392bbb7aeafc0996144f354a533a}{TMR\_\-hasMoreTags} ]Call should return false before a read() call. 
+
+Call should return false after a read() call that set $\ast$tagCount to zero. 
+
+Call should return true after a read() call that set $\ast$tagCount to a nonzero value. 
+
+Call should return true through exactly as many getNextTag() calls as specified by $\ast$tagCount. \end{description}
+
+
+\label{test__test000011}
+\hypertarget{test__test000011}{}
+ \begin{description}
+\item[Member \hyperlink{group__reader_g799e9d2c2d6b254e689bc53570af8f15}{TMR\_\-paramGet} ]Call should fail if key is an invalid parameter name. 
+
+Call should fail if key is valid but unsupported by connected reader. 
+
+Call should succeed if key matches parameter name, independent of case. \end{description}
+
+
+\label{test__test000010}
+\hypertarget{test__test000010}{}
+ \begin{description}
+\item[Member \hyperlink{group__reader_gd8c8030610870c694ff19b9733799dbb}{TMR\_\-paramSet} ]Call should fail if key is an invalid parameter name. 
+
+Call should fail if key is valid but unsupported by connected reader. 
+
+Call should succeed if key matches parameter name, independent of case. \end{description}
+
+
+\label{test__test000005}
+\hypertarget{test__test000005}{}
+ \begin{description}
+\item[Member \hyperlink{group__reader_gb477ff41498adaa35ca5cae932ecfc70}{TMR\_\-read} ]Call should fail if reader is not connected. 
+
+If call is successful as per TMR\_\-Error, $\ast$tagCount should be modified and contain a positive value. \end{description}
+
+
+\label{test__test000008}
+\hypertarget{test__test000008}{}
+ \begin{description}
+\item[Member \hyperlink{group__reader_gcc9391a834e069adc7dca9e910f45c06}{TMR\_\-readIntoArray} ]Call should fail if reader is not connected. 
+
+If call is successful as per TMR\_\-Error, $\ast$tagCount should be modified and contain a positive value, and $\ast$result should be modified and contain the corresponding number of tag read values. \end{description}
+
+
+\label{test__test000009}
+\hypertarget{test__test000009}{}
+ \begin{description}
+\item[Member \hyperlink{group__reader_g8f88f53e5ccb6d17cd430f0d7428f641}{TMR\_\-writeTag} ]Call should fail if reader is not connected. 
+
+Upon success, a subsequent \hyperlink{group__reader_gb477ff41498adaa35ca5cae932ecfc70}{TMR\_\-read()} should find the new tag ID. \end{description}

@@ -1,0 +1,181 @@
+\hypertarget{tm__reader_8h}{
+\section{tm\_\-reader.h File Reference}
+\label{tm__reader_8h}\index{tm\_\-reader.h@{tm\_\-reader.h}}
+}
+Mercury API Reader Interface.  
+
+
+{\tt \#include \char`\"{}tm\_\-config.h\char`\"{}}\par
+{\tt \#include $<$pthread.h$>$}\par
+{\tt \#include \char`\"{}tmr\_\-types.h\char`\"{}}\par
+{\tt \#include \char`\"{}tmr\_\-status.h\char`\"{}}\par
+{\tt \#include \char`\"{}tmr\_\-gpio.h\char`\"{}}\par
+{\tt \#include \char`\"{}tmr\_\-params.h\char`\"{}}\par
+{\tt \#include \char`\"{}tmr\_\-read\_\-plan.h\char`\"{}}\par
+{\tt \#include \char`\"{}tmr\_\-tag\_\-auth.h\char`\"{}}\par
+{\tt \#include \char`\"{}tmr\_\-tag\_\-data.h\char`\"{}}\par
+{\tt \#include \char`\"{}tmr\_\-tag\_\-lock\_\-action.h\char`\"{}}\par
+{\tt \#include \char`\"{}tmr\_\-tag\_\-protocol.h\char`\"{}}\par
+{\tt \#include \char`\"{}tmr\_\-tagop.h\char`\"{}}\par
+{\tt \#include \char`\"{}tmr\_\-serial\_\-reader.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+struct \hyperlink{struct_t_m_r___read_listener_block}{TMR\_\-ReadListenerBlock}
+\item 
+struct \hyperlink{struct_t_m_r___read_exception_listener_block}{TMR\_\-ReadExceptionListenerBlock}
+\item 
+struct \hyperlink{struct_t_m_r___transport_listener_block}{TMR\_\-TransportListenerBlock}
+\item 
+struct \hyperlink{struct_t_m_r___reader}{TMR\_\-Reader}
+\item 
+struct \hyperlink{struct_t_m_r__memory_cookie}{TMR\_\-memoryCookie}
+\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef void($\ast$ \hyperlink{tm__reader_8h_f63b1a99c7e1bca392fc5fb649a0bc97}{TMR\_\-ReadListener} )(\hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, const \hyperlink{struct_t_m_r___tag_read_data}{TMR\_\-TagReadData} $\ast$t, void $\ast$cookie)
+\item 
+typedef void($\ast$ \hyperlink{tm__reader_8h_c0b752a65cd4263cf4d71710d107e63a}{TMR\_\-ReadExceptionListener} )(\hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, TMR\_\-Status error, void $\ast$cookie)
+\item 
+typedef void($\ast$ \hyperlink{tm__reader_8h_ee5ffafaeca03b3d972b8a5570f64b0c}{TMR\_\-TransportListener} )(bool tx, uint32\_\-t dataLen, const uint8\_\-t data\mbox{[}$\,$\mbox{]}, uint32\_\-t timeout, void $\ast$cookie)
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+TMR\_\-Status \hyperlink{group__reader_g77b9edd8d948ab1e1d9b95bf546cc43e}{TMR\_\-create} (\hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, const char $\ast$deviceUri)
+\item 
+TMR\_\-Status \hyperlink{group__reader_g3a75a6998463bfdf20242a3fb9c82427}{TMR\_\-create\_\-alloc} (\hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$$\ast$readerPointer, const char $\ast$deviceUri)
+\item 
+TMR\_\-Status \hyperlink{group__reader_gf4d6e37515b6206807f60e2d21ca1e52}{TMR\_\-connect} (struct \hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader)
+\item 
+TMR\_\-Status \hyperlink{group__reader_gc0d51178a7d1d96ea82c8ea87b1697db}{TMR\_\-destroy} (\hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader)
+\item 
+TMR\_\-Status \hyperlink{group__reader_gb477ff41498adaa35ca5cae932ecfc70}{TMR\_\-read} (\hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, uint32\_\-t timeoutMs, int32\_\-t $\ast$tagCount)
+\item 
+TMR\_\-Status \hyperlink{group__reader_g5925392bbb7aeafc0996144f354a533a}{TMR\_\-hasMoreTags} (\hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader)
+\item 
+TMR\_\-Status \hyperlink{group__reader_gbee8bf69ae6010858c5425956308292b}{TMR\_\-getNextTag} (\hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, \hyperlink{struct_t_m_r___tag_read_data}{TMR\_\-TagReadData} $\ast$tagData)
+\item 
+TMR\_\-Status \hyperlink{group__reader_gcc9391a834e069adc7dca9e910f45c06}{TMR\_\-readIntoArray} (struct \hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, uint32\_\-t timeoutMs, int32\_\-t $\ast$tagCount, \hyperlink{struct_t_m_r___tag_read_data}{TMR\_\-TagReadData} $\ast$result\mbox{[}$\,$\mbox{]})
+\item 
+TMR\_\-Status \hyperlink{group__reader_g8f88f53e5ccb6d17cd430f0d7428f641}{TMR\_\-writeTag} (\hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, const \hyperlink{struct_t_m_r___tag_filter}{TMR\_\-TagFilter} $\ast$target, \hyperlink{struct_t_m_r___tag_data}{TMR\_\-TagData} $\ast$data)
+\item 
+TMR\_\-Status \hyperlink{group__reader_gf27dfca0b93aec3cd8e24b5c60f7e9bb}{TMR\_\-killTag} (\hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, \hyperlink{struct_t_m_r___tag_filter}{TMR\_\-TagFilter} $\ast$target, \hyperlink{struct_t_m_r___tag_authentication}{TMR\_\-TagAuthentication} $\ast$auth)
+\item 
+TMR\_\-Status \hyperlink{group__reader_g8597458eb25df64f934016a89eac981c}{TMR\_\-lockTag} (\hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, \hyperlink{struct_t_m_r___tag_filter}{TMR\_\-TagFilter} $\ast$target, \hyperlink{struct_t_m_r___tag_lock_action}{TMR\_\-TagLockAction} $\ast$action)
+\item 
+TMR\_\-Status \hyperlink{group__reader_g2a136073cc2a93bf39ad699d57f9809f}{TMR\_\-readTagMemBytes} (\hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, \hyperlink{struct_t_m_r___tag_filter}{TMR\_\-TagFilter} $\ast$target, uint32\_\-t bank, uint32\_\-t byteAddress, uint16\_\-t byteCount, uint8\_\-t data\mbox{[}$\,$\mbox{]})
+\item 
+TMR\_\-Status \hyperlink{group__reader_g3ab6bd275b40ef431a058fdc0e760eba}{TMR\_\-readTagMemWords} (\hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, \hyperlink{struct_t_m_r___tag_filter}{TMR\_\-TagFilter} $\ast$target, uint32\_\-t bank, uint32\_\-t wordAddress, uint16\_\-t wordCount, uint16\_\-t data\mbox{[}$\,$\mbox{]})
+\item 
+TMR\_\-Status \hyperlink{group__reader_g17ea9a96b24e0a6d0c88cce3be33223a}{TMR\_\-writeTagMemBytes} (\hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, \hyperlink{struct_t_m_r___tag_filter}{TMR\_\-TagFilter} $\ast$target, uint32\_\-t bank, uint32\_\-t byteAddress, uint16\_\-t byteCount, const uint8\_\-t data\mbox{[}$\,$\mbox{]})
+\item 
+TMR\_\-Status \hyperlink{group__reader_gbf70580fa19874585850653139ea17eb}{TMR\_\-writeTagMemWords} (\hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, \hyperlink{struct_t_m_r___tag_filter}{TMR\_\-TagFilter} $\ast$target, uint32\_\-t bank, uint32\_\-t wordAddress, uint16\_\-t wordCount, const uint16\_\-t data\mbox{[}$\,$\mbox{]})
+\item 
+TMR\_\-Status \hyperlink{group__reader_g10588e2601ace37292564a877c598334}{TMR\_\-gpoSet} (\hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, uint8\_\-t count, const \hyperlink{struct_t_m_r___gpio_pin}{TMR\_\-GpioPin} state\mbox{[}$\,$\mbox{]})
+\item 
+TMR\_\-Status \hyperlink{group__reader_g11ed5acc43ab75e923690e86fcaadc16}{TMR\_\-gpiGet} (\hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, uint8\_\-t $\ast$count, \hyperlink{struct_t_m_r___gpio_pin}{TMR\_\-GpioPin} state\mbox{[}$\,$\mbox{]})
+\item 
+TMR\_\-Status \hyperlink{group__reader_g865559def5875922baf2c921e8af822b}{TMR\_\-firmwareLoad} (\hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, void $\ast$cookie, \hyperlink{tmr__types_8h_d5736b555500b6826cb87096b0d6d783}{TMR\_\-FirmwareDataProvider} provider)
+\item 
+bool \hyperlink{tm__reader_8h_1e57c23bc393527b7e8a51b62c6da4ec}{TMR\_\-memoryProvider} (void $\ast$cookie, uint16\_\-t $\ast$size, uint8\_\-t $\ast$data)
+\item 
+bool \hyperlink{tm__reader_8h_ea053ede1e650c1d0b21d95787541e0a}{TMR\_\-fileProvider} (void $\ast$cookie, uint16\_\-t $\ast$size, uint8\_\-t $\ast$data)
+\item 
+TMR\_\-Status \hyperlink{group__reader_gd8c8030610870c694ff19b9733799dbb}{TMR\_\-paramSet} (struct \hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, \hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692}{TMR\_\-Param} key, const void $\ast$value)
+\item 
+TMR\_\-Status \hyperlink{group__reader_g799e9d2c2d6b254e689bc53570af8f15}{TMR\_\-paramGet} (struct \hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, \hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692}{TMR\_\-Param} key, void $\ast$value)
+\item 
+TMR\_\-Status \hyperlink{group__reader_gb0b455295d4984b2fa653f2ebccc263e}{TMR\_\-paramList} (struct \hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, \hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692}{TMR\_\-Param} $\ast$keys, uint32\_\-t $\ast$len)
+\item 
+const char $\ast$ \hyperlink{group__reader_g73f896de4aa8cb256c33a771ab514460}{TMR\_\-paramName} (\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692}{TMR\_\-Param} key)
+\item 
+\hyperlink{tmr__params_8h_a2f354f3ef4ea399b19a0c2b626ff692}{TMR\_\-Param} \hyperlink{group__reader_g837ad11acb819d1427a2d9ecf1cef99a}{TMR\_\-paramID} (const char $\ast$name)
+\item 
+TMR\_\-Status \hyperlink{group__reader_gf1a35a5a75818801532ec51992123018}{TMR\_\-addTransportListener} (\hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, \hyperlink{struct_t_m_r___transport_listener_block}{TMR\_\-TransportListenerBlock} $\ast$block)
+\item 
+TMR\_\-Status \hyperlink{group__reader_g1a07c9bba16ee46f6cc47509bb6d10df}{TMR\_\-removeTransportListener} (\hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, \hyperlink{struct_t_m_r___transport_listener_block}{TMR\_\-TransportListenerBlock} $\ast$block)
+\item 
+TMR\_\-Status \hyperlink{group__reader_g18745261e79dccc89a516eaf38cd83f2}{TMR\_\-addReadListener} (struct \hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, \hyperlink{struct_t_m_r___read_listener_block}{TMR\_\-ReadListenerBlock} $\ast$block)
+\item 
+TMR\_\-Status \hyperlink{group__reader_g702b49e0f99507ffe0361b772b161123}{TMR\_\-removeReadListener} (struct \hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, \hyperlink{struct_t_m_r___read_listener_block}{TMR\_\-ReadListenerBlock} $\ast$block)
+\item 
+TMR\_\-Status \hyperlink{group__reader_gda68ed4d7d5dfc41d29eb578d1d8b802}{TMR\_\-addReadExceptionListener} (struct \hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, \hyperlink{struct_t_m_r___read_exception_listener_block}{TMR\_\-ReadExceptionListenerBlock} $\ast$block)
+\item 
+TMR\_\-Status \hyperlink{group__reader_g89e04179bc7e159f9cccb070e1c77944}{TMR\_\-removeReadExceptionListener} (struct \hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader, \hyperlink{struct_t_m_r___read_exception_listener_block}{TMR\_\-ReadExceptionListenerBlock} $\ast$block)
+\item 
+TMR\_\-Status \hyperlink{group__reader_gad5e5df913bb9150c9d6c1fc12bebe7e}{TMR\_\-startReading} (struct \hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader)
+\item 
+TMR\_\-Status \hyperlink{group__reader_g82c3f389ceda58871e9c35975390231d}{TMR\_\-stopReading} (struct \hyperlink{struct_t_m_r___reader}{TMR\_\-Reader} $\ast$reader)
+\end{CompactItemize}
+
+
+\label{_details}
+\hypertarget{_details}{}
+\subsection{Detailed Description}
+Mercury API Reader Interface. 
+
+\begin{Desc}
+\item[Author:]Brian Fiegel \end{Desc}
+\begin{Desc}
+\item[Date:]4/18/2009 \end{Desc}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{tm__reader_8h_c0b752a65cd4263cf4d71710d107e63a}{
+\index{tm\_\-reader.h@{tm\_\-reader.h}!TMR\_\-ReadExceptionListener@{TMR\_\-ReadExceptionListener}}
+\index{TMR\_\-ReadExceptionListener@{TMR\_\-ReadExceptionListener}!tm_reader.h@{tm\_\-reader.h}}
+\subsubsection[{TMR\_\-ReadExceptionListener}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ {\bf TMR\_\-ReadExceptionListener})({\bf TMR\_\-Reader} $\ast$reader, TMR\_\-Status error, void $\ast$cookie)}}
+\label{tm__reader_8h_c0b752a65cd4263cf4d71710d107e63a}
+
+
+Type of functions to be registered as read error callbacks \hypertarget{tm__reader_8h_f63b1a99c7e1bca392fc5fb649a0bc97}{
+\index{tm\_\-reader.h@{tm\_\-reader.h}!TMR\_\-ReadListener@{TMR\_\-ReadListener}}
+\index{TMR\_\-ReadListener@{TMR\_\-ReadListener}!tm_reader.h@{tm\_\-reader.h}}
+\subsubsection[{TMR\_\-ReadListener}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ {\bf TMR\_\-ReadListener})({\bf TMR\_\-Reader} $\ast$reader, const {\bf TMR\_\-TagReadData} $\ast$t, void $\ast$cookie)}}
+\label{tm__reader_8h_f63b1a99c7e1bca392fc5fb649a0bc97}
+
+
+Type of functions to be registered as read callbacks \hypertarget{tm__reader_8h_ee5ffafaeca03b3d972b8a5570f64b0c}{
+\index{tm\_\-reader.h@{tm\_\-reader.h}!TMR\_\-TransportListener@{TMR\_\-TransportListener}}
+\index{TMR\_\-TransportListener@{TMR\_\-TransportListener}!tm_reader.h@{tm\_\-reader.h}}
+\subsubsection[{TMR\_\-TransportListener}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ {\bf TMR\_\-TransportListener})(bool tx, uint32\_\-t dataLen, const uint8\_\-t data\mbox{[}$\,$\mbox{]}, uint32\_\-t timeout, void $\ast$cookie)}}
+\label{tm__reader_8h_ee5ffafaeca03b3d972b8a5570f64b0c}
+
+
+Type of functions to be registered as transport callbacks 
+
+\subsection{Function Documentation}
+\hypertarget{tm__reader_8h_ea053ede1e650c1d0b21d95787541e0a}{
+\index{tm\_\-reader.h@{tm\_\-reader.h}!TMR\_\-fileProvider@{TMR\_\-fileProvider}}
+\index{TMR\_\-fileProvider@{TMR\_\-fileProvider}!tm_reader.h@{tm\_\-reader.h}}
+\subsubsection[{TMR\_\-fileProvider}]{\setlength{\rightskip}{0pt plus 5cm}bool TMR\_\-fileProvider (void $\ast$ {\em cookie}, \/  uint16\_\-t $\ast$ {\em size}, \/  uint8\_\-t $\ast$ {\em data})}}
+\label{tm__reader_8h_ea053ede1e650c1d0b21d95787541e0a}
+
+
+This function can be used as a callback to TMR\_\-firmwareLoad when the firmware image exists as a file.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em cookie}]FILE $\ast$ pointing to the file to read from. \item[\mbox{$\leftarrow$} {\em size}]The number of bytes requested. \item[\mbox{$\rightarrow$} {\em size}]The number of bytes returned. \item[{\em data}]Pointer to buffer to fill. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true if there is more firmware data to return. \end{Desc}
+\hypertarget{tm__reader_8h_1e57c23bc393527b7e8a51b62c6da4ec}{
+\index{tm\_\-reader.h@{tm\_\-reader.h}!TMR\_\-memoryProvider@{TMR\_\-memoryProvider}}
+\index{TMR\_\-memoryProvider@{TMR\_\-memoryProvider}!tm_reader.h@{tm\_\-reader.h}}
+\subsubsection[{TMR\_\-memoryProvider}]{\setlength{\rightskip}{0pt plus 5cm}bool TMR\_\-memoryProvider (void $\ast$ {\em cookie}, \/  uint16\_\-t $\ast$ {\em size}, \/  uint8\_\-t $\ast$ {\em data})}}
+\label{tm__reader_8h_1e57c23bc393527b7e8a51b62c6da4ec}
+
+
+This function can be used as a callback to TMR\_\-firmwareLoad when the firmware image exists in system memory. The cookie is a pointer to a \hyperlink{struct_t_m_r__memory_cookie}{TMR\_\-memoryCookie} that is initialized with the start of the firmware image in memory and its size.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em cookie}]\hyperlink{struct_t_m_r__memory_cookie}{TMR\_\-memoryCookie} value. \item[\mbox{$\leftarrow$} {\em size}]The number of bytes requested. \item[\mbox{$\rightarrow$} {\em size}]The number of bytes returned. \item[{\em data}]Pointer to buffer to fill. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true if there is more firmware data to return. \end{Desc}

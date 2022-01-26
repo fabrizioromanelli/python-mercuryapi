@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-autorfid", "test-autorfid.vcproj", "{8CDE9EBD-21E9-419B-A027-71D34535EAEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CDE9EBD-21E9-419B-A027-71D34535EAEC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8CDE9EBD-21E9-419B-A027-71D34535EAEC}.Debug|Win32.Build.0 = Debug|Win32
+		{8CDE9EBD-21E9-419B-A027-71D34535EAEC}.Release|Win32.ActiveCfg = Release|Win32
+		{8CDE9EBD-21E9-419B-A027-71D34535EAEC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

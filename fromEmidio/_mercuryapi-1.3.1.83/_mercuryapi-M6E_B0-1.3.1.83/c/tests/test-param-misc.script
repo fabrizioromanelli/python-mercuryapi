@@ -1,0 +1,12 @@
+echo Test of the parameter mechanism generally
+
+set /reader/powermode # bogus, no value
+set /reader/xyzzy foo # bogus, no such paramater
+set                   # bogus, no parameter at all
+
+get /reader/xyzzy     # bogus, no such paramater
+
+get /reader/baudRate  # check that we can get anything
+get /READER/BAUDRATE  # check that case mismatch is OK
+
+get # get everything

@@ -1,0 +1,119 @@
+\hypertarget{group__readplan}{
+\section{Read plans}
+\label{group__readplan}\index{Read plans@{Read plans}}
+}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+struct \hyperlink{struct_t_m_r___simple_read_plan}{TMR\_\-SimpleReadPlan}
+\item 
+struct \hyperlink{struct_t_m_r___multi_read_plan}{TMR\_\-MultiReadPlan}
+\item 
+struct \hyperlink{struct_t_m_r___read_plan}{TMR\_\-ReadPlan}
+\end{CompactItemize}
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{group__readplan_g4646d0bb9359362ac44e57f04f7e429c}{TMR\_\-ReadPlanType} \{ , \hyperlink{group__readplan_gg4646d0bb9359362ac44e57f04f7e429ce19fe5cee99f0bd3a3ae118dced8e426}{TMR\_\-READ\_\-PLAN\_\-TYPE\_\-SIMPLE}, 
+\hyperlink{group__readplan_gg4646d0bb9359362ac44e57f04f7e429c886bea5e75d6b2f7d11574666450ab77}{TMR\_\-READ\_\-PLAN\_\-TYPE\_\-MULTI}
+ \}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+TMR\_\-Status \hyperlink{group__readplan_g1af189d2675156c9a068367219fa3d98}{TMR\_\-RP\_\-init\_\-simple} (\hyperlink{struct_t_m_r___read_plan}{TMR\_\-ReadPlan} $\ast$plan, uint8\_\-t antennaCount, uint8\_\-t $\ast$antennaList, \hyperlink{tmr__tag__protocol_8h_1e727f69e94ccc81da4d3b9440aba934}{TMR\_\-TagProtocol} protocol, uint32\_\-t weight)
+\item 
+TMR\_\-Status \hyperlink{group__readplan_gce3c98ef5a04cfcac4b14e0fff950988}{TMR\_\-RP\_\-init\_\-multi} (\hyperlink{struct_t_m_r___read_plan}{TMR\_\-ReadPlan} $\ast$plan, \hyperlink{struct_t_m_r___read_plan}{TMR\_\-ReadPlan} $\ast$$\ast$plans, uint8\_\-t planCount, uint32\_\-t weight)
+\item 
+TMR\_\-Status \hyperlink{group__readplan_g34719ef3c329be6b31af3bc2b4b3c234}{TMR\_\-RP\_\-set\_\-filter} (\hyperlink{struct_t_m_r___read_plan}{TMR\_\-ReadPlan} $\ast$plan, \hyperlink{struct_t_m_r___tag_filter}{TMR\_\-TagFilter} $\ast$filter)
+\item 
+TMR\_\-Status \hyperlink{group__readplan_g5f6032baee5c6a042d2351ecb9ab3953}{TMR\_\-RP\_\-set\_\-tagop} (\hyperlink{struct_t_m_r___read_plan}{TMR\_\-ReadPlan} $\ast$plan, \hyperlink{struct_t_m_r___tagop}{TMR\_\-Tagop} $\ast$tagop)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A read plan specifies the antennas, protocols, and filters to use for a search (read). Each ReadPlan structure has a numeric weight that controls what fraction of a search is used by that plan when combined in a MultiReadPlan (see below). Read plans are specified for the reader in the {\tt /reader/read/plan} parameter. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{group__readplan_g4646d0bb9359362ac44e57f04f7e429c}{
+\index{readplan@{readplan}!TMR\_\-ReadPlanType@{TMR\_\-ReadPlanType}}
+\index{TMR\_\-ReadPlanType@{TMR\_\-ReadPlanType}!readplan@{readplan}}
+\subsubsection[{TMR\_\-ReadPlanType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf TMR\_\-ReadPlanType}}}
+\label{group__readplan_g4646d0bb9359362ac44e57f04f7e429c}
+
+
+The type of a read plan \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{TMR\_\-READ\_\-PLAN\_\-TYPE\_\-SIMPLE@{TMR\_\-READ\_\-PLAN\_\-TYPE\_\-SIMPLE}!readplan@{readplan}}\index{readplan@{readplan}!TMR\_\-READ\_\-PLAN\_\-TYPE\_\-SIMPLE@{TMR\_\-READ\_\-PLAN\_\-TYPE\_\-SIMPLE}}\item[{\em 
+\hypertarget{group__readplan_gg4646d0bb9359362ac44e57f04f7e429ce19fe5cee99f0bd3a3ae118dced8e426}{
+TMR\_\-READ\_\-PLAN\_\-TYPE\_\-SIMPLE}
+\label{group__readplan_gg4646d0bb9359362ac44e57f04f7e429ce19fe5cee99f0bd3a3ae118dced8e426}
+}]Simple read plan - one protocol, a set of antennas, an optional tag filter, and an optional tag operation. \index{TMR\_\-READ\_\-PLAN\_\-TYPE\_\-MULTI@{TMR\_\-READ\_\-PLAN\_\-TYPE\_\-MULTI}!readplan@{readplan}}\index{readplan@{readplan}!TMR\_\-READ\_\-PLAN\_\-TYPE\_\-MULTI@{TMR\_\-READ\_\-PLAN\_\-TYPE\_\-MULTI}}\item[{\em 
+\hypertarget{group__readplan_gg4646d0bb9359362ac44e57f04f7e429c886bea5e75d6b2f7d11574666450ab77}{
+TMR\_\-READ\_\-PLAN\_\-TYPE\_\-MULTI}
+\label{group__readplan_gg4646d0bb9359362ac44e57f04f7e429c886bea5e75d6b2f7d11574666450ab77}
+}]Multi-read plan - a list of read plans (simple or multi). \end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{group__readplan_gce3c98ef5a04cfcac4b14e0fff950988}{
+\index{readplan@{readplan}!TMR\_\-RP\_\-init\_\-multi@{TMR\_\-RP\_\-init\_\-multi}}
+\index{TMR\_\-RP\_\-init\_\-multi@{TMR\_\-RP\_\-init\_\-multi}!readplan@{readplan}}
+\subsubsection[{TMR\_\-RP\_\-init\_\-multi}]{\setlength{\rightskip}{0pt plus 5cm}TMR\_\-Status TMR\_\-RP\_\-init\_\-multi ({\bf TMR\_\-ReadPlan} $\ast$ {\em plan}, \/  {\bf TMR\_\-ReadPlan} $\ast$$\ast$ {\em plans}, \/  uint8\_\-t {\em planCount}, \/  uint32\_\-t {\em weight})}}
+\label{group__readplan_gce3c98ef5a04cfcac4b14e0fff950988}
+
+
+Initialize a \hyperlink{struct_t_m_r___read_plan}{TMR\_\-ReadPlan} structure as a multi-read plan with the provided parameters.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em plan}]Pointer to the read plan to initialize. \item[{\em plans}]Array of pointers to read plans to include \item[{\em planCount}]Number of elements in array \item[{\em weight}]Weight. \end{description}
+\end{Desc}
+\hypertarget{group__readplan_g1af189d2675156c9a068367219fa3d98}{
+\index{readplan@{readplan}!TMR\_\-RP\_\-init\_\-simple@{TMR\_\-RP\_\-init\_\-simple}}
+\index{TMR\_\-RP\_\-init\_\-simple@{TMR\_\-RP\_\-init\_\-simple}!readplan@{readplan}}
+\subsubsection[{TMR\_\-RP\_\-init\_\-simple}]{\setlength{\rightskip}{0pt plus 5cm}TMR\_\-Status TMR\_\-RP\_\-init\_\-simple ({\bf TMR\_\-ReadPlan} $\ast$ {\em plan}, \/  uint8\_\-t {\em antennaCount}, \/  uint8\_\-t $\ast$ {\em antennaList}, \/  {\bf TMR\_\-TagProtocol} {\em protocol}, \/  uint32\_\-t {\em weight})}}
+\label{group__readplan_g1af189d2675156c9a068367219fa3d98}
+
+
+Initialize a \hyperlink{struct_t_m_r___read_plan}{TMR\_\-ReadPlan} structure as a simple read plan with the provided parameters.
+
+Only the mandatory elements are parameters to this function. The optional elements, filters and tag operations, can be set with \hyperlink{group__readplan_g34719ef3c329be6b31af3bc2b4b3c234}{TMR\_\-RP\_\-set\_\-filter()} and \hyperlink{group__readplan_g5f6032baee5c6a042d2351ecb9ab3953}{TMR\_\-RP\_\-set\_\-tagop()}.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em plan}]Pointer to the read plan to initialize. \item[{\em antennaCount}]Number of antennas in antenna list. A zero-length list requests the reader to use all antennas known to be connected at the time of the read operation. \item[{\em antennaList}]Pointer to antenna numbers. \item[{\em protocol}]Protocol \item[{\em weight}]Weight. \end{description}
+\end{Desc}
+\hypertarget{group__readplan_g34719ef3c329be6b31af3bc2b4b3c234}{
+\index{readplan@{readplan}!TMR\_\-RP\_\-set\_\-filter@{TMR\_\-RP\_\-set\_\-filter}}
+\index{TMR\_\-RP\_\-set\_\-filter@{TMR\_\-RP\_\-set\_\-filter}!readplan@{readplan}}
+\subsubsection[{TMR\_\-RP\_\-set\_\-filter}]{\setlength{\rightskip}{0pt plus 5cm}TMR\_\-Status TMR\_\-RP\_\-set\_\-filter ({\bf TMR\_\-ReadPlan} $\ast$ {\em plan}, \/  {\bf TMR\_\-TagFilter} $\ast$ {\em filter})}}
+\label{group__readplan_g34719ef3c329be6b31af3bc2b4b3c234}
+
+
+Set the filter of a simple read plan.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em plan}]Pointer to the read plan \item[{\em filter}]Pointer to the filter \end{description}
+\end{Desc}
+\hypertarget{group__readplan_g5f6032baee5c6a042d2351ecb9ab3953}{
+\index{readplan@{readplan}!TMR\_\-RP\_\-set\_\-tagop@{TMR\_\-RP\_\-set\_\-tagop}}
+\index{TMR\_\-RP\_\-set\_\-tagop@{TMR\_\-RP\_\-set\_\-tagop}!readplan@{readplan}}
+\subsubsection[{TMR\_\-RP\_\-set\_\-tagop}]{\setlength{\rightskip}{0pt plus 5cm}TMR\_\-Status TMR\_\-RP\_\-set\_\-tagop ({\bf TMR\_\-ReadPlan} $\ast$ {\em plan}, \/  {\bf TMR\_\-Tagop} $\ast$ {\em tagop})}}
+\label{group__readplan_g5f6032baee5c6a042d2351ecb9ab3953}
+
+
+Set the tagop of a simple read plan.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em plan}]Pointer to the read plan \item[{\em tagop}]Pointer to the tagop \end{description}
+\end{Desc}

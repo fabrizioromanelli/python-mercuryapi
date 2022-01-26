@@ -1,0 +1,513 @@
+\hypertarget{tmr__status_8h}{
+\section{tmr\_\-status.h File Reference}
+\label{tmr__status_8h}\index{tmr\_\-status.h@{tmr\_\-status.h}}
+}
+Mercury API - status codes.  
+
+
+{\tt \#include \char`\"{}tm\_\-config.h\char`\"{}}\par
+{\tt \#include $<$stdint.h$>$}\par
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \hyperlink{tmr__status_8h_c3a0c340f45815544c4c5e3609b23a20}{TMR\_\-ERROR\_\-MSG\_\-WRONG\_\-NUMBER\_\-OF\_\-DATA}~TMR\_\-ERROR\_\-CODE(0x100)
+\item 
+\#define \hyperlink{tmr__status_8h_473e69474f4b11e82cfcc167fcca4f57}{TMR\_\-ERROR\_\-INVALID\_\-OPCODE}~TMR\_\-ERROR\_\-CODE(0x101)
+\item 
+\#define \hyperlink{tmr__status_8h_532919de9216489f11541db0e1d8010c}{TMR\_\-ERROR\_\-UNIMPLEMENTED\_\-OPCODE}~TMR\_\-ERROR\_\-CODE(0x102)
+\item 
+\#define \hyperlink{tmr__status_8h_c8023ba60c7d4eab0a00eb3bff9b72eb}{TMR\_\-ERROR\_\-MSG\_\-POWER\_\-TOO\_\-HIGH}~TMR\_\-ERROR\_\-CODE(0x103)
+\item 
+\#define \hyperlink{tmr__status_8h_517c63a3b1967a2649eeeb9c0b48eb4c}{TMR\_\-ERROR\_\-MSG\_\-INVALID\_\-FREQ\_\-RECEIVED}~TMR\_\-ERROR\_\-CODE(0x104)
+\item 
+\#define \hyperlink{tmr__status_8h_8d34a10311f4caa0fcbe408a2eb2f41f}{TMR\_\-ERROR\_\-MSG\_\-INVALID\_\-PARAMETER\_\-VALUE}~TMR\_\-ERROR\_\-CODE(0x105)
+\item 
+\#define \hyperlink{tmr__status_8h_ceff85ebe183fba7b817703598ae19f7}{TMR\_\-ERROR\_\-MSG\_\-POWER\_\-TOO\_\-LOW}~TMR\_\-ERROR\_\-CODE(0x106)
+\item 
+\#define \hyperlink{tmr__status_8h_870313b3e0e3496d24c55ad2e9025c5f}{TMR\_\-ERROR\_\-UNIMPLEMENTED\_\-FEATURE}~TMR\_\-ERROR\_\-CODE(0x109)
+\item 
+\#define \hyperlink{tmr__status_8h_0459ada5d92b0fc5619887f312f378f8}{TMR\_\-ERROR\_\-INVALID\_\-BAUD\_\-RATE}~TMR\_\-ERROR\_\-CODE(0x10a)
+\item 
+\#define \hyperlink{tmr__status_8h_00fe0b6d968f9c43fceaae3b282517e3}{TMR\_\-ERROR\_\-INVALID\_\-REGION}~TMR\_\-ERROR\_\-CODE(0x10b)
+\item 
+\#define \hyperlink{tmr__status_8h_a590f16135b59324aefeb453e727d47f}{TMR\_\-ERROR\_\-BL\_\-INVALID\_\-IMAGE\_\-CRC}~TMR\_\-ERROR\_\-CODE(0x200)
+\item 
+\#define \hyperlink{tmr__status_8h_6ba40d49f3e34c45229152590f2c8c4f}{TMR\_\-ERROR\_\-BL\_\-INVALID\_\-APP\_\-END\_\-ADDR}~TMR\_\-ERROR\_\-CODE(0x201)
+\item 
+\#define \hyperlink{tmr__status_8h_74f4fc2b452ea13d79c4a9313cda042a}{TMR\_\-ERROR\_\-FLASH\_\-BAD\_\-ERASE\_\-PASSWORD}~TMR\_\-ERROR\_\-CODE(0x300)
+\item 
+\#define \hyperlink{tmr__status_8h_3e22c50f1fe26ae805423ae04bc873f6}{TMR\_\-ERROR\_\-FLASH\_\-BAD\_\-WRITE\_\-PASSWORD}~TMR\_\-ERROR\_\-CODE(0x301)
+\item 
+\#define \hyperlink{tmr__status_8h_4c5565163e24bbc7ab7216313999e3f8}{TMR\_\-ERROR\_\-FLASH\_\-UNDEFINED\_\-SECTOR}~TMR\_\-ERROR\_\-CODE(0x302)
+\item 
+\#define \hyperlink{tmr__status_8h_6857b82b419f4d89a08cad22b6e9dcbf}{TMR\_\-ERROR\_\-FLASH\_\-ILLEGAL\_\-SECTOR}~TMR\_\-ERROR\_\-CODE(0x303)
+\item 
+\#define \hyperlink{tmr__status_8h_9ba6d5cc6c8ea819a64385bbeb23ebf0}{TMR\_\-ERROR\_\-FLASH\_\-WRITE\_\-TO\_\-NON\_\-ERASED\_\-AREA}~TMR\_\-ERROR\_\-CODE(0x304)
+\item 
+\#define \hyperlink{tmr__status_8h_67567c1dd970fa57ad5a045359946252}{TMR\_\-ERROR\_\-FLASH\_\-WRITE\_\-TO\_\-ILLEGAL\_\-SECTOR}~TMR\_\-ERROR\_\-CODE(0x305)
+\item 
+\#define \hyperlink{tmr__status_8h_c7e3dc1a30c44062ba108627cebaff17}{TMR\_\-ERROR\_\-FLASH\_\-VERIFY\_\-FAILED}~TMR\_\-ERROR\_\-CODE(0x306)
+\item 
+\#define \hyperlink{tmr__status_8h_bfd1e66dadbe4f605dbf6a32ac16613d}{TMR\_\-ERROR\_\-NO\_\-TAGS\_\-FOUND}~TMR\_\-ERROR\_\-CODE(0x400)
+\item 
+\#define \hyperlink{tmr__status_8h_4ce5d5c03ca6c96fff61ff33fe32c19f}{TMR\_\-ERROR\_\-NO\_\-PROTOCOL\_\-DEFINED}~TMR\_\-ERROR\_\-CODE(0x401)
+\item 
+\#define \hyperlink{tmr__status_8h_32bd58f3d839ea6086c6e6938f952997}{TMR\_\-ERROR\_\-INVALID\_\-PROTOCOL\_\-SPECIFIED}~TMR\_\-ERROR\_\-CODE(0x402)
+\item 
+\#define \hyperlink{tmr__status_8h_2f92ca6f6aabc211bfee20e4ff133dde}{TMR\_\-ERROR\_\-WRITE\_\-PASSED\_\-LOCK\_\-FAILED}~TMR\_\-ERROR\_\-CODE(0x403)
+\item 
+\#define \hyperlink{tmr__status_8h_5b6758d0ba2369a4031a51b381087609}{TMR\_\-ERROR\_\-PROTOCOL\_\-NO\_\-DATA\_\-READ}~TMR\_\-ERROR\_\-CODE(0x404)
+\item 
+\#define \hyperlink{tmr__status_8h_c15ca496e431566bdd96cb5f8e78b26c}{TMR\_\-ERROR\_\-AFE\_\-NOT\_\-ON}~TMR\_\-ERROR\_\-CODE(0x405)
+\item 
+\#define \hyperlink{tmr__status_8h_45bc5f487c59793b4bcdcdc83abe7eec}{TMR\_\-ERROR\_\-PROTOCOL\_\-WRITE\_\-FAILED}~TMR\_\-ERROR\_\-CODE(0x406)
+\item 
+\#define \hyperlink{tmr__status_8h_1633bd7cd824ed73e28cef4d4bf28518}{TMR\_\-ERROR\_\-NOT\_\-IMPLEMENTED\_\-FOR\_\-THIS\_\-PROTOCOL}~TMR\_\-ERROR\_\-CODE(0x407)
+\item 
+\#define \hyperlink{tmr__status_8h_4d4d765519447940f2e970561727dbf8}{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-WRITE\_\-DATA}~TMR\_\-ERROR\_\-CODE(0x408)
+\item 
+\#define \hyperlink{tmr__status_8h_82e52da8c535a4be5d8eb2b14e41be4a}{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-ADDRESS}~TMR\_\-ERROR\_\-CODE(0x409)
+\item 
+\#define \hyperlink{tmr__status_8h_3c74fec2ab71993aed7038840c4329a6}{TMR\_\-ERROR\_\-GENERAL\_\-TAG\_\-ERROR}~TMR\_\-ERROR\_\-CODE(0x40a)
+\item 
+\#define \hyperlink{tmr__status_8h_7b80f243a7771d3cafe219950a0f3f4d}{TMR\_\-ERROR\_\-DATA\_\-TOO\_\-LARGE}~TMR\_\-ERROR\_\-CODE(0x40b)
+\item 
+\#define \hyperlink{tmr__status_8h_935097ea13f2edcfd15bc6a690a7b7d3}{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-KILL\_\-PASSWORD}~TMR\_\-ERROR\_\-CODE(0x40c)
+\item 
+\#define \hyperlink{tmr__status_8h_e5a6f790efe5ad8fa4233a360eada706}{TMR\_\-ERROR\_\-PROTOCOL\_\-KILL\_\-FAILED}~TMR\_\-ERROR\_\-CODE(0x40e)
+\item 
+\#define \hyperlink{tmr__status_8h_50c6dc3adec9ceae77613acb1b65277e}{TMR\_\-ERROR\_\-PROTOCOL\_\-BIT\_\-DECODING\_\-FAILED}~TMR\_\-ERROR\_\-CODE(0x40f)
+\item 
+\#define \hyperlink{tmr__status_8h_35f0b01065a53bcc8829bb875a3e827d}{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-EPC}~TMR\_\-ERROR\_\-CODE(0x410)
+\item 
+\#define \hyperlink{tmr__status_8h_f558aa4cf38c8a272a50c56b0ef6e800}{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-NUM\_\-DATA}~TMR\_\-ERROR\_\-CODE(0x411)
+\item 
+\#define \hyperlink{tmr__status_8h_a1bdf2d41785de89474b0d59a1a0c86c}{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-OTHER\_\-ERROR}~TMR\_\-ERROR\_\-CODE(0x420)
+\item 
+\#define \hyperlink{tmr__status_8h_0a371d993cbe1cd96802cd8e977dc22a}{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-MEMORY\_\-OVERRUN\_\-BAD\_\-PC}~TMR\_\-ERROR\_\-CODE(0x423)
+\item 
+\#define \hyperlink{tmr__status_8h_901e3dc42bb87f75d535408f0a160a99}{TMR\_\-ERROR\_\-GEN2\_\-PROCOCOL\_\-MEMORY\_\-LOCKED}~TMR\_\-ERROR\_\-CODE(0x424)
+\item 
+\#define \hyperlink{tmr__status_8h_55d33b8be0eae6c309daf62f81c66070}{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-INSUFFICIENT\_\-POWER}~TMR\_\-ERROR\_\-CODE(0x42b)
+\item 
+\#define \hyperlink{tmr__status_8h_3f2314c44f33614d23032ce50172743a}{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-NON\_\-SPECIFIC\_\-ERROR}~TMR\_\-ERROR\_\-CODE(0x42f)
+\item 
+\#define \hyperlink{tmr__status_8h_a53fdd2dee89d3dcdabd3404f44d3888}{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-UNKNOWN\_\-ERROR}~TMR\_\-ERROR\_\-CODE(0x430)
+\item 
+\#define \hyperlink{tmr__status_8h_c26074b17d7745d405a0a1977f564601}{TMR\_\-ERROR\_\-AHAL\_\-INVALID\_\-FREQ}~TMR\_\-ERROR\_\-CODE(0x500)
+\item 
+\#define \hyperlink{tmr__status_8h_6834fadc3f5dd2da7e7213908ba617b8}{TMR\_\-ERROR\_\-AHAL\_\-CHANNEL\_\-OCCUPIED}~TMR\_\-ERROR\_\-CODE(0x501)
+\item 
+\#define \hyperlink{tmr__status_8h_1192cbbb1adfc99c877e4c732fff6953}{TMR\_\-ERROR\_\-AHAL\_\-TRANSMITTER\_\-ON}~TMR\_\-ERROR\_\-CODE(0x502)
+\item 
+\#define \hyperlink{tmr__status_8h_3902d5104f9edf8e2bd0a5b7593a23ec}{TMR\_\-ERROR\_\-ANTENNA\_\-NOT\_\-CONNECTED}~TMR\_\-ERROR\_\-CODE(0x503)
+\item 
+\#define \hyperlink{tmr__status_8h_6a62cd5438d96d9328081ed066c84eee}{TMR\_\-ERROR\_\-TEMPERATURE\_\-EXCEED\_\-LIMITS}~TMR\_\-ERROR\_\-CODE(0x504)
+\item 
+\#define \hyperlink{tmr__status_8h_326fb6a08f2711d149ad5631057ca1b8}{TMR\_\-ERROR\_\-HIGH\_\-RETURN\_\-LOSS}~TMR\_\-ERROR\_\-CODE(0x505)
+\item 
+\#define \hyperlink{tmr__status_8h_fa25c16392e5b7aa57e782988ad8d8cc}{TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-NOT\_\-ENOUGH\_\-TAGS\_\-AVAILABLE}~TMR\_\-ERROR\_\-CODE(0x600)
+\item 
+\#define \hyperlink{tmr__status_8h_16ea9b581efd984841d6dc1ea80b9766}{TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-FULL}~TMR\_\-ERROR\_\-CODE(0x601)
+\item 
+\#define \hyperlink{tmr__status_8h_86d556bdaae35fad089186ab5054fdfb}{TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-REPEATED\_\-TAG\_\-ID}~TMR\_\-ERROR\_\-CODE(0x602)
+\item 
+\#define \hyperlink{tmr__status_8h_d64b166ebdf25daef24efff7cfe31e8b}{TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-NUM\_\-TAG\_\-TOO\_\-LARGE}~TMR\_\-ERROR\_\-CODE(0x603)
+\item 
+\#define \hyperlink{tmr__status_8h_57a4c29f644b9372481d2133b5a39f42}{TMR\_\-ERROR\_\-SYSTEM\_\-UNKNOWN\_\-ERROR}~TMR\_\-ERROR\_\-CODE(0x7f00)
+\item 
+\#define \hyperlink{tmr__status_8h_fdacd7271e6116444267944fc640e2bd}{TMR\_\-ERROR\_\-TM\_\-ASSERT\_\-FAILED}~TMR\_\-ERROR\_\-CODE(0x7f01)
+\end{CompactItemize}
+
+
+\label{_details}
+\hypertarget{_details}{}
+\subsection{Detailed Description}
+Mercury API - status codes. 
+
+\begin{Desc}
+\item[Author:]Nathan Williams \end{Desc}
+\begin{Desc}
+\item[Date:]11/24/2009 \end{Desc}
+
+
+\subsection{Define Documentation}
+\hypertarget{tmr__status_8h_c15ca496e431566bdd96cb5f8e78b26c}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-AFE\_\-NOT\_\-ON@{TMR\_\-ERROR\_\-AFE\_\-NOT\_\-ON}}
+\index{TMR\_\-ERROR\_\-AFE\_\-NOT\_\-ON@{TMR\_\-ERROR\_\-AFE\_\-NOT\_\-ON}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-AFE\_\-NOT\_\-ON}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-AFE\_\-NOT\_\-ON~TMR\_\-ERROR\_\-CODE(0x405)}}
+\label{tmr__status_8h_c15ca496e431566bdd96cb5f8e78b26c}
+
+
+Reader not fully initialized and hasn't yet turned on its radio. Have you set region? \hypertarget{tmr__status_8h_6834fadc3f5dd2da7e7213908ba617b8}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-AHAL\_\-CHANNEL\_\-OCCUPIED@{TMR\_\-ERROR\_\-AHAL\_\-CHANNEL\_\-OCCUPIED}}
+\index{TMR\_\-ERROR\_\-AHAL\_\-CHANNEL\_\-OCCUPIED@{TMR\_\-ERROR\_\-AHAL\_\-CHANNEL\_\-OCCUPIED}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-AHAL\_\-CHANNEL\_\-OCCUPIED}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-AHAL\_\-CHANNEL\_\-OCCUPIED~TMR\_\-ERROR\_\-CODE(0x501)}}
+\label{tmr__status_8h_6834fadc3f5dd2da7e7213908ba617b8}
+
+
+With LBT enabled an attempt was made to set the frequency to an occupied channel. \hypertarget{tmr__status_8h_c26074b17d7745d405a0a1977f564601}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-AHAL\_\-INVALID\_\-FREQ@{TMR\_\-ERROR\_\-AHAL\_\-INVALID\_\-FREQ}}
+\index{TMR\_\-ERROR\_\-AHAL\_\-INVALID\_\-FREQ@{TMR\_\-ERROR\_\-AHAL\_\-INVALID\_\-FREQ}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-AHAL\_\-INVALID\_\-FREQ}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-AHAL\_\-INVALID\_\-FREQ~TMR\_\-ERROR\_\-CODE(0x500)}}
+\label{tmr__status_8h_c26074b17d7745d405a0a1977f564601}
+
+
+A command was received to set a frequency outside the specified range. \hypertarget{tmr__status_8h_1192cbbb1adfc99c877e4c732fff6953}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-AHAL\_\-TRANSMITTER\_\-ON@{TMR\_\-ERROR\_\-AHAL\_\-TRANSMITTER\_\-ON}}
+\index{TMR\_\-ERROR\_\-AHAL\_\-TRANSMITTER\_\-ON@{TMR\_\-ERROR\_\-AHAL\_\-TRANSMITTER\_\-ON}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-AHAL\_\-TRANSMITTER\_\-ON}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-AHAL\_\-TRANSMITTER\_\-ON~TMR\_\-ERROR\_\-CODE(0x502)}}
+\label{tmr__status_8h_1192cbbb1adfc99c877e4c732fff6953}
+
+
+Checking antenna status while CW is on is not allowed. \hypertarget{tmr__status_8h_3902d5104f9edf8e2bd0a5b7593a23ec}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-ANTENNA\_\-NOT\_\-CONNECTED@{TMR\_\-ERROR\_\-ANTENNA\_\-NOT\_\-CONNECTED}}
+\index{TMR\_\-ERROR\_\-ANTENNA\_\-NOT\_\-CONNECTED@{TMR\_\-ERROR\_\-ANTENNA\_\-NOT\_\-CONNECTED}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-ANTENNA\_\-NOT\_\-CONNECTED}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-ANTENNA\_\-NOT\_\-CONNECTED~TMR\_\-ERROR\_\-CODE(0x503)}}
+\label{tmr__status_8h_3902d5104f9edf8e2bd0a5b7593a23ec}
+
+
+Antenna not detected during pre-transmit safety test. \hypertarget{tmr__status_8h_6ba40d49f3e34c45229152590f2c8c4f}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-BL\_\-INVALID\_\-APP\_\-END\_\-ADDR@{TMR\_\-ERROR\_\-BL\_\-INVALID\_\-APP\_\-END\_\-ADDR}}
+\index{TMR\_\-ERROR\_\-BL\_\-INVALID\_\-APP\_\-END\_\-ADDR@{TMR\_\-ERROR\_\-BL\_\-INVALID\_\-APP\_\-END\_\-ADDR}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-BL\_\-INVALID\_\-APP\_\-END\_\-ADDR}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-BL\_\-INVALID\_\-APP\_\-END\_\-ADDR~TMR\_\-ERROR\_\-CODE(0x201)}}
+\label{tmr__status_8h_6ba40d49f3e34c45229152590f2c8c4f}
+
+
+Serial protocol status code for this exception. \hypertarget{tmr__status_8h_a590f16135b59324aefeb453e727d47f}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-BL\_\-INVALID\_\-IMAGE\_\-CRC@{TMR\_\-ERROR\_\-BL\_\-INVALID\_\-IMAGE\_\-CRC}}
+\index{TMR\_\-ERROR\_\-BL\_\-INVALID\_\-IMAGE\_\-CRC@{TMR\_\-ERROR\_\-BL\_\-INVALID\_\-IMAGE\_\-CRC}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-BL\_\-INVALID\_\-IMAGE\_\-CRC}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-BL\_\-INVALID\_\-IMAGE\_\-CRC~TMR\_\-ERROR\_\-CODE(0x200)}}
+\label{tmr__status_8h_a590f16135b59324aefeb453e727d47f}
+
+
+Firmware is corrupt: Checksum doesn't match content. \hypertarget{tmr__status_8h_7b80f243a7771d3cafe219950a0f3f4d}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-DATA\_\-TOO\_\-LARGE@{TMR\_\-ERROR\_\-DATA\_\-TOO\_\-LARGE}}
+\index{TMR\_\-ERROR\_\-DATA\_\-TOO\_\-LARGE@{TMR\_\-ERROR\_\-DATA\_\-TOO\_\-LARGE}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-DATA\_\-TOO\_\-LARGE}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-DATA\_\-TOO\_\-LARGE~TMR\_\-ERROR\_\-CODE(0x40b)}}
+\label{tmr__status_8h_7b80f243a7771d3cafe219950a0f3f4d}
+
+
+Read Tag Data was asked for more data than it supports. \hypertarget{tmr__status_8h_74f4fc2b452ea13d79c4a9313cda042a}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-FLASH\_\-BAD\_\-ERASE\_\-PASSWORD@{TMR\_\-ERROR\_\-FLASH\_\-BAD\_\-ERASE\_\-PASSWORD}}
+\index{TMR\_\-ERROR\_\-FLASH\_\-BAD\_\-ERASE\_\-PASSWORD@{TMR\_\-ERROR\_\-FLASH\_\-BAD\_\-ERASE\_\-PASSWORD}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-FLASH\_\-BAD\_\-ERASE\_\-PASSWORD}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-FLASH\_\-BAD\_\-ERASE\_\-PASSWORD~TMR\_\-ERROR\_\-CODE(0x300)}}
+\label{tmr__status_8h_74f4fc2b452ea13d79c4a9313cda042a}
+
+
+Internal reader error. Contact support. \hypertarget{tmr__status_8h_3e22c50f1fe26ae805423ae04bc873f6}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-FLASH\_\-BAD\_\-WRITE\_\-PASSWORD@{TMR\_\-ERROR\_\-FLASH\_\-BAD\_\-WRITE\_\-PASSWORD}}
+\index{TMR\_\-ERROR\_\-FLASH\_\-BAD\_\-WRITE\_\-PASSWORD@{TMR\_\-ERROR\_\-FLASH\_\-BAD\_\-WRITE\_\-PASSWORD}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-FLASH\_\-BAD\_\-WRITE\_\-PASSWORD}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-FLASH\_\-BAD\_\-WRITE\_\-PASSWORD~TMR\_\-ERROR\_\-CODE(0x301)}}
+\label{tmr__status_8h_3e22c50f1fe26ae805423ae04bc873f6}
+
+
+Internal reader error. Contact support. \hypertarget{tmr__status_8h_6857b82b419f4d89a08cad22b6e9dcbf}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-FLASH\_\-ILLEGAL\_\-SECTOR@{TMR\_\-ERROR\_\-FLASH\_\-ILLEGAL\_\-SECTOR}}
+\index{TMR\_\-ERROR\_\-FLASH\_\-ILLEGAL\_\-SECTOR@{TMR\_\-ERROR\_\-FLASH\_\-ILLEGAL\_\-SECTOR}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-FLASH\_\-ILLEGAL\_\-SECTOR}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-FLASH\_\-ILLEGAL\_\-SECTOR~TMR\_\-ERROR\_\-CODE(0x303)}}
+\label{tmr__status_8h_6857b82b419f4d89a08cad22b6e9dcbf}
+
+
+Internal reader error. Contact support. \hypertarget{tmr__status_8h_4c5565163e24bbc7ab7216313999e3f8}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-FLASH\_\-UNDEFINED\_\-SECTOR@{TMR\_\-ERROR\_\-FLASH\_\-UNDEFINED\_\-SECTOR}}
+\index{TMR\_\-ERROR\_\-FLASH\_\-UNDEFINED\_\-SECTOR@{TMR\_\-ERROR\_\-FLASH\_\-UNDEFINED\_\-SECTOR}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-FLASH\_\-UNDEFINED\_\-SECTOR}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-FLASH\_\-UNDEFINED\_\-SECTOR~TMR\_\-ERROR\_\-CODE(0x302)}}
+\label{tmr__status_8h_4c5565163e24bbc7ab7216313999e3f8}
+
+
+Internal reader error. Contact support. \hypertarget{tmr__status_8h_c7e3dc1a30c44062ba108627cebaff17}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-FLASH\_\-VERIFY\_\-FAILED@{TMR\_\-ERROR\_\-FLASH\_\-VERIFY\_\-FAILED}}
+\index{TMR\_\-ERROR\_\-FLASH\_\-VERIFY\_\-FAILED@{TMR\_\-ERROR\_\-FLASH\_\-VERIFY\_\-FAILED}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-FLASH\_\-VERIFY\_\-FAILED}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-FLASH\_\-VERIFY\_\-FAILED~TMR\_\-ERROR\_\-CODE(0x306)}}
+\label{tmr__status_8h_c7e3dc1a30c44062ba108627cebaff17}
+
+
+Internal reader error. Contact support. \hypertarget{tmr__status_8h_67567c1dd970fa57ad5a045359946252}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-FLASH\_\-WRITE\_\-TO\_\-ILLEGAL\_\-SECTOR@{TMR\_\-ERROR\_\-FLASH\_\-WRITE\_\-TO\_\-ILLEGAL\_\-SECTOR}}
+\index{TMR\_\-ERROR\_\-FLASH\_\-WRITE\_\-TO\_\-ILLEGAL\_\-SECTOR@{TMR\_\-ERROR\_\-FLASH\_\-WRITE\_\-TO\_\-ILLEGAL\_\-SECTOR}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-FLASH\_\-WRITE\_\-TO\_\-ILLEGAL\_\-SECTOR}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-FLASH\_\-WRITE\_\-TO\_\-ILLEGAL\_\-SECTOR~TMR\_\-ERROR\_\-CODE(0x305)}}
+\label{tmr__status_8h_67567c1dd970fa57ad5a045359946252}
+
+
+Internal reader error. Contact support. \hypertarget{tmr__status_8h_9ba6d5cc6c8ea819a64385bbeb23ebf0}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-FLASH\_\-WRITE\_\-TO\_\-NON\_\-ERASED\_\-AREA@{TMR\_\-ERROR\_\-FLASH\_\-WRITE\_\-TO\_\-NON\_\-ERASED\_\-AREA}}
+\index{TMR\_\-ERROR\_\-FLASH\_\-WRITE\_\-TO\_\-NON\_\-ERASED\_\-AREA@{TMR\_\-ERROR\_\-FLASH\_\-WRITE\_\-TO\_\-NON\_\-ERASED\_\-AREA}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-FLASH\_\-WRITE\_\-TO\_\-NON\_\-ERASED\_\-AREA}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-FLASH\_\-WRITE\_\-TO\_\-NON\_\-ERASED\_\-AREA~TMR\_\-ERROR\_\-CODE(0x304)}}
+\label{tmr__status_8h_9ba6d5cc6c8ea819a64385bbeb23ebf0}
+
+
+Internal reader error. Contact support. \hypertarget{tmr__status_8h_901e3dc42bb87f75d535408f0a160a99}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-GEN2\_\-PROCOCOL\_\-MEMORY\_\-LOCKED@{TMR\_\-ERROR\_\-GEN2\_\-PROCOCOL\_\-MEMORY\_\-LOCKED}}
+\index{TMR\_\-ERROR\_\-GEN2\_\-PROCOCOL\_\-MEMORY\_\-LOCKED@{TMR\_\-ERROR\_\-GEN2\_\-PROCOCOL\_\-MEMORY\_\-LOCKED}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-GEN2\_\-PROCOCOL\_\-MEMORY\_\-LOCKED}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-GEN2\_\-PROCOCOL\_\-MEMORY\_\-LOCKED~TMR\_\-ERROR\_\-CODE(0x424)}}
+\label{tmr__status_8h_901e3dc42bb87f75d535408f0a160a99}
+
+
+Internal reader error. Contact support. \hypertarget{tmr__status_8h_55d33b8be0eae6c309daf62f81c66070}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-INSUFFICIENT\_\-POWER@{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-INSUFFICIENT\_\-POWER}}
+\index{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-INSUFFICIENT\_\-POWER@{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-INSUFFICIENT\_\-POWER}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-INSUFFICIENT\_\-POWER}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-INSUFFICIENT\_\-POWER~TMR\_\-ERROR\_\-CODE(0x42b)}}
+\label{tmr__status_8h_55d33b8be0eae6c309daf62f81c66070}
+
+
+Internal reader error. Contact support. \hypertarget{tmr__status_8h_0a371d993cbe1cd96802cd8e977dc22a}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-MEMORY\_\-OVERRUN\_\-BAD\_\-PC@{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-MEMORY\_\-OVERRUN\_\-BAD\_\-PC}}
+\index{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-MEMORY\_\-OVERRUN\_\-BAD\_\-PC@{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-MEMORY\_\-OVERRUN\_\-BAD\_\-PC}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-MEMORY\_\-OVERRUN\_\-BAD\_\-PC}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-MEMORY\_\-OVERRUN\_\-BAD\_\-PC~TMR\_\-ERROR\_\-CODE(0x423)}}
+\label{tmr__status_8h_0a371d993cbe1cd96802cd8e977dc22a}
+
+
+Internal reader error. Contact support. \hypertarget{tmr__status_8h_3f2314c44f33614d23032ce50172743a}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-NON\_\-SPECIFIC\_\-ERROR@{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-NON\_\-SPECIFIC\_\-ERROR}}
+\index{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-NON\_\-SPECIFIC\_\-ERROR@{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-NON\_\-SPECIFIC\_\-ERROR}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-NON\_\-SPECIFIC\_\-ERROR}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-NON\_\-SPECIFIC\_\-ERROR~TMR\_\-ERROR\_\-CODE(0x42f)}}
+\label{tmr__status_8h_3f2314c44f33614d23032ce50172743a}
+
+
+Internal reader error. Contact support. \hypertarget{tmr__status_8h_a1bdf2d41785de89474b0d59a1a0c86c}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-OTHER\_\-ERROR@{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-OTHER\_\-ERROR}}
+\index{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-OTHER\_\-ERROR@{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-OTHER\_\-ERROR}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-OTHER\_\-ERROR}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-OTHER\_\-ERROR~TMR\_\-ERROR\_\-CODE(0x420)}}
+\label{tmr__status_8h_a1bdf2d41785de89474b0d59a1a0c86c}
+
+
+Internal reader error. Contact support. \hypertarget{tmr__status_8h_a53fdd2dee89d3dcdabd3404f44d3888}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-UNKNOWN\_\-ERROR@{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-UNKNOWN\_\-ERROR}}
+\index{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-UNKNOWN\_\-ERROR@{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-UNKNOWN\_\-ERROR}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-UNKNOWN\_\-ERROR}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-GEN2\_\-PROTOCOL\_\-UNKNOWN\_\-ERROR~TMR\_\-ERROR\_\-CODE(0x430)}}
+\label{tmr__status_8h_a53fdd2dee89d3dcdabd3404f44d3888}
+
+
+Internal reader error. Contact support. \hypertarget{tmr__status_8h_3c74fec2ab71993aed7038840c4329a6}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-GENERAL\_\-TAG\_\-ERROR@{TMR\_\-ERROR\_\-GENERAL\_\-TAG\_\-ERROR}}
+\index{TMR\_\-ERROR\_\-GENERAL\_\-TAG\_\-ERROR@{TMR\_\-ERROR\_\-GENERAL\_\-TAG\_\-ERROR}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-GENERAL\_\-TAG\_\-ERROR}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-GENERAL\_\-TAG\_\-ERROR~TMR\_\-ERROR\_\-CODE(0x40a)}}
+\label{tmr__status_8h_3c74fec2ab71993aed7038840c4329a6}
+
+
+Unknown error during RFID operation. \hypertarget{tmr__status_8h_326fb6a08f2711d149ad5631057ca1b8}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-HIGH\_\-RETURN\_\-LOSS@{TMR\_\-ERROR\_\-HIGH\_\-RETURN\_\-LOSS}}
+\index{TMR\_\-ERROR\_\-HIGH\_\-RETURN\_\-LOSS@{TMR\_\-ERROR\_\-HIGH\_\-RETURN\_\-LOSS}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-HIGH\_\-RETURN\_\-LOSS}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-HIGH\_\-RETURN\_\-LOSS~TMR\_\-ERROR\_\-CODE(0x505)}}
+\label{tmr__status_8h_326fb6a08f2711d149ad5631057ca1b8}
+
+
+Excess power detected at transmitter port, usually due to antenna tuning mismatch. \hypertarget{tmr__status_8h_0459ada5d92b0fc5619887f312f378f8}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-INVALID\_\-BAUD\_\-RATE@{TMR\_\-ERROR\_\-INVALID\_\-BAUD\_\-RATE}}
+\index{TMR\_\-ERROR\_\-INVALID\_\-BAUD\_\-RATE@{TMR\_\-ERROR\_\-INVALID\_\-BAUD\_\-RATE}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-INVALID\_\-BAUD\_\-RATE}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-INVALID\_\-BAUD\_\-RATE~TMR\_\-ERROR\_\-CODE(0x10a)}}
+\label{tmr__status_8h_0459ada5d92b0fc5619887f312f378f8}
+
+
+Requested serial speed is not supported. \hypertarget{tmr__status_8h_473e69474f4b11e82cfcc167fcca4f57}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-INVALID\_\-OPCODE@{TMR\_\-ERROR\_\-INVALID\_\-OPCODE}}
+\index{TMR\_\-ERROR\_\-INVALID\_\-OPCODE@{TMR\_\-ERROR\_\-INVALID\_\-OPCODE}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-INVALID\_\-OPCODE}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-INVALID\_\-OPCODE~TMR\_\-ERROR\_\-CODE(0x101)}}
+\label{tmr__status_8h_473e69474f4b11e82cfcc167fcca4f57}
+
+
+Command opcode not recognized. \hypertarget{tmr__status_8h_32bd58f3d839ea6086c6e6938f952997}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-INVALID\_\-PROTOCOL\_\-SPECIFIED@{TMR\_\-ERROR\_\-INVALID\_\-PROTOCOL\_\-SPECIFIED}}
+\index{TMR\_\-ERROR\_\-INVALID\_\-PROTOCOL\_\-SPECIFIED@{TMR\_\-ERROR\_\-INVALID\_\-PROTOCOL\_\-SPECIFIED}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-INVALID\_\-PROTOCOL\_\-SPECIFIED}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-INVALID\_\-PROTOCOL\_\-SPECIFIED~TMR\_\-ERROR\_\-CODE(0x402)}}
+\label{tmr__status_8h_32bd58f3d839ea6086c6e6938f952997}
+
+
+Requested RFID protocol is not recognized. \hypertarget{tmr__status_8h_00fe0b6d968f9c43fceaae3b282517e3}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-INVALID\_\-REGION@{TMR\_\-ERROR\_\-INVALID\_\-REGION}}
+\index{TMR\_\-ERROR\_\-INVALID\_\-REGION@{TMR\_\-ERROR\_\-INVALID\_\-REGION}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-INVALID\_\-REGION}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-INVALID\_\-REGION~TMR\_\-ERROR\_\-CODE(0x10b)}}
+\label{tmr__status_8h_00fe0b6d968f9c43fceaae3b282517e3}
+
+
+Region is not supported. \hypertarget{tmr__status_8h_517c63a3b1967a2649eeeb9c0b48eb4c}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-MSG\_\-INVALID\_\-FREQ\_\-RECEIVED@{TMR\_\-ERROR\_\-MSG\_\-INVALID\_\-FREQ\_\-RECEIVED}}
+\index{TMR\_\-ERROR\_\-MSG\_\-INVALID\_\-FREQ\_\-RECEIVED@{TMR\_\-ERROR\_\-MSG\_\-INVALID\_\-FREQ\_\-RECEIVED}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-MSG\_\-INVALID\_\-FREQ\_\-RECEIVED}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-MSG\_\-INVALID\_\-FREQ\_\-RECEIVED~TMR\_\-ERROR\_\-CODE(0x104)}}
+\label{tmr__status_8h_517c63a3b1967a2649eeeb9c0b48eb4c}
+
+
+Requested frequency is outside the allowed range. \hypertarget{tmr__status_8h_8d34a10311f4caa0fcbe408a2eb2f41f}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-MSG\_\-INVALID\_\-PARAMETER\_\-VALUE@{TMR\_\-ERROR\_\-MSG\_\-INVALID\_\-PARAMETER\_\-VALUE}}
+\index{TMR\_\-ERROR\_\-MSG\_\-INVALID\_\-PARAMETER\_\-VALUE@{TMR\_\-ERROR\_\-MSG\_\-INVALID\_\-PARAMETER\_\-VALUE}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-MSG\_\-INVALID\_\-PARAMETER\_\-VALUE}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-MSG\_\-INVALID\_\-PARAMETER\_\-VALUE~TMR\_\-ERROR\_\-CODE(0x105)}}
+\label{tmr__status_8h_8d34a10311f4caa0fcbe408a2eb2f41f}
+
+
+Parameter value is outside the allowed range. \hypertarget{tmr__status_8h_c8023ba60c7d4eab0a00eb3bff9b72eb}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-MSG\_\-POWER\_\-TOO\_\-HIGH@{TMR\_\-ERROR\_\-MSG\_\-POWER\_\-TOO\_\-HIGH}}
+\index{TMR\_\-ERROR\_\-MSG\_\-POWER\_\-TOO\_\-HIGH@{TMR\_\-ERROR\_\-MSG\_\-POWER\_\-TOO\_\-HIGH}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-MSG\_\-POWER\_\-TOO\_\-HIGH}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-MSG\_\-POWER\_\-TOO\_\-HIGH~TMR\_\-ERROR\_\-CODE(0x103)}}
+\label{tmr__status_8h_c8023ba60c7d4eab0a00eb3bff9b72eb}
+
+
+Requested power setting is above the allowed maximum. \hypertarget{tmr__status_8h_ceff85ebe183fba7b817703598ae19f7}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-MSG\_\-POWER\_\-TOO\_\-LOW@{TMR\_\-ERROR\_\-MSG\_\-POWER\_\-TOO\_\-LOW}}
+\index{TMR\_\-ERROR\_\-MSG\_\-POWER\_\-TOO\_\-LOW@{TMR\_\-ERROR\_\-MSG\_\-POWER\_\-TOO\_\-LOW}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-MSG\_\-POWER\_\-TOO\_\-LOW}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-MSG\_\-POWER\_\-TOO\_\-LOW~TMR\_\-ERROR\_\-CODE(0x106)}}
+\label{tmr__status_8h_ceff85ebe183fba7b817703598ae19f7}
+
+
+Requested power setting is below the allowed minimum. \hypertarget{tmr__status_8h_c3a0c340f45815544c4c5e3609b23a20}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-MSG\_\-WRONG\_\-NUMBER\_\-OF\_\-DATA@{TMR\_\-ERROR\_\-MSG\_\-WRONG\_\-NUMBER\_\-OF\_\-DATA}}
+\index{TMR\_\-ERROR\_\-MSG\_\-WRONG\_\-NUMBER\_\-OF\_\-DATA@{TMR\_\-ERROR\_\-MSG\_\-WRONG\_\-NUMBER\_\-OF\_\-DATA}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-MSG\_\-WRONG\_\-NUMBER\_\-OF\_\-DATA}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-MSG\_\-WRONG\_\-NUMBER\_\-OF\_\-DATA~TMR\_\-ERROR\_\-CODE(0x100)}}
+\label{tmr__status_8h_c3a0c340f45815544c4c5e3609b23a20}
+
+
+Invalid number of arguments \hypertarget{tmr__status_8h_4ce5d5c03ca6c96fff61ff33fe32c19f}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-NO\_\-PROTOCOL\_\-DEFINED@{TMR\_\-ERROR\_\-NO\_\-PROTOCOL\_\-DEFINED}}
+\index{TMR\_\-ERROR\_\-NO\_\-PROTOCOL\_\-DEFINED@{TMR\_\-ERROR\_\-NO\_\-PROTOCOL\_\-DEFINED}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-NO\_\-PROTOCOL\_\-DEFINED}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-NO\_\-PROTOCOL\_\-DEFINED~TMR\_\-ERROR\_\-CODE(0x401)}}
+\label{tmr__status_8h_4ce5d5c03ca6c96fff61ff33fe32c19f}
+
+
+RFID protocol has not been configured. \hypertarget{tmr__status_8h_bfd1e66dadbe4f605dbf6a32ac16613d}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-NO\_\-TAGS\_\-FOUND@{TMR\_\-ERROR\_\-NO\_\-TAGS\_\-FOUND}}
+\index{TMR\_\-ERROR\_\-NO\_\-TAGS\_\-FOUND@{TMR\_\-ERROR\_\-NO\_\-TAGS\_\-FOUND}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-NO\_\-TAGS\_\-FOUND}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-NO\_\-TAGS\_\-FOUND~TMR\_\-ERROR\_\-CODE(0x400)}}
+\label{tmr__status_8h_bfd1e66dadbe4f605dbf6a32ac16613d}
+
+
+Reader was asked to find tags, but none were detected. \hypertarget{tmr__status_8h_1633bd7cd824ed73e28cef4d4bf28518}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-NOT\_\-IMPLEMENTED\_\-FOR\_\-THIS\_\-PROTOCOL@{TMR\_\-ERROR\_\-NOT\_\-IMPLEMENTED\_\-FOR\_\-THIS\_\-PROTOCOL}}
+\index{TMR\_\-ERROR\_\-NOT\_\-IMPLEMENTED\_\-FOR\_\-THIS\_\-PROTOCOL@{TMR\_\-ERROR\_\-NOT\_\-IMPLEMENTED\_\-FOR\_\-THIS\_\-PROTOCOL}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-NOT\_\-IMPLEMENTED\_\-FOR\_\-THIS\_\-PROTOCOL}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-NOT\_\-IMPLEMENTED\_\-FOR\_\-THIS\_\-PROTOCOL~TMR\_\-ERROR\_\-CODE(0x407)}}
+\label{tmr__status_8h_1633bd7cd824ed73e28cef4d4bf28518}
+
+
+Command is not supported in the current RFID protocol. \hypertarget{tmr__status_8h_50c6dc3adec9ceae77613acb1b65277e}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-PROTOCOL\_\-BIT\_\-DECODING\_\-FAILED@{TMR\_\-ERROR\_\-PROTOCOL\_\-BIT\_\-DECODING\_\-FAILED}}
+\index{TMR\_\-ERROR\_\-PROTOCOL\_\-BIT\_\-DECODING\_\-FAILED@{TMR\_\-ERROR\_\-PROTOCOL\_\-BIT\_\-DECODING\_\-FAILED}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-PROTOCOL\_\-BIT\_\-DECODING\_\-FAILED}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-PROTOCOL\_\-BIT\_\-DECODING\_\-FAILED~TMR\_\-ERROR\_\-CODE(0x40f)}}
+\label{tmr__status_8h_50c6dc3adec9ceae77613acb1b65277e}
+
+
+Internal reader error. Contact support. \hypertarget{tmr__status_8h_82e52da8c535a4be5d8eb2b14e41be4a}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-ADDRESS@{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-ADDRESS}}
+\index{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-ADDRESS@{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-ADDRESS}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-ADDRESS}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-ADDRESS~TMR\_\-ERROR\_\-CODE(0x409)}}
+\label{tmr__status_8h_82e52da8c535a4be5d8eb2b14e41be4a}
+
+
+Requested data address is outside the valid range. \hypertarget{tmr__status_8h_35f0b01065a53bcc8829bb875a3e827d}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-EPC@{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-EPC}}
+\index{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-EPC@{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-EPC}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-EPC}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-EPC~TMR\_\-ERROR\_\-CODE(0x410)}}
+\label{tmr__status_8h_35f0b01065a53bcc8829bb875a3e827d}
+
+
+Internal reader error. Contact support. \hypertarget{tmr__status_8h_935097ea13f2edcfd15bc6a690a7b7d3}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-KILL\_\-PASSWORD@{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-KILL\_\-PASSWORD}}
+\index{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-KILL\_\-PASSWORD@{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-KILL\_\-PASSWORD}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-KILL\_\-PASSWORD}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-KILL\_\-PASSWORD~TMR\_\-ERROR\_\-CODE(0x40c)}}
+\label{tmr__status_8h_935097ea13f2edcfd15bc6a690a7b7d3}
+
+
+Incorrect password was provided to Kill Tag. \hypertarget{tmr__status_8h_f558aa4cf38c8a272a50c56b0ef6e800}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-NUM\_\-DATA@{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-NUM\_\-DATA}}
+\index{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-NUM\_\-DATA@{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-NUM\_\-DATA}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-NUM\_\-DATA}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-NUM\_\-DATA~TMR\_\-ERROR\_\-CODE(0x411)}}
+\label{tmr__status_8h_f558aa4cf38c8a272a50c56b0ef6e800}
+
+
+Internal reader error. Contact support. \hypertarget{tmr__status_8h_4d4d765519447940f2e970561727dbf8}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-WRITE\_\-DATA@{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-WRITE\_\-DATA}}
+\index{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-WRITE\_\-DATA@{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-WRITE\_\-DATA}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-WRITE\_\-DATA}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-PROTOCOL\_\-INVALID\_\-WRITE\_\-DATA~TMR\_\-ERROR\_\-CODE(0x408)}}
+\label{tmr__status_8h_4d4d765519447940f2e970561727dbf8}
+
+
+Data does not conform to protocol standards. \hypertarget{tmr__status_8h_e5a6f790efe5ad8fa4233a360eada706}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-PROTOCOL\_\-KILL\_\-FAILED@{TMR\_\-ERROR\_\-PROTOCOL\_\-KILL\_\-FAILED}}
+\index{TMR\_\-ERROR\_\-PROTOCOL\_\-KILL\_\-FAILED@{TMR\_\-ERROR\_\-PROTOCOL\_\-KILL\_\-FAILED}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-PROTOCOL\_\-KILL\_\-FAILED}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-PROTOCOL\_\-KILL\_\-FAILED~TMR\_\-ERROR\_\-CODE(0x40e)}}
+\label{tmr__status_8h_e5a6f790efe5ad8fa4233a360eada706}
+
+
+Kill failed for unknown reason. \hypertarget{tmr__status_8h_5b6758d0ba2369a4031a51b381087609}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-PROTOCOL\_\-NO\_\-DATA\_\-READ@{TMR\_\-ERROR\_\-PROTOCOL\_\-NO\_\-DATA\_\-READ}}
+\index{TMR\_\-ERROR\_\-PROTOCOL\_\-NO\_\-DATA\_\-READ@{TMR\_\-ERROR\_\-PROTOCOL\_\-NO\_\-DATA\_\-READ}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-PROTOCOL\_\-NO\_\-DATA\_\-READ}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-PROTOCOL\_\-NO\_\-DATA\_\-READ~TMR\_\-ERROR\_\-CODE(0x404)}}
+\label{tmr__status_8h_5b6758d0ba2369a4031a51b381087609}
+
+
+Tag data was requested, but could not be read. \hypertarget{tmr__status_8h_45bc5f487c59793b4bcdcdc83abe7eec}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-PROTOCOL\_\-WRITE\_\-FAILED@{TMR\_\-ERROR\_\-PROTOCOL\_\-WRITE\_\-FAILED}}
+\index{TMR\_\-ERROR\_\-PROTOCOL\_\-WRITE\_\-FAILED@{TMR\_\-ERROR\_\-PROTOCOL\_\-WRITE\_\-FAILED}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-PROTOCOL\_\-WRITE\_\-FAILED}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-PROTOCOL\_\-WRITE\_\-FAILED~TMR\_\-ERROR\_\-CODE(0x406)}}
+\label{tmr__status_8h_45bc5f487c59793b4bcdcdc83abe7eec}
+
+
+Write to tag failed. \hypertarget{tmr__status_8h_57a4c29f644b9372481d2133b5a39f42}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-SYSTEM\_\-UNKNOWN\_\-ERROR@{TMR\_\-ERROR\_\-SYSTEM\_\-UNKNOWN\_\-ERROR}}
+\index{TMR\_\-ERROR\_\-SYSTEM\_\-UNKNOWN\_\-ERROR@{TMR\_\-ERROR\_\-SYSTEM\_\-UNKNOWN\_\-ERROR}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-SYSTEM\_\-UNKNOWN\_\-ERROR}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-SYSTEM\_\-UNKNOWN\_\-ERROR~TMR\_\-ERROR\_\-CODE(0x7f00)}}
+\label{tmr__status_8h_57a4c29f644b9372481d2133b5a39f42}
+
+
+Internal reader error. Contact support. \hypertarget{tmr__status_8h_16ea9b581efd984841d6dc1ea80b9766}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-FULL@{TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-FULL}}
+\index{TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-FULL@{TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-FULL}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-FULL}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-FULL~TMR\_\-ERROR\_\-CODE(0x601)}}
+\label{tmr__status_8h_16ea9b581efd984841d6dc1ea80b9766}
+
+
+Too many tags are in buffer. Remove some with Get Tag ID Buffer or Clear Tag ID Buffer. \hypertarget{tmr__status_8h_fa25c16392e5b7aa57e782988ad8d8cc}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-NOT\_\-ENOUGH\_\-TAGS\_\-AVAILABLE@{TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-NOT\_\-ENOUGH\_\-TAGS\_\-AVAILABLE}}
+\index{TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-NOT\_\-ENOUGH\_\-TAGS\_\-AVAILABLE@{TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-NOT\_\-ENOUGH\_\-TAGS\_\-AVAILABLE}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-NOT\_\-ENOUGH\_\-TAGS\_\-AVAILABLE}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-NOT\_\-ENOUGH\_\-TAGS\_\-AVAILABLE~TMR\_\-ERROR\_\-CODE(0x600)}}
+\label{tmr__status_8h_fa25c16392e5b7aa57e782988ad8d8cc}
+
+
+Asked for more tags than were available in the buffer. \hypertarget{tmr__status_8h_d64b166ebdf25daef24efff7cfe31e8b}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-NUM\_\-TAG\_\-TOO\_\-LARGE@{TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-NUM\_\-TAG\_\-TOO\_\-LARGE}}
+\index{TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-NUM\_\-TAG\_\-TOO\_\-LARGE@{TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-NUM\_\-TAG\_\-TOO\_\-LARGE}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-NUM\_\-TAG\_\-TOO\_\-LARGE}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-NUM\_\-TAG\_\-TOO\_\-LARGE~TMR\_\-ERROR\_\-CODE(0x603)}}
+\label{tmr__status_8h_d64b166ebdf25daef24efff7cfe31e8b}
+
+
+Asked for tags than a single transaction can handle. \hypertarget{tmr__status_8h_86d556bdaae35fad089186ab5054fdfb}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-REPEATED\_\-TAG\_\-ID@{TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-REPEATED\_\-TAG\_\-ID}}
+\index{TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-REPEATED\_\-TAG\_\-ID@{TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-REPEATED\_\-TAG\_\-ID}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-REPEATED\_\-TAG\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-TAG\_\-ID\_\-BUFFER\_\-REPEATED\_\-TAG\_\-ID~TMR\_\-ERROR\_\-CODE(0x602)}}
+\label{tmr__status_8h_86d556bdaae35fad089186ab5054fdfb}
+
+
+Internal error -- reader is trying to insert a duplicate tag record. Contact support. \hypertarget{tmr__status_8h_6a62cd5438d96d9328081ed066c84eee}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-TEMPERATURE\_\-EXCEED\_\-LIMITS@{TMR\_\-ERROR\_\-TEMPERATURE\_\-EXCEED\_\-LIMITS}}
+\index{TMR\_\-ERROR\_\-TEMPERATURE\_\-EXCEED\_\-LIMITS@{TMR\_\-ERROR\_\-TEMPERATURE\_\-EXCEED\_\-LIMITS}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-TEMPERATURE\_\-EXCEED\_\-LIMITS}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-TEMPERATURE\_\-EXCEED\_\-LIMITS~TMR\_\-ERROR\_\-CODE(0x504)}}
+\label{tmr__status_8h_6a62cd5438d96d9328081ed066c84eee}
+
+
+Reader temperature outside safe range. \hypertarget{tmr__status_8h_fdacd7271e6116444267944fc640e2bd}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-TM\_\-ASSERT\_\-FAILED@{TMR\_\-ERROR\_\-TM\_\-ASSERT\_\-FAILED}}
+\index{TMR\_\-ERROR\_\-TM\_\-ASSERT\_\-FAILED@{TMR\_\-ERROR\_\-TM\_\-ASSERT\_\-FAILED}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-TM\_\-ASSERT\_\-FAILED}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-TM\_\-ASSERT\_\-FAILED~TMR\_\-ERROR\_\-CODE(0x7f01)}}
+\label{tmr__status_8h_fdacd7271e6116444267944fc640e2bd}
+
+
+Internal reader error. Contact support. \hypertarget{tmr__status_8h_870313b3e0e3496d24c55ad2e9025c5f}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-UNIMPLEMENTED\_\-FEATURE@{TMR\_\-ERROR\_\-UNIMPLEMENTED\_\-FEATURE}}
+\index{TMR\_\-ERROR\_\-UNIMPLEMENTED\_\-FEATURE@{TMR\_\-ERROR\_\-UNIMPLEMENTED\_\-FEATURE}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-UNIMPLEMENTED\_\-FEATURE}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-UNIMPLEMENTED\_\-FEATURE~TMR\_\-ERROR\_\-CODE(0x109)}}
+\label{tmr__status_8h_870313b3e0e3496d24c55ad2e9025c5f}
+
+
+Command not supported. \hypertarget{tmr__status_8h_532919de9216489f11541db0e1d8010c}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-UNIMPLEMENTED\_\-OPCODE@{TMR\_\-ERROR\_\-UNIMPLEMENTED\_\-OPCODE}}
+\index{TMR\_\-ERROR\_\-UNIMPLEMENTED\_\-OPCODE@{TMR\_\-ERROR\_\-UNIMPLEMENTED\_\-OPCODE}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-UNIMPLEMENTED\_\-OPCODE}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-UNIMPLEMENTED\_\-OPCODE~TMR\_\-ERROR\_\-CODE(0x102)}}
+\label{tmr__status_8h_532919de9216489f11541db0e1d8010c}
+
+
+Command opcode recognized, but is not supported. \hypertarget{tmr__status_8h_2f92ca6f6aabc211bfee20e4ff133dde}{
+\index{tmr\_\-status.h@{tmr\_\-status.h}!TMR\_\-ERROR\_\-WRITE\_\-PASSED\_\-LOCK\_\-FAILED@{TMR\_\-ERROR\_\-WRITE\_\-PASSED\_\-LOCK\_\-FAILED}}
+\index{TMR\_\-ERROR\_\-WRITE\_\-PASSED\_\-LOCK\_\-FAILED@{TMR\_\-ERROR\_\-WRITE\_\-PASSED\_\-LOCK\_\-FAILED}!tmr_status.h@{tmr\_\-status.h}}
+\subsubsection[{TMR\_\-ERROR\_\-WRITE\_\-PASSED\_\-LOCK\_\-FAILED}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMR\_\-ERROR\_\-WRITE\_\-PASSED\_\-LOCK\_\-FAILED~TMR\_\-ERROR\_\-CODE(0x403)}}
+\label{tmr__status_8h_2f92ca6f6aabc211bfee20e4ff133dde}
+
+
+For write-then-lock commands, tag was successfully written, but lock failed. 

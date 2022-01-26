@@ -1,0 +1,17 @@
+
+get /reader/gen2/tagEncoding
+
+set /reader/gen2/tagEncoding m8
+get /reader/gen2/tagEncoding
+
+set /reader/gen2/tagEncoding m4
+get /reader/gen2/tagEncoding 
+
+set /reader/gen2/tagEncoding M2
+get /reader/gen2/tagEncoding 
+
+set /reader/gen2/tagEncoding FM0
+get /reader/gen2/tagEncoding 
+
+set /reader/gen2/tagEncoding m4
+get /reader/gen2/tagEncoding 

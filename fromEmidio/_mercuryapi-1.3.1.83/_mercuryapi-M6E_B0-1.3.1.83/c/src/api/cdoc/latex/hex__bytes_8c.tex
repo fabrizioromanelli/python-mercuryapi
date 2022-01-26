@@ -1,0 +1,84 @@
+\hypertarget{hex__bytes_8c}{
+\section{hex\_\-bytes.c File Reference}
+\label{hex__bytes_8c}\index{hex\_\-bytes.c@{hex\_\-bytes.c}}
+}
+Routines for converting between byte arrays and hex strings.  
+
+
+{\tt \#include $<$stdlib.h$>$}\par
+{\tt \#include \char`\"{}tm\_\-reader.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+TMR\_\-Status \hyperlink{hex__bytes_8c_96a5d471a62fa37b1a66e894c04b98af}{TMR\_\-hexToBytes} (const char $\ast$hex, uint8\_\-t $\ast$bytes, uint32\_\-t size, uint32\_\-t $\ast$convertLen)
+\item 
+void \hyperlink{hex__bytes_8c_ebfeac0977014965d178a396f6d74944}{TMR\_\-bytesToHex} (const uint8\_\-t $\ast$bytes, uint32\_\-t size, char $\ast$hex)
+\item 
+void \hyperlink{hex__bytes_8c_91c661d3d23ddfdd459badb688140488}{TMR\_\-hexDottedQuad} (const uint8\_\-t bytes\mbox{[}4\mbox{]}, char buf\mbox{[}12\mbox{]})
+\end{CompactItemize}
+
+
+\label{_details}
+\hypertarget{_details}{}
+\subsection{Detailed Description}
+Routines for converting between byte arrays and hex strings. 
+
+\begin{Desc}
+\item[Author:]Nathan Williams \end{Desc}
+\begin{Desc}
+\item[Date:]10/23/2009 \end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{hex__bytes_8c_ebfeac0977014965d178a396f6d74944}{
+\index{hex\_\-bytes.c@{hex\_\-bytes.c}!TMR\_\-bytesToHex@{TMR\_\-bytesToHex}}
+\index{TMR\_\-bytesToHex@{TMR\_\-bytesToHex}!hex_bytes.c@{hex\_\-bytes.c}}
+\subsubsection[{TMR\_\-bytesToHex}]{\setlength{\rightskip}{0pt plus 5cm}void TMR\_\-bytesToHex (const uint8\_\-t $\ast$ {\em bytes}, \/  uint32\_\-t {\em size}, \/  char $\ast$ {\em hex})}}
+\label{hex__bytes_8c_ebfeac0977014965d178a396f6d74944}
+
+
+Convert an array of bytes, such as a tag EPC, into a hexadecimal string.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em bytes}]The byte array to convert. \item[{\em size}]The length of the byte array to convert. \item[\mbox{$\rightarrow$} {\em hex}]The converted hexadecimal string, null-terminated.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[\hyperlink{test__test000013}{Test}]If size is 0, $\ast$hex should point to an empty string. \end{Desc}
+\hypertarget{hex__bytes_8c_91c661d3d23ddfdd459badb688140488}{
+\index{hex\_\-bytes.c@{hex\_\-bytes.c}!TMR\_\-hexDottedQuad@{TMR\_\-hexDottedQuad}}
+\index{TMR\_\-hexDottedQuad@{TMR\_\-hexDottedQuad}!hex_bytes.c@{hex\_\-bytes.c}}
+\subsubsection[{TMR\_\-hexDottedQuad}]{\setlength{\rightskip}{0pt plus 5cm}void TMR\_\-hexDottedQuad (const uint8\_\-t {\em bytes}\mbox{[}4\mbox{]}, \/  char {\em buf}\mbox{[}12\mbox{]})}}
+\label{hex__bytes_8c_91c661d3d23ddfdd459badb688140488}
+
+
+Convert a four-byte array into a null-terminated string with the format 02X.02X.02X.02X (AA.BB.CC.DD).
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em bytes}]The array of four bytes to convert \item[{\em buf}]The string to write to. Must be at least 12 bytes. \end{description}
+\end{Desc}
+\hypertarget{hex__bytes_8c_96a5d471a62fa37b1a66e894c04b98af}{
+\index{hex\_\-bytes.c@{hex\_\-bytes.c}!TMR\_\-hexToBytes@{TMR\_\-hexToBytes}}
+\index{TMR\_\-hexToBytes@{TMR\_\-hexToBytes}!hex_bytes.c@{hex\_\-bytes.c}}
+\subsubsection[{TMR\_\-hexToBytes}]{\setlength{\rightskip}{0pt plus 5cm}TMR\_\-Status TMR\_\-hexToBytes (const char $\ast$ {\em hex}, \/  uint8\_\-t $\ast$ {\em bytes}, \/  uint32\_\-t {\em size}, \/  uint32\_\-t $\ast$ {\em convertLen})}}
+\label{hex__bytes_8c_96a5d471a62fa37b1a66e894c04b98af}
+
+
+Convert a hexadecimal string into an array of bytes. The string may optionally include a \char`\"{}0x\char`\"{} prefix, which will be ignored.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em hex}]The hexadecimal string to convert. \item[\mbox{$\rightarrow$} {\em bytes}]The array to store the converted bytes. \item[{\em size}]The length of the byte array to store into. \item[\mbox{$\rightarrow$} {\em convertLen}]The number of bytes written to the array, or {\tt NULL}.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[\hyperlink{test__test000012}{Test}]If hex string is empty, $\ast$bytes should not be altered. 
+
+$\ast$convertLen is set to the correct value. 
+
+Function works when convertLen is {\tt NULL}. 
+
+Specific values: {\tt \char`\"{}00\char`\"{}}, {\tt \char`\"{}0000\char`\"{}}, {\tt \char`\"{}ffff\char`\"{}}, {\tt \char`\"{}0xffff\char`\"{}}, {\tt \char`\"{}00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899aabb\char`\"{}}. \end{Desc}

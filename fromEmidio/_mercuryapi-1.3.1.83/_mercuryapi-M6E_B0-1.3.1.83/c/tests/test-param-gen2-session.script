@@ -1,0 +1,43 @@
+echo Testing Gen2 session setting
+
+get /reader/gen2/session
+
+set /reader/gen2/session S3
+get /reader/gen2/session
+
+set /reader/gen2/session S2
+get /reader/gen2/session
+
+set /reader/gen2/session S1
+get /reader/gen2/session
+
+set /reader/gen2/session S0
+get /reader/gen2/session
+
+echo Testing invalid settings
+
+set /reader/gen2/session S4
+get /reader/gen2/session
+
+set /reader/gen2/session 3
+get /reader/gen2/session
+
+echo Testing session behavior
+
+echo Session 1 - Back-to-back reads within 500ms should not find tags the second time
+set /reader/gen2/session S1
+get /reader/gen2/session
+echo Waiting 6s for S1 persistence flag to clear
+sleep 6000
+read 200
+echo Second read
+read 200
+
+echo Session 0 - Back-to-back reads within 500ms should find tags both times
+set /reader/gen2/session S0
+get /reader/gen2/session
+read 250
+echo Second read
+read 250
+
+echo Done
