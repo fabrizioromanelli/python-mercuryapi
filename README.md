@@ -711,3 +711,4 @@ The python-mercuryapi is distributed under the terms of the MIT License.
 See the [LICENSE](LICENSE).
 
 Copyright (c) 2016-2020 Petr Gotthard
+
