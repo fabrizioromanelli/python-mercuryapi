@@ -8,9 +8,9 @@ import time
 from datetime import datetime
 import mercury
 
-def saveSamples(filename, tag):
+def saveSamples(filename, tag, power):
   with open(filename, 'a') as sampleFile:
-    listToStr = '{}'.format(tag.epc)+','+'{:1.1f}'.format(tag.antenna)+','+'{:15.20f}'.format(tag.frequency)+','+'{:15.20f}'.format(tag.rssi)+','+'{:15.20f}'.format(tag.phase)+','+'{:15.20f}'.format(tag.timestamp)+'\n'
+    listToStr = '{}'.format(power)+','+'{}'.format(tag.epc)+','+'{:1.1f}'.format(tag.antenna)+','+'{:15.20f}'.format(tag.frequency)+','+'{:15.20f}'.format(tag.rssi)+','+'{:15.20f}'.format(tag.phase)+','+'{:15.20f}'.format(tag.timestamp)+'\n'
     sampleFile.write(listToStr)
 
 reader = mercury.Reader("tmr:///dev/ttyUSB0", baudrate=115200)
@@ -71,5 +71,5 @@ while power <= maxPower:
   reader.set_read_plan([1], protocol, read_power=power)
   tags = reader.read(async_on)
   for tag in tags:
-    saveSamples(filename, tag)
+    saveSamples(filename, tag, power)
   power = power + deltaPower

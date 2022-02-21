@@ -21,7 +21,7 @@ reader = mercury.Reader("tmr:///dev/ttyUSB0", baudrate=115200)
 print(reader.get_model())
 print(reader.get_supported_regions())
 
-power = 1500
+power = 2070
 filename = "samples.dat"
 region = "EU3"
 protocol = "GEN2"
