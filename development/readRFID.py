@@ -34,9 +34,8 @@ protocol = "GEN2"
 
 # Here we set the correct parameters, once the search (progressive or simple) is done
 freqList = [freq]
-reader.set_hop_table(freqList)
-
 reader.set_region(region)
+reader.set_hop_table(freqList)
 reader.set_read_plan([1], protocol, read_power=power)
 print(reader.read())
 
