@@ -27,40 +27,14 @@ print(reader.get_model())
 print(reader.get_supported_regions())
 
 power = 2140
-freq1 = 866300
-freq2 = 866300
-nFreq = 12
+freq  = 866300
 filename = "samples.dat"
 region = "EU3"
 protocol = "GEN2"
 
 # Here we set the correct parameters, once the search (progressive or simple) is done
-if True:
-  freqList = reader.get_hop_table()
-
-  if (freq1 > freq2) and (freq2 > 0):
-    deltaFreq = (freq1 - freq2) / nFreq
-    for idx in range(len(freqList)):
-      freqList[idx] = freq2 + (idx % (nFreq+1)) * deltaFreq
-  elif (freq2 > freq1) and (freq2 > 0):
-    deltaFreq = (freq2 - freq1) / nFreq
-    for idx in range(len(freqList)):
-      freqList[idx] = freq1 + (idx % (nFreq+1)) * deltaFreq
-  else:
-    if (freq1 >= 840000) and (freq1 <= 960000):
-      for idx in range(len(freqList)):
-        freqList[idx] = freq1
-    else:
-      print("Error: freq1 [840-960]MHz")
-    
-      if (freq2 >= 840000 and freq2 <= 960000) or (freq2 == 0):
-        if (freq2 > 0):
-          for idx in range(2,12,2):
-            freqList[idx] = freq2
-      else:
-        print("Error: 840MHz < freq2 < 960MHz oppure freq2 = 0 per disabilitarla")
-
-  reader.set_hop_table(freqList)
+freqList = [freq]
+reader.set_hop_table(freqList)
 
 reader.set_region(region)
 reader.set_read_plan([1], protocol, read_power=power)
