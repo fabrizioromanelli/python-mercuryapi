@@ -37,6 +37,9 @@ filename = "progressiveTagSearch.dat"
 region = "EU3"
 protocol = "GEN2"
 
+# Here we set the correct parameters, once the progressive search is done
+reader.set_region(region)
+
 if changeFrequency:
   freqList = reader.get_hop_table()
 
@@ -63,9 +66,6 @@ if changeFrequency:
         print("Error: 840MHz < freq2 < 960MHz oppure freq2 = 0 per disabilitarla")
 
   reader.set_hop_table(freqList)
-
-# Here we set the correct parameters, once the progressive search is done
-reader.set_region(region)
 
 while power <= maxPower:
   reader.set_read_plan([1], protocol, read_power=power)
