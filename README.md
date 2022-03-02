@@ -332,7 +332,7 @@ print(reader.get_supported_regions())
 Gets the frequencies for the reader to use, in kHz.
 
 #### reader.set_hop_table(*list*)
-Sets the frequencies for the reader to use, in kHz.
+Sets the frequencies for the reader to use, in kHz. This must be done *after* any call to reader.set_region(*region*), otherwise it will be ignored.
 
 #### reader.get_hop_time()
 Gets the frequency hop time, in milliseconds.
