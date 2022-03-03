@@ -26,8 +26,8 @@ except:
 print(reader.get_model())
 print(reader.get_supported_regions())
 
-power = 2140
-freq  = 866300
+power = 2500
+freq  = 867000
 filename = "samples.dat"
 region = "EU3"
 protocol = "GEN2"
@@ -48,8 +48,9 @@ signal.signal(signal.SIGINT, signal_handler)
 # frequency the tag was read with
 # e.g.: reader.start_reading(lambda tag: print(tag.epc, tag.antenna, tag.read_count, tag.rssi, datetime.fromtimestamp(tag.timestamp)))
 # reader.start_reading(lambda tag: print(tag.epc, tag.antenna, tag.frequency, tag.rssi, tag.phase, tag.timestamp))
-reader.start_reading(lambda tag: saveSamples(filename, tag))
-signal.pause()
+reader.start_reading(lambda tag: saveSamples(filename, tag), 100, 2000)
+#signal.pause()
+time.sleep(8)
 print("Reading in progress...")
 reader.stop_reading()
 

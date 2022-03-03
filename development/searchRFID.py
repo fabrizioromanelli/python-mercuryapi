@@ -13,16 +13,21 @@ def saveSamples(filename, tag, power):
     listToStr = '{}'.format(power)+','+'{}'.format(tag.epc)+','+'{:1.1f}'.format(tag.antenna)+','+'{:15.20f}'.format(tag.frequency)+','+'{:15.20f}'.format(tag.rssi)+','+'{:15.20f}'.format(tag.phase)+','+'{:15.20f}'.format(tag.timestamp)+'\n'
     sampleFile.write(listToStr)
 
-reader = mercury.Reader("tmr:///dev/ttyUSB0", baudrate=115200)
+try:
+  reader = mercury.Reader("tmr:///dev/ttyUSB0", baudrate=115200)
+except:
+  print("dev/ttyUSB0 not configured, trying dev/ttyUSB1...")
+  reader = mercury.Reader("tmr:///dev/ttyUSB1", baudrate=115200)
+
 print(reader.get_model())
 print(reader.get_supported_regions())
 
 # Settings for progressive scan
 # Frequency settings
 changeFrequency = False
-freq1 = 870000
-freq2 = 868000
-nFreq = 12
+freq1 = 867000
+freq2 = 867000
+nFreq = 1
 
 # Asynchronous timeouts
 async_on = 100
@@ -57,7 +62,7 @@ if changeFrequency:
         freqList[idx] = freq1
     else:
       print("Error: freq1 [840-960]MHz")
-    
+
       if (freq2 >= 840000 and freq2 <= 960000) or (freq2 == 0):
         if (freq2 > 0):
           for idx in range(2,12,2):
