@@ -1,8 +1,0 @@
-echo Test of basic reading
-
-get /reader/antenna/portList
-get /reader/antenna/txRxMap
-
-read 1000
-
-echo done

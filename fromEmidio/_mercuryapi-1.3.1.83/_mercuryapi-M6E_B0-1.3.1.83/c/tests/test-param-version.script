@@ -1,4 +1,0 @@
-get /reader/version/hardware
-get /reader/version/serial
-get /reader/version/model
-get /reader/version/software
